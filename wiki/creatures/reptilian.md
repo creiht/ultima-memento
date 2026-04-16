@@ -71,7 +71,7 @@ Reptilian creatures include lizards, snakes, serpents, and other cold-blooded be
 | a turtle | 46-60 | 76-100 | 6-25 | 11-20 | 65-85 | 5-10 | - | 5-10 | - | No | - |
 | an alligator | 46-60 | 76-100 | 6-25 | 11-20 | 25-35 | 5-10 | - | 5-10 | - | Yes | - |
 | an iguana | 76-90 | 126-150 | 56-75 | 11-20 | 35-45 | 30-45 | - | 25-35 | 25-35 | Yes | [Meager](../systems/loot-tables/monster-packs.md#meager) |
-| useless stone | 106-123 | 176-205 | 46-65 | 46-70 | 35-45 | 25-35 | 15-25 | 5-15 | 5-15 | Yes | [Average](../systems/loot-tables/monster-packs.md#average) |
+| a basilisk | 106-123 | 176-205 | 46-65 | 46-70 | 35-45 | 25-35 | 15-25 | 5-15 | 5-15 | Yes | [Average](../systems/loot-tables/monster-packs.md#average) |
 
 ## Sea
 
@@ -150,4 +150,4 @@ Reptilian creatures include lizards, snakes, serpents, and other cold-blooded be
 | an arcticonda | 81.1 | 2 |
 | an ice toad | 79.1 | 1 |
 | an iguana | 80.7 | 1 |
-| useless stone | 73.9 | 1 |
+| a basilisk | 73.9 | 1 |

@@ -13,7 +13,7 @@ Undead are reanimated corpses and spirits — skeletons, zombies, liches, wraith
 | Name | Hits | Str | Dex | Int | Phys Resist | Fire Resist | Cold Resist | Poison Resist | Energy Resist | Tameable | Notable Loot |
 |------|------|-----|-----|-----|-------------|-------------|-------------|---------------|---------------|----------|--------------|
 | AncientLich | 560-595 | 216-305 | 96-115 | 966-1045 | 55-65 | 25-30 | 50-60 | 50-60 | 25-30 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
-| Chest of Lich King Relics | 660-695 | 316-405 | 196-215 | 1066-1145 | 65-75 | 35-40 | 60-70 | 60-70 | 35-40 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
+| a lich king | 660-695 | 316-405 | 196-215 | 1066-1145 | 65-75 | 35-40 | 60-70 | 60-70 | 35-40 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
 | Dracolich | 558-599 | 898-1030 | 68-200 | 488-620 | 75-80 | 40-60 | 40-60 | 70-80 | 40-60 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Gems](../systems/loot-tables/utility-packs.md#gems), [HighScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
 | Dracula | 350-400 | 1096-1185 | 86-175 | 686-775 | 65-75 | 80-90 | 70-80 | 60-70 | 60-70 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [UltraRich](../systems/loot-tables/monster-packs.md#ultrarich), [HighScrolls](../systems/loot-tables/utility-packs.md#scrolls), DraculaSword |
 | Grundul Varg | 200-300 | 386-400 | 151-165 | 161-175 | 35-45 | 25-30 | 25-30 | 10-20 | 10-20 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Rich](../systems/loot-tables/monster-packs.md#rich), [Rich](../systems/loot-tables/monster-packs.md#rich) |
@@ -37,9 +37,9 @@ Undead are reanimated corpses and spirits — skeletons, zombies, liches, wraith
 | a dark reaper | 40-129 | 66-215 | 66-75 | 101-250 | 35-45 | 15-25 | 10-20 | 40-50 | 30-40 | No | [Average](../systems/loot-tables/monster-packs.md#average), EbonyLog, MandrakeRoot, Seed, Engines |
 | a diseased mummy | 208-222 | 346-370 | 71-90 | 26-40 | 45-55 | 10-20 | 50-60 | 20-30 | 20-30 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Gems](../systems/loot-tables/utility-packs.md#gems), [LowPotions](../systems/loot-tables/utility-packs.md#lowpotions), Garlic, Bandage, BodyPart |
 | a frozen corpse | 56-84 | 92-140 | 62-100 | 52-80 | 15-20 | - | 95-100 | 5-10 | - | No | [Average](../systems/loot-tables/monster-packs.md#average), BodyPart |
-| a ghost | - | 86-100 | 81-95 | 61-75 | 15-20 | - | 20-30 | 5-10 | - | No | [Meager](../systems/loot-tables/monster-packs.md#meager), [Average](../systems/loot-tables/monster-packs.md#average) |
-| a ghost | - | 86-100 | 81-95 | 61-75 | 15-20 | - | 20-30 | 5-10 | - | No | [Meager](../systems/loot-tables/monster-packs.md#meager), [Average](../systems/loot-tables/monster-packs.md#average) |
-| a ghost | 49-63 | 81-105 | 91-115 | 96-120 | 15-20 | 5-10 | - | 5-10 | 5-10 | No | [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
+| a ghost (GhostWarrior) | - | 86-100 | 81-95 | 61-75 | 15-20 | - | 20-30 | 5-10 | - | No | [Meager](../systems/loot-tables/monster-packs.md#meager), [Average](../systems/loot-tables/monster-packs.md#average) |
+| a ghost (GhostPirate) | - | 86-100 | 81-95 | 61-75 | 15-20 | - | 20-30 | 5-10 | - | No | [Meager](../systems/loot-tables/monster-packs.md#meager), [Average](../systems/loot-tables/monster-packs.md#average) |
+| a ghost (GhostWizard) | 49-63 | 81-105 | 91-115 | 96-120 | 15-20 | 5-10 | - | 5-10 | 5-10 | No | [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
 | a ghost dragyn | 478-495 | 796-825 | 86-105 | 436-475 | 55-65 | 60-70 | 30-40 | 25-35 | 35-45 | No | - |
 | a ghostly dragon | 478-495 | 796-825 | 86-105 | 436-475 | 55-65 | 60-70 | 30-40 | 25-35 | 35-45 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
 | a ghostly gargoyle | 88-105 | 146-175 | 76-95 | 81-105 | 30-35 | 25-35 | 5-10 | 15-25 | - | No | [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls), GraveDust |
@@ -73,16 +73,16 @@ Undead are reanimated corpses and spirits — skeletons, zombies, liches, wraith
 | an undead lion | 251-280 | 276-325 | 156-175 | 76-105 | 40-60 | 20-30 | 50-60 | 55-65 | 40-50 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls), LeftArm, RightArm, Torso, Bone, RibCage, RibCage, BonePile, BonePile, BonePile, BonePile |
 | an undead sailor | 118-150 | 196-250 | 76-95 | 36-60 | 35-45 | 20-30 | 50-60 | 20-30 | 30-40 | No | - |
 | an undead wolf | 34-48 | 56-80 | 56-75 | 31-55 | 15-20 | 10-15 | 20-25 | 10-15 | 10-15 | No | - |
-| bone carved chest | 202-231 | 336-385 | 96-115 | 31-55 | 45-50 | 30-40 | 25-35 | 50-60 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
-| dead giant's hand scythe | 202-231 | 336-385 | 96-115 | 31-55 | 45-50 | 50-60 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
-| evil robe of  | 250-303 | 416-505 | 146-165 | 566-655 | 40-50 | 30-40 | 50-60 | 50-60 | 40-50 | No | [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
-| pharaoh chest | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Rich](../systems/loot-tables/monster-packs.md#rich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls), BodyPart, MummyWrap |
+| a bone slasher | 202-231 | 336-385 | 96-115 | 31-55 | 45-50 | 30-40 | 25-35 | 50-60 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
+| a zombie giant | 202-231 | 336-385 | 96-115 | 31-55 | 45-50 | 50-60 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
+| a shroud | 250-303 | 416-505 | 146-165 | 566-655 | 40-50 | 30-40 | 50-60 | 50-60 | 40-50 | No | [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
+| a mummy giant | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Rich](../systems/loot-tables/monster-packs.md#rich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls), BodyPart, MummyWrap |
 | restless soul | 16-24 | 26-40 | 26-40 | 26-40 | 15-25 | 5-15 | 25-40 | 5-10 | 10-20 | No | [Poor](../systems/loot-tables/monster-packs.md#poor) |
-| shroud of  | 103-120 | 171-200 | 126-145 | 276-305 | 40-60 | 20-30 | 50-60 | 55-65 | 40-50 | No | [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls), GraveDust |
-| skull | - | - | - | - | 10 | 0 | 0 | 10 | 0 | No | [Average](../systems/loot-tables/monster-packs.md#average), [Average](../systems/loot-tables/monster-packs.md#average), [Meager](../systems/loot-tables/monster-packs.md#meager) |
-| skull | 450-503 | 466-555 | 146-165 | 666-755 | 40-50 | 30-40 | 50-60 | 50-60 | 40-50 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
-| staff | 190-235 | 235-280 | 76-95 | 301-325 | 45-60 | 30-40 | 30-40 | 50-60 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
-| titan lich chest | 560-595 | 216-305 | 96-115 | 966-1045 | 55-65 | 25-30 | 50-60 | 50-60 | 25-30 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls), BodyPart |
+| a ghostly | 103-120 | 171-200 | 126-145 | 276-305 | 40-60 | 20-30 | 50-60 | 55-65 | 40-50 | No | [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls), GraveDust |
+| a dead knight | - | - | - | - | 10 | 0 | 0 | 10 | 0 | No | [Average](../systems/loot-tables/monster-packs.md#average), [Average](../systems/loot-tables/monster-packs.md#average), [Meager](../systems/loot-tables/monster-packs.md#meager) |
+| a demilich | 450-503 | 466-555 | 146-165 | 666-755 | 40-50 | 30-40 | 50-60 | 50-60 | 40-50 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
+| a dead wizard | 190-235 | 235-280 | 76-95 | 301-325 | 45-60 | 30-40 | 30-40 | 50-60 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
+| a titan lich | 560-595 | 216-305 | 96-115 | 966-1045 | 55-65 | 25-30 | 50-60 | 50-60 | 25-30 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls), BodyPart |
 
 ## Skeletal Variants (15)
 
@@ -91,8 +91,8 @@ Undead are reanimated corpses and spirits — skeletons, zombies, liches, wraith
 | SkeletonHorse | 198-215 | 396-425 | 76-95 | 76-115 | 55-65 | 30-40 | 30-40 | 30-40 | 20-30 | Yes | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average), [LowScrolls](../systems/loot-tables/utility-packs.md#scrolls), [LowPotions](../systems/loot-tables/utility-packs.md#lowpotions) |
 | a bone knight | 118-150 | 196-250 | 76-95 | 36-60 | 35-45 | 20-30 | 50-60 | 20-30 | 30-40 | No | [Average](../systems/loot-tables/monster-packs.md#average), [Meager](../systems/loot-tables/monster-packs.md#meager), PlateArms, PlateChest, PlateGloves, PlateGorget, PlateLegs, PlateHelm, Scimitar, WoodenShield |
 | a bone magi | 46-60 | 76-100 | 56-75 | 186-210 | 35-40 | 20-30 | 50-60 | 20-30 | 30-40 | No | [Average](../systems/loot-tables/monster-packs.md#average), [LowScrolls](../systems/loot-tables/utility-packs.md#scrolls), [LowPotions](../systems/loot-tables/utility-packs.md#lowpotions) |
-| a frail skeleton | 24-38 | 26-40 | 26-35 | 6-10 | 15-20 | 5-10 | 25-40 | 25-35 | 5-15 | No | [Poor](../systems/loot-tables/monster-packs.md#poor) |
-| a frail skeleton | 24-38 | 26-40 | 26-35 | 6-10 | 15-20 | 5-10 | 25-40 | 25-35 | 5-15 | No | [Poor](../systems/loot-tables/monster-packs.md#poor), BodyPart, BodyPart |
+| a frail skeleton (FrailSkeleton) | 24-38 | 26-40 | 26-35 | 6-10 | 15-20 | 5-10 | 25-40 | 25-35 | 5-15 | No | [Poor](../systems/loot-tables/monster-packs.md#poor) |
+| a frail skeleton (Undead) | 24-38 | 26-40 | 26-35 | 6-10 | 15-20 | 5-10 | 25-40 | 25-35 | 5-15 | No | [Poor](../systems/loot-tables/monster-packs.md#poor), BodyPart, BodyPart |
 | a skeletal archer | 34-48 | 56-80 | 101-130 | 16-40 | 15-20 | 5-10 | 25-40 | 25-35 | 5-15 | No | [Poor](../systems/loot-tables/monster-packs.md#poor), BoneArms, BoneChest, BoneGloves, BoneLegs, BoneHelm, BoneSkirt, Arrow |
 | a skeletal gargoyle | 46-60 | 76-100 | 56-75 | 186-210 | 35-40 | 20-30 | 50-60 | 20-30 | 30-40 | No | [Average](../systems/loot-tables/monster-packs.md#average), [LowScrolls](../systems/loot-tables/utility-packs.md#scrolls), [LowPotions](../systems/loot-tables/utility-packs.md#lowpotions) |
 | a skeletal knight | 118-150 | 196-250 | 76-95 | 36-60 | 35-45 | 20-30 | 50-60 | 20-30 | 30-40 | No | [Average](../systems/loot-tables/monster-packs.md#average), [Meager](../systems/loot-tables/monster-packs.md#meager), PlateArms, PlateChest, PlateGloves, PlateGorget, PlateLegs, PlateHelm, Scimitar, WoodenShield |
@@ -108,8 +108,8 @@ Undead are reanimated corpses and spirits — skeletons, zombies, liches, wraith
 
 | Name | Hits | Str | Dex | Int | Phys Resist | Fire Resist | Cold Resist | Poison Resist | Energy Resist | Tameable | Notable Loot |
 |------|------|-----|-----|-----|-------------|-------------|-------------|---------------|---------------|----------|--------------|
-| a zombie | 28-42 | 46-70 | 31-50 | 26-40 | 15-20 | - | 20-30 | 5-10 | - | No | [Meager](../systems/loot-tables/monster-packs.md#meager), BodyPart |
-| a zombie | 28-42 | 46-70 | 31-50 | 26-40 | 15-20 | - | 20-30 | 5-10 | - | No | [Meager](../systems/loot-tables/monster-packs.md#meager), BodyPart |
+| a zombie (Zombie) | 28-42 | 46-70 | 31-50 | 26-40 | 15-20 | - | 20-30 | 5-10 | - | No | [Meager](../systems/loot-tables/monster-packs.md#meager), BodyPart |
+| a zombie (Undead) | 28-42 | 46-70 | 31-50 | 26-40 | 15-20 | - | 20-30 | 5-10 | - | No | [Meager](../systems/loot-tables/monster-packs.md#meager), BodyPart |
 | a zombie gargoyle | 48-62 | 66-90 | 51-70 | 26-40 | 15-20 | - | 20-30 | 5-10 | - | No | [Meager](../systems/loot-tables/monster-packs.md#meager), LeftArm, RightArm, Torso, Bone, RibCage, RibCage, BonePile, BonePile, BonePile, BonePile |
 | a zombie mage | 46-60 | 76-100 | 56-75 | 186-210 | 35-40 | 20-30 | 50-60 | 20-30 | 30-40 | No | [Average](../systems/loot-tables/monster-packs.md#average), [LowScrolls](../systems/loot-tables/utility-packs.md#scrolls), [LowPotions](../systems/loot-tables/utility-packs.md#lowpotions), BodyPart |
 

@@ -12,11 +12,11 @@ Humanoids include intelligent non-human races — orcs, lizardmen, ratmen, ophid
 
 | Name | Hits | Str | Dex | Int | Phys Resist | Fire Resist | Cold Resist | Poison Resist | Energy Resist | Tameable | Notable Loot |
 |------|------|-----|-----|-----|-------------|-------------|-------------|---------------|---------------|----------|--------------|
-| Jedi robe | 502-531 | 350-400 | 177-255 | 350-400 | 45-55 | 30-40 | 30-40 | 40-50 | 60-70 | No | [Meager](../systems/loot-tables/monster-packs.md#meager) |
+| a jedi | 502-531 | 350-400 | 177-255 | 350-400 | 45-55 | 30-40 | 30-40 | 40-50 | 60-70 | No | [Meager](../systems/loot-tables/monster-packs.md#meager) |
 | Psionicist | 302-331 | 350-400 | 177-255 | 350-400 | 45-55 | 30-40 | 30-40 | 40-50 | 60-70 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Rich](../systems/loot-tables/monster-packs.md#rich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
-| Syth robe | 502-531 | 350-400 | 177-255 | 350-400 | 45-55 | 30-40 | 30-40 | 40-50 | 60-70 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Rich](../systems/loot-tables/monster-packs.md#rich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
+| a syth | 502-531 | 350-400 | 177-255 | 350-400 | 45-55 | 30-40 | 30-40 | 40-50 | 60-70 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Rich](../systems/loot-tables/monster-packs.md#rich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
 | an alien savage | 202-231 | 336-385 | 281-305 | 96-115 | 45-55 | 30-40 | 30-40 | 40-50 | 40-50 | No | [Average](../systems/loot-tables/monster-packs.md#average), [Average](../systems/loot-tables/monster-packs.md#average), [Meager](../systems/loot-tables/monster-packs.md#meager) |
-| hull plate | 302-331 | 336-385 | 96-115 | 281-305 | 45-55 | 30-40 | 30-40 | 40-50 | 60-70 | No | [Average](../systems/loot-tables/monster-packs.md#average), [Average](../systems/loot-tables/monster-packs.md#average), [Meager](../systems/loot-tables/monster-packs.md#meager) |
+| a bomb worshipper | 302-331 | 336-385 | 96-115 | 281-305 | 45-55 | 30-40 | 30-40 | 40-50 | 60-70 | No | [Average](../systems/loot-tables/monster-packs.md#average), [Average](../systems/loot-tables/monster-packs.md#average), [Meager](../systems/loot-tables/monster-packs.md#meager) |
 
 ## Ambroz
 
@@ -137,7 +137,7 @@ Humanoids include intelligent non-human races — orcs, lizardmen, ratmen, ophid
 | Rogue | - | - | - | - | - | - | - | - | - | No | [Average](../systems/loot-tables/monster-packs.md#average), [Average](../systems/loot-tables/monster-packs.md#average), [Meager](../systems/loot-tables/monster-packs.md#meager) |
 | a disciple of blood | - | 86-100 | 81-95 | 61-75 | - | - | - | - | - | No | [Average](../systems/loot-tables/monster-packs.md#average) |
 | executioner's hood | - | 386-400 | 151-165 | 161-175 | 35-45 | 25-30 | 25-30 | 10-20 | 10-20 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Meager](../systems/loot-tables/monster-packs.md#meager) |
-| staff | 592-711 | 986-1185 | 177-255 | 196-220 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Rich](../systems/loot-tables/monster-packs.md#rich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls), [MedPotions](../systems/loot-tables/utility-packs.md#medpotions) |
+| an archmage | 592-711 | 986-1185 | 177-255 | 196-220 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Rich](../systems/loot-tables/monster-packs.md#rich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls), [MedPotions](../systems/loot-tables/utility-packs.md#medpotions) |
 | the Black Knights's box | 230 | 230 | 150 | 120 | 40 | 30 | 30 | 30 | 30 | No | [Average](../systems/loot-tables/monster-packs.md#average), [Average](../systems/loot-tables/monster-packs.md#average), [Meager](../systems/loot-tables/monster-packs.md#meager) |
 | throwing stone | - | 300 | 300 | 300 | - | - | - | - | - | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average), [Meager](../systems/loot-tables/monster-packs.md#meager), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls), MageEye, Arrow, Bolt, Bolt, Bolt, Arrow, Arrow, Arrow, HarpoonRope |
 
@@ -278,7 +278,7 @@ Humanoids include intelligent non-human races — orcs, lizardmen, ratmen, ophid
 | a serpyn sorceress | 250-303 | 416-505 | 96-115 | 366-455 | 45-55 | 30-40 | 35-45 | 40-50 | 35-45 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
 | a water naga | 112-250 | 161-360 | 151-300 | 21-40 | 35-45 | 5-10 | 5-10 | 100 | 5-10 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average), [Gems](../systems/loot-tables/utility-packs.md#gems), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
 | an ophidian matriarch | 250-303 | 416-505 | 96-115 | 366-455 | 45-55 | 30-40 | 35-45 | 40-50 | 35-45 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
-| lethal venom sack | 266-342 | 417-595 | 166-175 | 46-70 | 35-40 | 30-40 | 35-45 | 90-100 | 35-45 | No | [Rich](../systems/loot-tables/monster-packs.md#rich) |
+| a serpentar | 266-342 | 417-595 | 166-175 | 46-70 | 35-40 | 30-40 | 35-45 | 90-100 | 35-45 | No | [Rich](../systems/loot-tables/monster-packs.md#rich) |
 
 ## Terathan
 

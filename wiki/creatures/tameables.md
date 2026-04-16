@@ -48,7 +48,7 @@ A complete list of all creatures that can be tamed in Ultima Memento. Taming req
 | a bobcat | 64-88 | 112-160 | 120-190 | 50-76 | 61.1 | 1 | - |
 | a brown bear | 46-60 | 76-100 | 26-45 | 23-47 | 41.1 | 1 | - |
 | a bull | 50-64 | 77-111 | 56-75 | 47-75 | 71.1 | 1 | - |
-| a cat | 6 | 9 | 35 | 5 | - | 1 | - |
+| a cat (Cat) | 6 | 9 | 35 | 5 | - | 1 | - |
 | a cheetah | 34-48 | 56-80 | 66-85 | 26-50 | 41.1 | 1 | - |
 | a chicken | 3 | 5 | 15 | 5 | - | 1 | - |
 | a cougar | 34-48 | 56-80 | 66-85 | 26-50 | 41.1 | 1 | - |
@@ -93,16 +93,16 @@ A complete list of all creatures that can be tamed in Ultima Memento. Taming req
 | a panther | 64-88 | 112-160 | 120-190 | 50-76 | 61.1 | 1 | - |
 | a penguin | 3 | 5 | 15 | 5 | - | 1 | - |
 | a pig | 12 | 20 | 20 | 5 | 11.1 | 1 | - |
-| a rabbit | 4-6 | 6-10 | 26-38 | 6-14 | - | 1 | - |
-| a rabbit | 4-6 | 6-10 | 26-38 | 6-14 | - | 1 | - |
-| a rat | 6 | 4 | 12 | 2 | - | 1 | RawRibs, BeetleShell, EyeOfToad, DriedToad, SilverWidow |
-| a rat | 6 | 9 | 35 | 5 | - | 1 | [Poor](../systems/loot-tables/monster-packs.md#poor) |
+| a rabbit (Rabbit) | 4-6 | 6-10 | 26-38 | 6-14 | - | 1 | - |
+| a rabbit (WhiteRabbit) | 4-6 | 6-10 | 26-38 | 6-14 | - | 1 | - |
+| a rat (Critter) | 6 | 4 | 12 | 2 | - | 1 | RawRibs, BeetleShell, EyeOfToad, DriedToad, SilverWidow |
+| a rat (Rat) | 6 | 9 | 35 | 5 | - | 1 | [Poor](../systems/loot-tables/monster-packs.md#poor) |
 | a roadrunner | - | 10 | 25-35 | 10 | - | 1 | - |
 | a sabreclaw cub | 27-41 | 41-71 | 47-77 | 27-57 | 59.1 | 1 | - |
 | a sabretooth cub | 27-41 | 41-71 | 47-77 | 27-57 | 59.1 | 1 | - |
 | a seagull | - | 10 | 25-35 | 10 | - | 1 | SomeRandomNote |
 | a seal | 14-17 | 21-29 | 46-55 | 16-20 | 35.1 | 1 | - |
-| a sewer rat | 6 | 9 | 25 | 6-10 | - | 1 | [Poor](../systems/loot-tables/monster-packs.md#poor) |
+| a sewer rat (SewerRat) | 6 | 9 | 25 | 6-10 | - | 1 | [Poor](../systems/loot-tables/monster-packs.md#poor) |
 | a sheep | 12 | 19 | 25 | 5 | 11.1 | 1 | - |
 | a snow leopard | 34-48 | 56-80 | 66-85 | 26-50 | 53.1 | 1 | - |
 | a squirrel | 42-50 | 44-50 | 35 | 5 | - | 1 | - |
@@ -119,13 +119,12 @@ A complete list of all creatures that can be tamed in Ultima Memento. Taming req
 | an eagle | 20-27 | 31-47 | 36-60 | 8-20 | 17.1 | 1 | - |
 | an elephant | 176-193 | 226-255 | 81-105 | 16-40 | 79.1 | 2 | - |
 | an ostrich | 48-62 | 76-100 | 66-90 | 41-65 | 29.1 | 1 | - |
-| raw axe beak leg | 58-72 | 96-120 | 86-110 | 51-75 | 39.1 | 1 | - |
+| an axebeak | 58-72 | 96-120 | 86-110 | 51-75 | 39.1 | 1 | - |
 
 ### [Base](base.md) (1 tameable)
 
 | Name | Hits | Str | Dex | Int | Min Tame Skill | Control Slots | Notable Loot |
 |------|------|-----|-----|-----|----------------|---------------|--------------|
-| lantern | - | - | - | - | 29.1 | - | - |
 
 ### [Demons](demons.md) (2 tameable)
 
@@ -140,7 +139,7 @@ A complete list of all creatures that can be tamed in Ultima Memento. Taming req
 |------|------|-----|-----|-----|----------------|---------------|--------------|
 | AncientWyvern | 478-495 | 796-825 | 86-105 | 436-475 | 93.9 | 3 | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
 | DragonTurtle | 576-652 | 867-1045 | 86-105 | 46-70 | 99.9 | 3 | [Rich](../systems/loot-tables/monster-packs.md#rich), [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
-| Hydra | 478-495 | 796-825 | 86-105 | 436-475 | 79.9 | 3 | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Rich](../systems/loot-tables/monster-packs.md#rich), [Gems](../systems/loot-tables/utility-packs.md#gems), HydraTooth, HydraTooth, HydraTooth |
+| Hydra (EnergyHydra) | 478-495 | 796-825 | 86-105 | 436-475 | 79.9 | 3 | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Rich](../systems/loot-tables/monster-packs.md#rich), [Gems](../systems/loot-tables/utility-packs.md#gems), HydraTooth, HydraTooth, HydraTooth |
 | PrimevalAbysmalDragon | 558-611 | 896-985 | 86-175 | 586-675 | 114.9 | 4 | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
 | PrimevalAmberDragon | 558-611 | 896-985 | 86-175 | 586-675 | 114.9 | 4 | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
 | PrimevalBlackDragon | 558-611 | 896-985 | 86-175 | 586-675 | 114.9 | 4 | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
@@ -159,8 +158,8 @@ A complete list of all creatures that can be tamed in Ultima Memento. Taming req
 | a baby dragon | 198-212 | 198-212 | 76-95 | 109-116 | 30.3 | 1 | [Average](../systems/loot-tables/monster-packs.md#average) |
 | a dragoon | 478-495 | 796-825 | 86-105 | 436-475 | 93.9 | 3 | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
 | a draguul | 458-511 | 896-985 | 86-175 | 486-575 | 93.9 | 3 | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Rich](../systems/loot-tables/monster-packs.md#rich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
-| a drake | 241-258 | 401-430 | 133-152 | 101-140 | 84.3 | 2 | [Rich](../systems/loot-tables/monster-packs.md#rich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
-| a drake | 241-258 | 401-430 | 133-152 | 101-140 | 84.3 | 2 | [Rich](../systems/loot-tables/monster-packs.md#rich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
+| a drake (Drake) | 241-258 | 401-430 | 133-152 | 101-140 | 84.3 | 2 | [Rich](../systems/loot-tables/monster-packs.md#rich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
+| a drake (AbysmalDrake) | 241-258 | 401-430 | 133-152 | 101-140 | 84.3 | 2 | [Rich](../systems/loot-tables/monster-packs.md#rich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
 | a drakkhen | 141-158 | 201-230 | 103-122 | 71-110 | 20.0 | 2 | - |
 | a fire wyrmling | 198-212 | 198-212 | 76-95 | 109-116 | 30.3 | 1 | [Average](../systems/loot-tables/monster-packs.md#average) |
 | a sea dragon | 478-495 | 796-825 | 86-105 | 436-475 | 93.9 | 3 | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
@@ -168,11 +167,11 @@ A complete list of all creatures that can be tamed in Ultima Memento. Taming req
 | a wyvra | 378-395 | 396-425 | 86-105 | 236-275 | 79.9 | 3 | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
 | an ancient drake | 541-558 | 601-630 | 233-252 | 301-340 | 94.3 | 3 | [Rich](../systems/loot-tables/monster-packs.md#rich), [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
 | an elder dragyn | 578-595 | 896-925 | 136-155 | 536-575 | 99.9 | 3 | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
-| deadly venom sack | 125-141 | 202-240 | 153-172 | 51-90 | 63.9 | 3 | [Average](../systems/loot-tables/monster-packs.md#average), [Meager](../systems/loot-tables/monster-packs.md#meager), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
-| rusted item | 478-495 | 796-825 | 86-105 | 436-475 | 93.9 | 3 | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Gems](../systems/loot-tables/utility-packs.md#gems), [Rich](../systems/loot-tables/monster-packs.md#rich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
-| rusted item | 478-495 | 796-825 | 86-105 | 436-475 | 93.9 | 3 | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Gems](../systems/loot-tables/utility-packs.md#gems), [Rich](../systems/loot-tables/monster-packs.md#rich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
-| rusted item | 433-456 | 721-760 | 101-130 | 386-425 | 96.3 | 3 | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [Gems](../systems/loot-tables/utility-packs.md#gems) |
-| rusted item | 241-258 | 251-290 | 63-82 | 61-100 | 64.3 | 1 | [Rich](../systems/loot-tables/monster-packs.md#rich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
+| a wyvern | 125-141 | 202-240 | 153-172 | 51-90 | 63.9 | 3 | [Average](../systems/loot-tables/monster-packs.md#average), [Meager](../systems/loot-tables/monster-packs.md#meager), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
+| a dragon (Dragons) | 478-495 | 796-825 | 86-105 | 436-475 | 93.9 | 3 | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Gems](../systems/loot-tables/utility-packs.md#gems), [Rich](../systems/loot-tables/monster-packs.md#rich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
+| a dragon (RidingDragon) | 478-495 | 796-825 | 86-105 | 436-475 | 93.9 | 3 | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Gems](../systems/loot-tables/utility-packs.md#gems), [Rich](../systems/loot-tables/monster-packs.md#rich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
+| a wyrm | 433-456 | 721-760 | 101-130 | 386-425 | 96.3 | 3 | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [Gems](../systems/loot-tables/utility-packs.md#gems) |
+| a young dragon | 241-258 | 251-290 | 63-82 | 61-100 | 64.3 | 1 | [Rich](../systems/loot-tables/monster-packs.md#rich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
 
 ### [Hellish](hellish.md) (8 tameable)
 
@@ -215,7 +214,7 @@ A complete list of all creatures that can be tamed in Ultima Memento. Taming req
 | an alien hatchling | 121-145 | 136-160 | 41-52 | 31-40 | 61.1 | 2 | [Average](../systems/loot-tables/monster-packs.md#average), [Meager](../systems/loot-tables/monster-packs.md#meager) |
 | an alien spider | 121-145 | 136-160 | 41-52 | 31-40 | 71.1 | 2 | [Average](../systems/loot-tables/monster-packs.md#average), [Meager](../systems/loot-tables/monster-packs.md#meager) |
 | an anhkheg | 121-145 | 136-160 | 41-52 | 31-40 | 41.1 | 1 | [Average](../systems/loot-tables/monster-packs.md#average), [Meager](../systems/loot-tables/monster-packs.md#meager) |
-| lethal venom sack | 80-110 | 96-120 | 86-105 | 6-10 | 39.1 | 2 | [Meager](../systems/loot-tables/monster-packs.md#meager) |
+| a poisonous beetle | 80-110 | 96-120 | 86-105 | 6-10 | 39.1 | 2 | [Meager](../systems/loot-tables/monster-packs.md#meager) |
 
 ### [Mystical](mystical.md) (12 tameable)
 
@@ -270,7 +269,7 @@ A complete list of all creatures that can be tamed in Ultima Memento. Taming req
 | an arcticonda | 97-216 | 161-360 | 151-300 | 21-40 | 81.1 | 2 | [Average](../systems/loot-tables/monster-packs.md#average), [Gems](../systems/loot-tables/utility-packs.md#gems) |
 | an ice toad | 66-80 | 96-120 | 26-45 | 31-40 | 79.1 | 1 | [Meager](../systems/loot-tables/monster-packs.md#meager) |
 | an iguana | 76-90 | 126-150 | 56-75 | 11-20 | 80.7 | 1 | [Meager](../systems/loot-tables/monster-packs.md#meager) |
-| useless stone | 106-123 | 176-205 | 46-65 | 46-70 | 73.9 | 1 | [Average](../systems/loot-tables/monster-packs.md#average) |
+| a basilisk | 106-123 | 176-205 | 46-65 | 46-70 | 73.9 | 1 | [Average](../systems/loot-tables/monster-packs.md#average) |
 
 ### [Slimes](slimes.md) (1 tameable)
 
@@ -290,4 +289,4 @@ A complete list of all creatures that can be tamed in Ultima Memento. Taming req
 | Name | Hits | Str | Dex | Int | Min Tame Skill | Control Slots | Notable Loot |
 |------|------|-----|-----|-----|----------------|---------------|--------------|
 | a watcher | 241-258 | 401-430 | 133-152 | 101-140 | 84.3 | 2 | - |
-| useless stone | 106-123 | 176-205 | 46-65 | 46-70 | 73.9 | 1 | [Average](../systems/loot-tables/monster-packs.md#average) |
+| a gorgon | 106-123 | 176-205 | 46-65 | 46-70 | 73.9 | 1 | [Average](../systems/loot-tables/monster-packs.md#average) |

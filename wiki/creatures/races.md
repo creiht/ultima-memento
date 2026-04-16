@@ -14,4 +14,4 @@ Races represent playable or semi-playable racial types in the game world, provid
 |------|------|-----|-----|-----|-------------|-------------|-------------|---------------|---------------|----------|--------------|
 | BaseRace | - | - | - | - | - | - | - | - | - | No | - |
 | NPCRace | - | - | - | - | - | - | - | - | - | No | - |
-| gypsy potion shelf | - | - | - | - | - | - | - | - | - | No | - |
+

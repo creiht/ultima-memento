@@ -26,9 +26,9 @@ Civilized creatures are NPCs that inhabit towns and settlements — shopkeepers,
 | cauldron | - | - | - | - | - | - | - | - | - | No | - |
 | cleaver | - | - | - | - | - | - | - | - | - | No | - |
 | crate of  | 300-400 | 200-300 | 200-300 | 200-300 | 35-45 | 25-30 | 25-30 | 10-20 | 10-20 | No | reagents_magic_jar1, reagents_magic_jar2, reagents_magic_jar3 |
-| forge | - | - | - | - | - | - | - | - | - | No | - |
-| hammer | - | - | - | - | - | - | - | - | - | No | - |
-| hammer | - | - | - | - | - | - | - | - | - | No | - |
+| forge (TradesmanSmelter) | - | - | - | - | - | - | - | - | - | No | - |
+| hammer (TradesmanSmith) | - | - | - | - | - | - | - | - | - | No | - |
+| hammer (TradesmanLumber) | - | - | - | - | - | - | - | - | - | No | - |
 | instrument | - | - | - | - | - | - | - | - | - | No | - |
 | magic wand | - | - | - | - | - | - | - | - | - | No | - |
 | meeting pets | - | - | - | - | - | - | - | - | - | No | - |
@@ -51,11 +51,11 @@ Civilized creatures are NPCs that inhabit towns and settlements — shopkeepers,
 | Sherry | - | 100 | 100 | 100 | 35-45 | 25-30 | 25-30 | 10-20 | 10-20 | No | - |
 | TownHerald | - | - | - | - | - | - | - | - | - | No | - |
 | a genie | 76-93 | 126-155 | 166-185 | 101-125 | 35-45 | 15-25 | 10-20 | 10-20 | 25-35 | No | - |
-| demon wings | 6000-6000 | 3000-3000 | 3000-3000 | 3000-3000 | 65-75 | 35-40 | 60-70 | 60-70 | 35-40 | No | - |
-| forge | - | - | - | - | - | - | - | - | - | No | - |
-| tattered robe | - | 386-400 | 151-165 | 161-175 | - | - | - | - | - | No | - |
+| a death knight demon | 6000-6000 | 3000-3000 | 3000-3000 | 3000-3000 | 65-75 | 35-40 | 60-70 | 60-70 | 35-40 | No | - |
+| forge (Actions) | - | - | - | - | - | - | - | - | - | No | - |
+| a necro greeter | - | 386-400 | 151-165 | 161-175 | - | - | - | - | - | No | - |
 | the Time Lord | 6000-6000 | 3000-3000 | 3000-3000 | 3000-3000 | 65-75 | 35-40 | 60-70 | 60-70 | 35-40 | No | - |
-| tunic | 6000-6000 | 3000-3000 | 3000-3000 | 3000-3000 | - | - | - | - | - | No | - |
+| a town guard | 6000-6000 | 3000-3000 | 3000-3000 | 3000-3000 | - | - | - | - | - | No | - |
 
 ## Comrades
 
@@ -66,22 +66,22 @@ Civilized creatures are NPCs that inhabit towns and settlements — shopkeepers,
 | archer henchman | - | - | - | - | - | - | - | - | - | No | - |
 | creature henchman | - | - | - | - | - | - | - | - | - | No | - |
 | fighter henchman | - | - | - | - | - | - | - | - | - | No | - |
-| henchman | - | - | - | - | - | - | - | - | - | No | - |
-| henchman | - | - | - | - | - | - | - | - | - | No | - |
-| henchman | - | - | - | - | - | - | - | - | - | No | - |
-| henchman | - | - | - | - | - | - | - | - | - | No | - |
-| henchman | - | - | - | - | - | - | - | - | - | No | - |
+| henchman (HenchmanFighter) | - | - | - | - | - | - | - | - | - | No | - |
+| henchman (HenchmanArcher) | - | - | - | - | - | - | - | - | - | No | - |
+| henchman (HenchmanWizard) | - | - | - | - | - | - | - | - | - | No | - |
+| henchman (HenchmanMonster) | - | - | - | - | - | - | - | - | - | No | - |
+| henchman (HenchmanItem) | - | - | - | - | - | - | - | - | - | No | - |
 | wizard henchman | - | - | - | - | - | - | - | - | - | No | - |
 
 ## Familiars
 
 | Name | Hits | Str | Dex | Int | Phys Resist | Fire Resist | Cold Resist | Poison Resist | Energy Resist | Tameable | Notable Loot |
 |------|------|-----|-----|-----|-------------|-------------|-------------|---------------|---------------|----------|--------------|
-| A hoard minion | - | - | - | - | - | - | - | - | - | No | - |
+| A hoard minion (HoardMinionFamiliarItem) | - | - | - | - | - | - | - | - | - | No | - |
 | a dark wolf | 60 | 100 | 90 | 90 | 40-50 | 25-40 | 25-40 | 25-40 | 25-40 | No | - |
 | a death adder | 50 | 70 | 150 | 100 | 10 | - | - | 100 | - | No | - |
 | a familiar | - | 65000 | - | - | - | - | - | - | - | No | - |
-| a hoard minion | - | 65000 | - | - | - | - | - | - | - | No | - |
+| a hoard minion (HoardMinionFamiliar) | - | 65000 | - | - | - | - | - | - | - | No | - |
 | a horde minion | 70 | 100 | 110 | 100 | 50-60 | 50-55 | - | 25-30 | 25-30 | No | - |
 | a shadow wisp | 50 | 50 | 60 | 100 | 10-15 | 10-15 | 10-15 | 10-15 | 99 | No | - |
 | a vampire bat | 90 | 120 | 120 | 100 | 10-15 | 10-15 | 10-15 | 10-15 | 10-15 | No | - |
@@ -112,7 +112,6 @@ Civilized creatures are NPCs that inhabit towns and settlements — shopkeepers,
 | ThiefGuildmaster | - | - | - | - | - | - | - | - | - | No | - |
 | TinkerGuildmaster | - | - | - | - | - | - | - | - | - | No | - |
 | WarriorGuildmaster | - | - | - | - | - | - | - | - | - | No | - |
-| diabolically coded parchment | - | - | - | - | - | - | - | - | - | No | - |
 
 ## Healers
 
@@ -214,7 +213,7 @@ Civilized creatures are NPCs that inhabit towns and settlements — shopkeepers,
 | Xardok | - | 200 | 200 | 200 | 35-45 | 25-30 | 25-30 | 10-20 | 10-20 | No | - |
 | a stranger | - | 200 | 200 | 200 | 35-45 | 25-30 | 25-30 | 10-20 | 10-20 | No | - |
 | an enslaved demon | - | - | - | - | - | - | - | - | - | No | - |
-| priest robe | - | 386-400 | 151-165 | 161-175 | - | - | - | - | - | No | - |
+| a mad god priest | - | 386-400 | 151-165 | 161-175 | - | - | - | - | - | No | - |
 
 ## Teachers
 

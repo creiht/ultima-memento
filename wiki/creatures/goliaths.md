@@ -13,8 +13,8 @@ Goliaths are massive creatures — giants, ogres, trolls, ettins, cyclopes, and 
 | Name | Hits | Str | Dex | Int | Phys Resist | Fire Resist | Cold Resist | Poison Resist | Energy Resist | Tameable | Notable Loot |
 |------|------|-----|-----|-----|-------------|-------------|-------------|---------------|---------------|----------|--------------|
 | ShamanicCyclops | - | 336-385 | 96-115 | 236-285 | 45-50 | 30-40 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
-| cyclopean chest | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average) |
-| cyclopean hammer | 202-231 | 336-385 | 96-115 | 31-55 | 45-50 | 30-40 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
+| an ancient cyclops | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average) |
+| a cyclops | 202-231 | 336-385 | 96-115 | 31-55 | 45-50 | 30-40 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
 
 ## Ettins
 
@@ -31,29 +31,29 @@ Goliaths are massive creatures — giants, ogres, trolls, ettins, cyclopes, and 
 |------|------|-----|-----|-----|-------------|-------------|-------------|---------------|---------------|----------|--------------|
 | DeepSeaGiant | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls), [Rich](../systems/loot-tables/monster-packs.md#rich) |
 | SeaGiant | 322-351 | 536-585 | 126-145 | 281-305 | 35-45 | 30-40 | 25-35 | 30-40 | 30-40 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
-| abysmal chest | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 30-40 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
-| cloud giant chest | 322-351 | 536-585 | 126-145 | 281-305 | 35-45 | 30-40 | 25-35 | 30-40 | 30-40 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
-| fire giant sack | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 70-80 | 5-10 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
-| forest giant sack | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 30-40 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
-| frost giant sack | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 5-10 | 70-80 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
-| giant sack | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 50-60 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
-| hill giant sack | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 50-60 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
-| hill giant sack | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 30-40 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average), [LowScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
-| ice chest | 478-495 | 796-825 | 86-105 | 436-475 | 35-45 | 5-15 | 80-90 | 30-40 | 30-40 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
-| jade chest | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 30-40 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
-| molten chest | 478-495 | 796-825 | 86-105 | 436-475 | 35-45 | 80-90 | 5-15 | 30-40 | 30-40 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
-| mountain giant sack | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 50-60 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
-| onyx chest | 322-351 | 536-585 | 126-145 | 281-305 | 35-45 | 30-40 | 25-35 | 30-40 | 30-40 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
-| sapphire chest | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 50-60 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
-| star giant chest | 322-351 | 536-585 | 126-145 | 281-305 | 35-45 | 30-40 | 25-35 | 30-40 | 30-40 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
-| stone giant sack | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 50-60 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
+| an abyss giant | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 30-40 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
+| a cloud giant | 322-351 | 536-585 | 126-145 | 281-305 | 35-45 | 30-40 | 25-35 | 30-40 | 30-40 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
+| a fire giant | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 70-80 | 5-10 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
+| a forest giant | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 30-40 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
+| a frost giant | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 5-10 | 70-80 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
+| a giant | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 50-60 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
+| a hill giant (HillGiant) | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 50-60 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
+| a hill giant (HillGiantShaman) | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 30-40 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average), [LowScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
+| an ice giant | 478-495 | 796-825 | 86-105 | 436-475 | 35-45 | 5-15 | 80-90 | 30-40 | 30-40 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
+| a jungle giant | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 30-40 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
+| a lava giant | 478-495 | 796-825 | 86-105 | 436-475 | 35-45 | 80-90 | 5-15 | 30-40 | 30-40 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
+| a mountain giant | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 50-60 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
+| a storm giant | 322-351 | 536-585 | 126-145 | 281-305 | 35-45 | 30-40 | 25-35 | 30-40 | 30-40 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
+| a sand giant | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 50-60 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
+| a star giant | 322-351 | 536-585 | 126-145 | 281-305 | 35-45 | 30-40 | 25-35 | 30-40 | 30-40 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
+| a stone giant | 322-351 | 536-585 | 126-145 | 281-305 | 45-50 | 50-60 | 25-35 | 30-40 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
 
 ## Goliaths
 
 | Name | Hits | Str | Dex | Int | Phys Resist | Fire Resist | Cold Resist | Poison Resist | Energy Resist | Tameable | Notable Loot |
 |------|------|-----|-----|-----|-------------|-------------|-------------|---------------|---------------|----------|--------------|
 | Zorn | 322-351 | 536-585 | 126-145 | 281-305 | 35-45 | 30-40 | 25-35 | 30-40 | 30-40 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls), RubyPickaxe |
-| orkish war chest | 658-711 | 1096-1185 | 86-175 | 686-775 | 65-75 | 80-90 | 70-80 | 60-70 | 60-70 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
+| an ork demigod | 658-711 | 1096-1185 | 86-175 | 686-775 | 65-75 | 80-90 | 70-80 | 60-70 | 60-70 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
 
 ## Ogres
 
@@ -70,8 +70,8 @@ Goliaths are massive creatures — giants, ogres, trolls, ettins, cyclopes, and 
 
 | Name | Hits | Str | Dex | Int | Phys Resist | Fire Resist | Cold Resist | Poison Resist | Energy Resist | Tameable | Notable Loot |
 |------|------|-----|-----|-----|-------------|-------------|-------------|---------------|---------------|----------|--------------|
-| ancient titan chest | 422-451 | 736-785 | 226-245 | 381-405 | 45-55 | 40-50 | 35-45 | 40-50 | 40-50 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
-| titan chest | 322-351 | 536-585 | 126-145 | 281-305 | 35-45 | 30-40 | 25-35 | 30-40 | 30-40 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
+| an elder titan | 422-451 | 736-785 | 226-245 | 381-405 | 45-55 | 40-50 | 35-45 | 40-50 | 40-50 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
+| a titan | 322-351 | 536-585 | 126-145 | 281-305 | 35-45 | 30-40 | 25-35 | 30-40 | 30-40 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
 
 ## Trolls
 

@@ -42,7 +42,7 @@ Insects encompass giant arthropods — spiders, scorpions, beetles, ants, and ot
 | a skellot | 80-110 | 96-120 | 86-105 | 6-10 | 40-50 | 20-30 | 20-30 | 90-100 | 20-30 | No | - |
 | a skitter | 121-145 | 136-160 | 41-52 | 31-40 | 35-40 | 15-30 | 15-30 | 50-80 | 20-35 | Yes | - |
 | a skitterling | 51-60 | 26-50 | 41-52 | 21-30 | 35-40 | 15-30 | 15-30 | 20-40 | 20-35 | No | - |
-| lethal venom sack | 80-110 | 96-120 | 86-105 | 6-10 | 40-50 | 20-30 | 20-30 | 90-100 | 20-30 | Yes | [Meager](../systems/loot-tables/monster-packs.md#meager) |
+| a poisonous beetle | 80-110 | 96-120 | 86-105 | 6-10 | 40-50 | 20-30 | 20-30 | 90-100 | 20-30 | Yes | [Meager](../systems/loot-tables/monster-packs.md#meager) |
 
 ## Insects
 
@@ -96,4 +96,4 @@ Insects encompass giant arthropods — spiders, scorpions, beetles, ants, and ot
 | an alien hatchling | 61.1 | 2 |
 | an alien spider | 71.1 | 2 |
 | an anhkheg | 41.1 | 1 |
-| lethal venom sack | 39.1 | 2 |
+| a poisonous beetle | 39.1 | 2 |

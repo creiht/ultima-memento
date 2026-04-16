@@ -32,11 +32,11 @@ Unusual creatures defy easy classification — mimics, energy vortexes, golems, 
 | an eye of the deep | 178-195 | 296-325 | 86-105 | 291-385 | 45-55 | 60-70 | 40-50 | 40-50 | 40-50 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Rich](../systems/loot-tables/monster-packs.md#rich) |
 | an umber hulk | 201-218 | 251-280 | 71-90 | 31-62 | 30-35 | 10-20 | 10-20 | 100 | 15-25 | No | [Average](../systems/loot-tables/monster-packs.md#average), [Rich](../systems/loot-tables/monster-packs.md#rich) |
 | tentacles of the blood god | 541-600 | 901-1000 | 126-140 | 1001-1200 | 55-65 | 35-45 | 35-45 | 35-45 | 35-45 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls), [HighScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
-| useless stone | 106-123 | 176-205 | 46-65 | 46-70 | 35-45 | 25-35 | 15-25 | 5-15 | 5-15 | Yes | [Average](../systems/loot-tables/monster-packs.md#average) |
+| a gorgon | 106-123 | 176-205 | 46-65 | 46-70 | 35-45 | 25-35 | 15-25 | 5-15 | 5-15 | Yes | [Average](../systems/loot-tables/monster-packs.md#average) |
 
 ## Tameable Members
 
 | Name | Min Taming Skill | Control Slots |
 |------|-----------------|---------------|
 | a watcher | 84.3 | 2 |
-| useless stone | 73.9 | 1 |
+| a gorgon | 73.9 | 1 |

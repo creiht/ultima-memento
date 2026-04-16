@@ -33,8 +33,8 @@ Constructs are artificial beings — golems, animated armor, clockwork devices, 
 | a bone golem | 101-118 | 151-180 | 71-90 | 31-62 | 30-35 | 10-20 | 10-20 | 100 | 15-25 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Gems](../systems/loot-tables/utility-packs.md#gems), BonePile, BonePile, BonePile, BonePile, BoneContainer |
 | a caddellite golem | 101-118 | 151-180 | 71-90 | 31-62 | 30-35 | 10-20 | 10-20 | 100 | 15-25 | No | [Average](../systems/loot-tables/monster-packs.md#average), [Gems](../systems/loot-tables/utility-packs.md#gems) |
 | a construct | - | - | - | - | - | - | - | 100 | - | No | - |
-| a flesh golem | 106-120 | 176-200 | 51-75 | 46-70 | 50-60 | 25-35 | 15-25 | 60-70 | 30-40 | No | [Average](../systems/loot-tables/monster-packs.md#average), BodyPart |
-| a flesh golem | 106-120 | 176-200 | 51-75 | 46-70 | 50-60 | 25-35 | 15-25 | 60-70 | 30-40 | No | [Average](../systems/loot-tables/monster-packs.md#average), BodyPart |
+| a flesh golem (FleshGolem) | 106-120 | 176-200 | 51-75 | 46-70 | 50-60 | 25-35 | 15-25 | 60-70 | 30-40 | No | [Average](../systems/loot-tables/monster-packs.md#average), BodyPart |
+| a flesh golem (SkinGolem) | 106-120 | 176-200 | 51-75 | 46-70 | 50-60 | 25-35 | 15-25 | 60-70 | 30-40 | No | [Average](../systems/loot-tables/monster-packs.md#average), BodyPart |
 | a runic golem | 201-218 | 251-280 | 71-90 | 31-62 | 40-45 | 20-30 | 20-30 | 100 | 75-95 | No | [Average](../systems/loot-tables/monster-packs.md#average), [Rich](../systems/loot-tables/monster-packs.md#rich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
 | a rust golem | 101-118 | 151-180 | 71-90 | 31-62 | 30-35 | 10-20 | 10-20 | 100 | 15-25 | No | [Average](../systems/loot-tables/monster-packs.md#average), [Rich](../systems/loot-tables/monster-packs.md#rich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
 | a wooden golem | - | - | - | - | 30-35 | - | 10-20 | 100 | 15-25 | No | [Average](../systems/loot-tables/monster-packs.md#average), [Gems](../systems/loot-tables/utility-packs.md#gems) |

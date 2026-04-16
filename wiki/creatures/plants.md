@@ -23,8 +23,8 @@ Plant creatures are animated vegetation — reapers, boglings, whipping vines, c
 | a fungal | 100-117 | 166-195 | 46-65 | 46-70 | 30-35 | 15-25 | 15-25 | 15-25 | 25 | No | [Average](../systems/loot-tables/monster-packs.md#average), VioletFungus |
 | a fungal mage | 109-123 | 181-205 | 191-215 | 96-120 | 30-35 | 15-25 | 15-25 | 15-25 | 25 | No | [Average](../systems/loot-tables/monster-packs.md#average), [LowScrolls](../systems/loot-tables/utility-packs.md#scrolls), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls), [MedPotions](../systems/loot-tables/utility-packs.md#medpotions), VioletFungus |
 | a quagmire | 91-105 | 101-130 | 66-85 | 31-55 | 50-60 | 10-20 | 10-20 | 100 | 20-30 | No | [Average](../systems/loot-tables/monster-packs.md#average) |
-| a reaper | - | - | - | - | 35-45 | 15-25 | 10-20 | 40-50 | 30-40 | No | [Average](../systems/loot-tables/monster-packs.md#average), MandrakeRoot, Seed, Engines |
-| a reaper | - | - | - | - | 35-45 | 15-25 | 10-20 | 40-50 | 30-40 | No | [Average](../systems/loot-tables/monster-packs.md#average), MandrakeRoot, Seed, Engines |
+| a reaper (Reaper) | - | - | - | - | 35-45 | 15-25 | 10-20 | 40-50 | 30-40 | No | [Average](../systems/loot-tables/monster-packs.md#average), MandrakeRoot, Seed, Engines |
+| a reaper (WalkingReaper) | - | - | - | - | 35-45 | 15-25 | 10-20 | 40-50 | 30-40 | No | [Average](../systems/loot-tables/monster-packs.md#average), MandrakeRoot, Seed, Engines |
 | a seaweeder | 58-72 | 96-120 | 91-115 | 21-45 | 20-25 | 10-20 | 15-25 | 15-25 | 15-25 | No | [Meager](../systems/loot-tables/monster-packs.md#meager), Log, Engines |
 | a shambler | 58-72 | 96-120 | 91-115 | 21-45 | 20-25 | 10-20 | 15-25 | 15-25 | 15-25 | No | [Meager](../systems/loot-tables/monster-packs.md#meager), Log, Seed, Engines |
 | a shambling mound | 481-540 | 801-900 | 46-65 | 36-50 | 30-40 | 20-25 | 10-15 | 40-50 | 20-25 | No | [Average](../systems/loot-tables/monster-packs.md#average), Board, Log, Seed, Engines |

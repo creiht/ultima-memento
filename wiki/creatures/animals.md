@@ -45,7 +45,7 @@ Animals are the natural fauna of the world — bears, birds, canines, felines, r
 | a turkey | 3 | 15 | 25 | 5 | 3-8 | - | - | - | - | Yes | - |
 | an eagle | 20-27 | 31-47 | 36-60 | 8-20 | 20-25 | 10-15 | 20-25 | 5-10 | 5-10 | Yes | - |
 | an ostrich | 48-62 | 76-100 | 66-90 | 41-65 | 25-30 | 10-20 | 10-30 | 20-30 | 10-20 | Yes | - |
-| raw axe beak leg | 58-72 | 96-120 | 86-110 | 51-75 | 25-30 | 10-20 | 10-30 | 20-30 | 10-20 | Yes | - |
+| an axebeak | 58-72 | 96-120 | 86-110 | 51-75 | 25-30 | 10-20 | 10-30 | 20-30 | 10-20 | Yes | - |
 
 ## Canines
 
@@ -85,9 +85,9 @@ Animals are the natural fauna of the world — bears, birds, canines, felines, r
 | TigerRiding | 64-88 | 112-160 | 120-190 | 50-76 | 30-35 | 5-10 | 10-15 | 5-10 | - | Yes | - |
 | WhiteTigerRiding | 64-88 | 112-160 | 120-190 | 50-76 | 30-35 | 5-10 | 10-15 | 5-10 | - | Yes | - |
 | a bobcat | 64-88 | 112-160 | 120-190 | 50-76 | 30-35 | 5-10 | 10-15 | 5-10 | - | Yes | - |
-| a cat | 58-75 | 96-125 | 86-105 | 141-165 | 35-40 | 40-50 | 20-30 | 10-20 | 20-30 | No | [Average](../systems/loot-tables/monster-packs.md#average), [LowPotions](../systems/loot-tables/utility-packs.md#lowpotions) |
-| a cat | 6 | 9 | 35 | 5 | 5-10 | - | - | - | - | Yes | - |
-| a cat | 58-75 | 96-125 | 86-105 | 141-165 | 35-40 | 40-50 | 20-30 | 10-20 | 20-30 | No | [Average](../systems/loot-tables/monster-packs.md#average), [LowPotions](../systems/loot-tables/utility-packs.md#lowpotions) |
+| a cat (BlackCat) | 58-75 | 96-125 | 86-105 | 141-165 | 35-40 | 40-50 | 20-30 | 10-20 | 20-30 | No | [Average](../systems/loot-tables/monster-packs.md#average), [LowPotions](../systems/loot-tables/utility-packs.md#lowpotions) |
+| a cat (Cat) | 6 | 9 | 35 | 5 | 5-10 | - | - | - | - | Yes | - |
+| a cat (WhiteCat) | 58-75 | 96-125 | 86-105 | 141-165 | 35-40 | 40-50 | 20-30 | 10-20 | 20-30 | No | [Average](../systems/loot-tables/monster-packs.md#average), [LowPotions](../systems/loot-tables/utility-packs.md#lowpotions) |
 | a cheetah | 34-48 | 56-80 | 66-85 | 26-50 | 20-25 | 5-10 | 10-15 | 5-10 | - | Yes | - |
 | a cougar | 34-48 | 56-80 | 66-85 | 26-50 | 20-25 | 5-10 | 10-15 | 5-10 | - | Yes | - |
 | a crag cat | - | 400 | 300 | 120 | 25-35 | - | 60-80 | 15-25 | 10-15 | Yes | - |
@@ -167,12 +167,12 @@ Animals are the natural fauna of the world — bears, birds, canines, felines, r
 | a giant rat | 26-39 | 32-74 | 46-65 | 16-30 | 15-20 | 5-10 | - | 25-35 | - | Yes | [Poor](../systems/loot-tables/monster-packs.md#poor) |
 | a jack rabbit | 9 | 15 | 25 | 5 | 2-5 | - | - | - | - | Yes | - |
 | a mouse | 6 | 9 | 25 | 6-10 | 5-10 | - | - | 15-25 | 5-10 | Yes | - |
-| a rabbit | 4-6 | 6-10 | 26-38 | 6-14 | 5-10 | - | - | - | - | Yes | - |
-| a rabbit | 4-6 | 6-10 | 26-38 | 6-14 | 5-10 | - | - | - | - | Yes | - |
-| a rat | 6 | 4 | 12 | 2 | 5-10 | - | - | - | - | Yes | RawRibs, BeetleShell, EyeOfToad, DriedToad, SilverWidow |
-| a rat | 6 | 9 | 35 | 5 | 5-10 | - | - | 5-10 | - | Yes | [Poor](../systems/loot-tables/monster-packs.md#poor) |
-| a sewer rat | 6 | 9 | 25 | 6-10 | 5-10 | - | - | 15-25 | 5-10 | Yes | [Poor](../systems/loot-tables/monster-packs.md#poor) |
-| a sewer rat | 36-49 | 52-94 | 66-75 | 16-30 | 35-40 | 25-30 | - | 45-55 | - | No | [Meager](../systems/loot-tables/monster-packs.md#meager) |
+| a rabbit (Rabbit) | 4-6 | 6-10 | 26-38 | 6-14 | 5-10 | - | - | - | - | Yes | - |
+| a rabbit (WhiteRabbit) | 4-6 | 6-10 | 26-38 | 6-14 | 5-10 | - | - | - | - | Yes | - |
+| a rat (Critter) | 6 | 4 | 12 | 2 | 5-10 | - | - | - | - | Yes | RawRibs, BeetleShell, EyeOfToad, DriedToad, SilverWidow |
+| a rat (Rat) | 6 | 9 | 35 | 5 | 5-10 | - | - | 5-10 | - | Yes | [Poor](../systems/loot-tables/monster-packs.md#poor) |
+| a sewer rat (SewerRat) | 6 | 9 | 25 | 6-10 | 5-10 | - | - | 15-25 | 5-10 | Yes | [Poor](../systems/loot-tables/monster-packs.md#poor) |
+| a sewer rat (SicklyRat) | 36-49 | 52-94 | 66-75 | 16-30 | 35-40 | 25-30 | - | 45-55 | - | No | [Meager](../systems/loot-tables/monster-packs.md#meager) |
 | a squirrel | 42-50 | 44-50 | 35 | 5 | 30-34 | 10-14 | 30-35 | 20-25 | 20-25 | Yes | - |
 | a stirge | 55-66 | 91-110 | 91-115 | 26-50 | 35-45 | 15-25 | 15-25 | 60-70 | 40-50 | No | [Poor](../systems/loot-tables/monster-packs.md#poor), BatWing |
 | a vampire bat | 55-66 | 91-110 | 91-115 | 26-50 | 35-45 | 15-25 | 15-25 | 60-70 | 40-50 | No | [Poor](../systems/loot-tables/monster-packs.md#poor), BatWing |
@@ -220,7 +220,7 @@ Animals are the natural fauna of the world — bears, birds, canines, felines, r
 | a bobcat | 61.1 | 1 |
 | a brown bear | 41.1 | 1 |
 | a bull | 71.1 | 1 |
-| a cat | - | 1 |
+| a cat (Cat) | - | 1 |
 | a cheetah | 41.1 | 1 |
 | a chicken | - | 1 |
 | a cougar | 41.1 | 1 |
@@ -265,16 +265,16 @@ Animals are the natural fauna of the world — bears, birds, canines, felines, r
 | a panther | 61.1 | 1 |
 | a penguin | - | 1 |
 | a pig | 11.1 | 1 |
-| a rabbit | - | 1 |
-| a rabbit | - | 1 |
-| a rat | - | 1 |
-| a rat | - | 1 |
+| a rabbit (Rabbit) | - | 1 |
+| a rabbit (WhiteRabbit) | - | 1 |
+| a rat (Critter) | - | 1 |
+| a rat (Rat) | - | 1 |
 | a roadrunner | - | 1 |
 | a sabreclaw cub | 59.1 | 1 |
 | a sabretooth cub | 59.1 | 1 |
 | a seagull | - | 1 |
 | a seal | 35.1 | 1 |
-| a sewer rat | - | 1 |
+| a sewer rat (SewerRat) | - | 1 |
 | a sheep | 11.1 | 1 |
 | a snow leopard | 53.1 | 1 |
 | a squirrel | - | 1 |
@@ -291,4 +291,4 @@ Animals are the natural fauna of the world — bears, birds, canines, felines, r
 | an eagle | 17.1 | 1 |
 | an elephant | 79.1 | 2 |
 | an ostrich | 29.1 | 1 |
-| raw axe beak leg | 39.1 | 1 |
+| an axebeak | 39.1 | 1 |

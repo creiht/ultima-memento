@@ -28,10 +28,10 @@ Unique creatures are one-of-a-kind bosses and special encounters. These include 
 | a gray dragon | 241-258 | 401-430 | 133-152 | 101-140 | 45-50 | 50-60 | 40-50 | 20-30 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
 | a sentinel | 592-711 | 986-1185 | 177-255 | 1066-1145 | 40-60 | 40-60 | 40-60 | 40-60 | 40-60 | No | - |
 | a spectre | 103-120 | 171-200 | 126-145 | 276-305 | 40-60 | 20-30 | 50-60 | 55-65 | 40-50 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls), GnarledStaff |
-| plate tunic of anarchy | 300 | 350 | 150 | 120 | 40 | 30 | 30 | 30 | 30 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [Rich](../systems/loot-tables/monster-packs.md#rich) |
-| plate tunic of insanity | 300 | 350 | 150 | 120 | 40 | 30 | 30 | 30 | 30 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [Rich](../systems/loot-tables/monster-packs.md#rich) |
-| plate tunic of wantoness | 300 | 350 | 150 | 120 | 40 | 30 | 30 | 30 | 30 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [Rich](../systems/loot-tables/monster-packs.md#rich) |
-| shadowlord robe | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Rich](../systems/loot-tables/monster-packs.md#rich) |
+| Bane of Anarchy | 300 | 350 | 150 | 120 | 40 | 30 | 30 | 30 | 30 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [Rich](../systems/loot-tables/monster-packs.md#rich) |
+| Bane of Insanity | 300 | 350 | 150 | 120 | 40 | 30 | 30 | 30 | 30 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [Rich](../systems/loot-tables/monster-packs.md#rich) |
+| Bane of Wantoness | 300 | 350 | 150 | 120 | 40 | 30 | 30 | 30 | 30 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [Rich](../systems/loot-tables/monster-packs.md#rich) |
+| a shadowlord | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Rich](../systems/loot-tables/monster-packs.md#rich) |
 
 ## Individual Pages
 
@@ -53,7 +53,7 @@ Each unique creature has a detailed page in [notable/](notable/):
 - [a gray dragon](notable/gray-dragon.md)
 - [a sentinel](notable/rune-guardian.md)
 - [a spectre](notable/spectres.md)
-- [plate tunic of anarchy](notable/bane-of-anarchy.md)
-- [plate tunic of insanity](notable/bane-of-insanity.md)
-- [plate tunic of wantoness](notable/bane-of-wantoness.md)
-- [shadowlord robe](notable/shadowlord.md)
+- [Bane of Anarchy](notable/bane-of-anarchy.md)
+- [Bane of Insanity](notable/bane-of-insanity.md)
+- [Bane of Wantoness](notable/bane-of-wantoness.md)
+- [a shadowlord](notable/shadowlord.md)
