@@ -1,6 +1,6 @@
 # Artifact Armor Sets
 
-Named artifact armor sets. Each piece provides its own enchantments; wearing a full set may also grant additional in-game effects.
+Named artifact armor sets. Each piece provides its own enchantments. Source code review confirms there is **no additional set-bonus mechanic** — armor sets are thematically grouped pieces with individual fixed stats. The benefit of collecting a full set is purely the sum of each piece's stats. There is no cross-piece activation or bonus for wearing all pieces simultaneously.
 
 See [README](README.md) for acquisition details.
 

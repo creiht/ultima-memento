@@ -32,7 +32,7 @@ All relics share these traits:
 | DDRelicJewels | Jewelry | 5.0 | Mercantile | Necklaces, amulets, medallions, rings, earrings |
 | DDRelicLeather | Leather | 40.0 | Mercantile | Animal leather — dragon, demon, unicorn, etc. |
 | DDRelicLight | Candelabras | 20.0 | Mercantile | Decorative candelabras and light fixtures (functional) |
-| DDRelicMoney | Copper/Silver | varies | — | Currency coins convertible to gold (copper: 10:1 ratio) |
+| DDRelicMoney | Copper/Silver | varies | — | Currency coins convertible to gold: **Copper 10:1** (10 copper = 1 gold), **Silver 5:1** (5 silver = 1 gold). Double-click at banker to exchange. |
 | DDRelicOrbs | Crystal Balls | 15-40 | Mercantile | Named crystal balls (show random visions when used) |
 | DDRelicPainting | Paintings | 10.0 | Mercantile | Wall-mounted paintings in various styles |
 | DDRelicReagent | Reagents | varies | Mercantile | Decorative reagent displays |

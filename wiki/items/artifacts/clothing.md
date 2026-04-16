@@ -30,7 +30,7 @@ See [README](README.md) for acquisition details.
 | Boots of the Mountain King | Boots | Standard | FC +1, FCR +1, LMC +15, LRC +15, Stam Regen +2, Elementalism +15, Focus +10, Meditation +10 | Lithos' Mystical Boots | Titan Lithos (boss drop) |
 | Boots of the Mystic Voice | Boots | Standard | FC +1, FCR +1, LMC +15, LRC +15, Stam Regen +2, Elementalism +15, Focus +10, Meditation +10 | Stratos' Magical Boots | Titan Stratos (boss drop) |
 | Detective Boots of the Royal Guard | Boots | Standard | INT +10 | - | Sage Artifact Quest |
-| Pads of the Cu Sidhe | FurBoots | Standard | - | - | Taming a Cu Sidhe |
+| Pads of the Cu Sidhe | FurBoots | Standard | No fixed magical attributes (ArtySetup level 0) | — | Taming a Cu Sidhe |
 | Polar Bear Boots | FurBoots | Standard | Dmg +10 | - | Sage Artifact Quest |
 | Sprinter's Sandals | Sandals | Standard | Stamina +15, Stam Regen +5 | Sprinting | Sage Artifact Quest |
 
@@ -41,7 +41,7 @@ See [README](README.md) for acquisition details.
 | Burglar's Bandana | Bandana | Standard | DEX +5, Stealing +10, Stealth +10, Snooping +10 | - | Sage Artifact Quest |
 | Captain John's Hat | TricorneHat | Standard | DEX +8, Night Sight, Hit Chance +15 | - | Sage Artifact Quest |
 | Crown of Tal'Keesh | Bandana | Standard | INT +8, Mana Regen +4, SDI +10 | - | Sage Artifact Quest |
-| Dread Pirate Hat | TricorneHat | Standard | DEX +8, Hit Chance +10, Night Sight, Luck +0, Seafaring +20, Cartography +20, Swords +10, Tactics +10 | - | Sage Artifact Quest |
+| Dread Pirate Hat | TricorneHat | Standard | DEX +8, Hit Chance +10, Night Sight, Seafaring +20, Cartography +20, Swords +10, Tactics +10; Base Res: Cold +14, Poison +10; + 12 random properties | - | Sage Artifact Quest |
 | Grim Reaper's Mask | WizardsHat | Standard | Necromancy +10, Spiritualism +10 | - | Sage Artifact Quest |
 | Hat of the Magi | WizardsHat | Standard | INT +8, Mana Regen +4, SDI +10 | - | Sage Artifact Quest |
 | Hunter's Headdress | DeerMask | Standard | DEX +8, Night Sight, Hit Chance +15, Marksmanship +20 | - | Sage Artifact Quest |

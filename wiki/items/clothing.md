@@ -1,72 +1,166 @@
 # Clothing
 
-Clothing items provide little to no combat protection but can carry magical properties, skill bonuses, and resistances. They are crafted via **Tailoring** and can be blessed to prevent loss on death.
+Clothing items provide no base combat resistance but can have **magical properties** (resistances, stat bonuses, skill bonuses) added via crafting or loot generation. All clothing is dyeable, blessable, and craftable via **Tailoring**. Exceptional quality clothing provides bonus magical properties.
 
-## Clothing Categories
+## Clothing Properties
 
-### Shirts
-Worn on the torso under outer garments. Includes fancy shirts, tunics, surcoats, and plain shirts.
+All clothing items share these properties:
 
-### Middle Torso
-Mid-layer torso items like doublets, vests, and jerkins.
+| Property | Notes |
+|----------|-------|
+| Base resistances | 0 physical/fire/cold/poison/energy (no base combat protection) |
+| Dyeable | Yes — all clothing implements the dye tub system |
+| Blessable | Yes — use a [Clothing Bless Deed](deeds.md) to prevent loss on death |
+| Quality | Low / Regular / Exceptional (exceptional adds bonus properties) |
+| Durability | Hit points degrade with use/damage |
+| STR requirement | 0 for all standard clothing |
+| Magical properties | Can have AosAttributes (stat bonuses, regen), AosSkillBonuses (up to 5), AosResistances (physical/fire/cold/poison/energy) |
+| Crafting | Tailoring skill with cloth or leather material |
 
-### Outer Torso
-Outer layer garments including robes, dresses, formal wear, and surcoats.
+## Clothing Slots & Common Items
 
-### Robes
-Full-body robes in various styles. Some special robes exist:
-- **Royal Cloak** — Special cloak with unique appearance
+### Shirt Slot (Layer.Shirt)
 
-### Cloaks
-Back-slot items. Various styles and colors available.
+| Item | Weight | Notes |
+|------|--------|-------|
+| Fancy Shirt | 2.0 | Decorative, common |
+| Plain Shirt | 1.0 | |
+| Tunic | 1.0 | |
+| Studdable Shirt | 2.0 | |
+| Royal Coat | 2.0 | Named NPC clothing |
+| Squire Shirt | 2.0 | |
 
-### Hats
-Head-slot items including wide-brim hats, skull caps, bandanas, caps, and hoods.
+### Middle Torso (Layer.MiddleTorso)
 
-### Reaper Hoods
-Special hooded items with a dark/sinister appearance.
+| Item | Weight | Notes |
+|------|--------|-------|
+| Doublet | 2.0 | |
+| Vest | 1.0 | |
+| Jerkin | 2.0 | |
+| Tunic (mid) | 2.0 | |
 
-### Pants
-Lower body garments including long pants, short pants, skirts, and kilts.
+### Outer Torso (Layer.OuterTorso)
 
-### Outer Legs
-Outer leg garments.
+| Item | Weight | Notes |
+|------|--------|-------|
+| Surcoat | 3.0 | |
+| Plate Mail (Cloth) | 3.0 | |
+| Dress | 3.0 | |
+| Formal Dress | 3.0 | |
 
-### Waist
-Belt-slot items including half aprons, full aprons, and sashes.
+### Robe (Layer.OuterTorso)
 
-### Shoes
-Foot-slot items including boots, sandals, shoes, and thigh boots.
+| Item | Weight | Notes |
+|------|--------|-------|
+| Robe | 3.0 | Full covering robe |
+| Female Kimono | 3.0 | Asian style |
+| Kimono | 3.0 | Asian style |
+| King Robe | 3.0 | |
+| Jester Suit | 3.0 | |
 
-### Loin Cloth
-Minimal lower body covering.
+### Cloak (Layer.Cloak)
+
+| Item | Weight | Notes |
+|------|--------|-------|
+| Cloak | 5.0 | Standard cloak |
+| Samuari Cloak | 3.0 | |
+| Royal Cloak | 5.0 | Special appearance |
+
+### Hat / Helm (Layer.Helm) — Hats
+
+| Item | Weight | Notes |
+|------|--------|-------|
+| Wide Brim Hat | 1.0 | |
+| Tall Straw Hat | 1.0 | |
+| Wizard's Hat | 1.0 | |
+| Witch's Hat | 1.0 | |
+| Skull Cap | 1.0 | |
+| Bandana | 1.0 | |
+| Cap | 1.0 | |
+| Tricorne Hat | 1.0 | |
+| Flower Garland | 1.0 | Decoration |
+| Bonnet | 1.0 | |
+| Fancy Pointy Hat | 1.0 | |
+| Summer Hat | 1.0 | |
+| Reaper Hood | 2.0 | Dark-themed hood (see Reaper Hoods section) |
+| Jester's Hat | 1.0 | |
+
+### Pants (Layer.Pants)
+
+| Item | Weight | Notes |
+|------|--------|-------|
+| Long Pants | 2.0 | |
+| Short Pants | 1.0 | |
+| Full Pants | 2.0 | |
+| Kilt | 2.0 | |
+| Skirt | 2.0 | |
+
+### Outer Legs (Layer.Pants / outer)
+
+| Item | Weight | Notes |
+|------|--------|-------|
+| Leather Skirt | 3.0 | crafted |
+| Thigh Boots (separate from shoe) | — | see Shoes |
+
+### Waist (Layer.Waist)
+
+| Item | Weight | Notes |
+|------|--------|-------|
+| Half Apron | 1.0 | |
+| Full Apron | 2.0 | |
+| Obi Sash | 1.0 | |
+| Sash | 1.0 | |
+
+### Shoes / Feet (Layer.Shoes)
+
+| Item | Weight | Notes |
+|------|--------|-------|
+| Shoes | 2.0 | |
+| Boots | 3.0 | |
+| Thigh Boots | 4.0 | |
+| Sandals | 1.0 | |
+| Ninja Tabi | 2.0 | Asian footwear |
+| Desert Boots | 3.0 | |
+
+### Loin Cloth (Layer.Pants / inner)
+
+| Item | Weight | Notes |
+|------|--------|-------|
+| Loin Cloth | 1.0 | Minimal coverage |
 
 ## Special Clothing
 
-### Suits
-Full-body costume items:
+### Reaper Hoods
 
-| Suit | Description |
-|------|-------------|
-| Death Shroud | Worn by ghosts |
+Dark/sinister hooded items worn in the Helm slot. Various aesthetic variants (skull, shadow, grim reaper, etc.).
+
+### Suits (Full-Body Costume Items)
+
+Suits use `BaseSuit` and occupy the **Shirt layer** in a single piece. They require **GameMaster access level** to equip (cosmetic/display items for NPCs or special occasions).
+
+| Suit | Notes |
+|------|-------|
+| Death Shroud | Worn by ghost NPCs |
 | Dupre Suit | Costume of the legendary paladin Dupre |
 | Lord Blackthorne Suit | Costume of Lord Blackthorne |
 | Lord British Suit | Costume of Lord British |
 
-## Properties
+## Crafting Materials & Bonuses
 
-All clothing can potentially have:
-- **Resistances**: Physical, Fire, Cold, Poison, Energy
-- **Attributes**: AoS attributes (stat bonuses, regeneration, etc.)
-- **Skill Bonuses**: Up to 5 skill bonuses
-- **Quality**: Low, Regular, Exceptional
-- **Durability**: Hit points
-- **Resource Material**: Different cloth/leather types affect bonuses and appearance
+The material used to craft clothing affects its appearance and may provide bonus resistances when exceptional quality:
 
-## Crafting
-
-Clothing is crafted using the **Tailoring** skill with cloth or leather as the primary material. Exceptional quality clothing receives bonus properties.
+- **Regular Cloth** — standard white/beige appearance
+- **Colored Cloth** — dyed variants; no stat difference
+- **Leather** — higher durability
+- **Spined / Horned / Barbed Leather** — exceptional leatherwork provides elemental resistance bonuses (see [Armor Guide](armor-guide.md) for material resistance details)
 
 ## Blessing
 
-Use a [Clothing Bless Deed](deeds.md) to bless an item, making it remain with you on death.
+Use a [Clothing Bless Deed](deeds.md) to bless a single clothing item. Blessed clothing stays with you on death (not dropped to your corpse).
+
+## Cross-links
+
+- [Tailoring](../../crafting/) — how to craft clothing
+- [Armor Guide](armor-guide.md) — material bonus resistance values
+- [Deeds](deeds.md) — Clothing Bless Deed and other property deeds
+- [Artifacts — Clothing](artifacts/clothing.md) — named artifacts worn in clothing slots

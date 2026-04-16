@@ -16,13 +16,14 @@ Jewelry is crafted via Tinkering using metal and gem resources. All jewelry weig
 
 ### Jewelry Properties
 
+- **Base resistances**: 0 physical / 0 fire / 0 cold / 0 poison / 0 energy (jewelry has no inherent base resistance — all resistance values come from magical properties or material bonuses)
 - **Quality**: Low, Regular, Exceptional
-- **Gem Type**: Star Sapphire, Emerald, Sapphire, Ruby, Citrine, Amethyst, Tourmaline, Amber, Diamond, Pearl — affects appearance
-- **Metal Resource**: Affects resistance bonuses and hue
-- **Attributes**: Can have AoS attributes (Strength, Dexterity, Intelligence bonuses, etc.)
+- **Gem Type**: Star Sapphire, Emerald, Sapphire, Ruby, Citrine, Amethyst, Tourmaline, Amber, Diamond, Pearl — affects appearance and value
+- **Metal Resource**: Metal tier affects resistance bonus values when exceptional quality
+- **Attributes**: Can have AoS attributes (Strength, Dexterity, Intelligence bonuses, HP, Stamina, Mana, all regen types, etc.)
 - **Resistances**: Physical, Fire, Cold, Poison, Energy
 - **Skill Bonuses**: Up to 5 skill bonuses
-- **Durability**: Has hit points
+- **Durability**: Has hit points; repaired with tinkering tools or Tinker's Deeds
 
 ## Guild Rings
 
@@ -55,18 +56,25 @@ Special rings given when joining a guild. Each provides significant skill bonuse
 
 ## Magic Wands
 
-Wands are trinket-slot items that cast a random spell when double-clicked. They require mana to cast.
+Wands are trinket-slot items that cast a magery spell when double-clicked. They require mana to cast (based on the spell level). The wand must be **equipped** to cast from it.
 
 | Property | Details |
 |----------|---------|
 | Weight | 1.0 |
 | Equip Slot | Trinket (hip) |
 | Identified By | Mercantile skill |
-| Charges | Limited; can be recharged by visiting a wizard NPC |
+| Charges | Limited; depleted with each cast |
+| Recharging | Visit a wizard NPC — they can recharge a wand if they have the right spell |
+| Spell Type | Each wand is enchanted with a specific spell from the full Magery spell list (any of the 64 spells across 8 circles) |
+| Mana Cost | Normal mana cost for the spell applies; some spells also consume reagents |
 
 ## Talismans
 
-Talismans come in over 50 random forms (idols, totems, symbols, pouches, skulls, scrolls, vials, etc.) and provide random magical bonuses. Equipped in the Trinket slot.
+Talismans come in **51 random forms** and provide random magical bonuses. Equipped in the Trinket slot. Forms (source: `TrinketTalisman.cs`):
+
+talisman, idol, totem, symbol, bag/pouch/sack, ankh, censer, cube, lamp, box/chest/casket/coffer, ball/orb/sphere, dice, eye, gem/crystal/jewel, unicorn horn, rose/flower, medal/badge/medallion, skull, scroll/parchment/manuscript, vial/flask/bottle, key, hand/claw, heart, jaw, spine, feather, shell, coin, rune, ring, knife/blade/dagger, tooth, horn, scale, wing, bead, lens, shard, flask/decanter, bone/femur/skull, candle, pendant/medallion, statuette, cog/gear, spring, sextant, compass, bracelet, thread spool
+
+> The talisman randomly picks one of these form names and a random magical attribute combination (resistances, skill bonuses, stat bonuses, etc.).
 
 ## Light Sources
 

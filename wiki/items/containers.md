@@ -4,11 +4,16 @@ Containers are items that hold other items. They range from player backpacks and
 
 ## Player Containers
 
-| Container | Description | How to Obtain |
-|-----------|-------------|---------------|
-| Bag of Holding | Reduced-weight container for carrying more items | Rare loot, special rewards |
-| Sack of Holding | Reduced-weight sack variant | Rare loot, special rewards |
-| Moving Box | Large-capacity box for transferring items between houses | Purchase |
+| Container | Weight | Max Items | Weight Reduction | How to Obtain |
+|-----------|--------|-----------|-----------------|---------------|
+| Bag of Holding | 1.0 | 10 | **95%** (items weigh 5% of normal) | Rare loot, special rewards |
+| Sack of Holding (Small) | 1.0 | 10 | 100% (items weigh nothing; max weight 100,000) | Rare loot, rewards |
+| Sack of Holding (Medium) | 2.0 | 20 | 100% | Rare loot, rewards |
+| Sack of Holding (Large) | 3.0 | 30 | 100% | Rare loot, rewards |
+| Moving Box | — | Large | None | Purchase |
+
+> **Bag of Holding**: Contents weigh exactly 5% of their normal weight (`totalWeight × 0.05`). Holds 10 items.
+> **Sack of Holding**: Max capacity weight is 100,000 stones regardless of contents. Tiered variants by size.
 
 ## Storage Containers
 

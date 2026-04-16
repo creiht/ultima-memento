@@ -31,9 +31,9 @@ Technology items are sci-fi themed equipment found in alien/futuristic areas of 
 | Canteen | 0.1 | Alien liquid — quenches thirst. Stackable. | Alien loot |
 | Romulan Ale | 0.1 | Alien alcoholic beverage. Stackable. | Alien loot |
 | First Aid Kit | 10.0 | Opens to produce bandages and random healing potions (pill bottle form) | Alien loot |
-| Plasma Grenade | 0.1 | Throwable explosive. Stackable. | Alien loot, crafting |
-| Thermal Detonator | 0.1 | Throwable explosive device. Stackable. | Alien loot |
-| Landmine | 5.0 | Set on the ground; explodes when stepped on. Power based on Remove Trap skill. Max 3 per area. | Alien loot, crafting |
+| Plasma Grenade | 0.1 | Throwable explosive. Deals **60–90 fire damage** (100% fire) in a **3-tile AoE** radius. Damage divided among multiple targets. Stackable. | Alien loot, crafting |
+| Thermal Detonator | 0.1 | Throwable explosive device. Deals **60–90 fire damage** (100% fire) in a **3-tile AoE** radius. Damage divided among multiple targets. Stackable. | Alien loot |
+| Landmine | 5.0 | Set on the ground; explodes when stepped on. Damage scales with Remove Trap skill. Max 3 per area at once. | Alien loot, crafting |
 
 ## Tools
 

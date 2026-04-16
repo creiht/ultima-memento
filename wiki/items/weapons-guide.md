@@ -57,6 +57,7 @@ This guide contains full stat tables for all weapon types, including damage, spe
 | Large Knife | 10 | 12 | 2.25 | 10 | 1H |
 | Leafblade | 13 | 15 | 2.75 | 20 | 1H |
 | War Cleaver | 11 | 13 | 2.25 | 15 | 1H |
+| Throwing Dagger | 5 | STR/10 | — | — | 1H | Thrown item (not a weapon); damage = `Random(5, STR ÷ 10)`; range 10; miss chance based on target DEX; dagger lands at target location after throw |
 
 ## Spears & Polearms (Fencing Skill)
 
