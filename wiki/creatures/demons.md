@@ -1,0 +1,53 @@
+# Demons
+
+Demons are powerful fiends from the lower planes. They wield dark magic, have high resistances, and drop valuable loot. A few rare demon types can be tamed by skilled tamers.
+
+**Total creatures:** 32  
+**Tameable:** 2
+
+[Back to Creature Index](README.md) | [Tameables](tameables.md)
+
+
+## Stats
+
+| Name | Hits | Str | Dex | Int | Phys Resist | Fire Resist | Cold Resist | Poison Resist | Energy Resist | Tameable | Notable Loot |
+|------|------|-----|-----|-----|-------------|-------------|-------------|---------------|---------------|----------|--------------|
+| Chest of Bloody Relics | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | FilthyRich, Rich, MedScrolls |
+| ClassicBalron | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | FilthyRich, Rich, MedScrolls, Longsword |
+| ClassicDaemon | 286-303 | 476-505 | 76-95 | 301-325 | 45-60 | 50-60 | 30-40 | 20-30 | 30-40 | No | Rich, Average, MedScrolls |
+| DemonOfTheSea | 286-303 | 476-505 | 76-95 | 301-325 | 45-60 | 50-60 | 30-40 | 20-30 | 30-40 | No | Rich, Average, MedScrolls |
+| Devil | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | FilthyRich, Rich, MedScrolls |
+| FireMephit | 55-70 | 91-115 | 61-80 | 86-105 | 25-35 | 100 | 0 | 30-40 | 30-40 | Yes | Meager, MedScrolls |
+| IceDevil | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | FilthyRich, Rich, MedScrolls |
+| Imp | 55-70 | 91-115 | 61-80 | 86-105 | 25-35 | 40-50 | 20-30 | 30-40 | 30-40 | Yes | Meager, MedScrolls |
+| MutantDaemon | 286-303 | 476-505 | 76-95 | 301-325 | 45-60 | 50-60 | 30-40 | 20-30 | 30-40 | No | Rich, Average, MedScrolls |
+| Satan | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | FilthyRich, Rich, MedScrolls |
+| Xurtzar | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | FilthyRich, Rich, MedScrolls |
+| a bone demon | 451-575 | 451-575 | 151-175 | 171-220 | 75 | 60 | 90 | 100 | 60 | No | FilthyRich, BoneContainer |
+| a demon | 286-303 | 476-505 | 76-95 | 301-325 | 45-60 | 50-60 | 30-40 | 20-30 | 30-40 | No | Rich, Average, MedScrolls |
+| a demon | 186-203 | 276-305 | 46-65 | 201-225 | 45-60 | 50-60 | 30-40 | 20-30 | 30-40 | No | Average, Average, MedScrolls |
+| a demonic ghost | 186-203 | 276-305 | 46-65 | 201-225 | 45-60 | 50-60 | 30-40 | 100 | 30-40 | No | Average, Average, MedScrolls, GraveDust |
+| a fire demon | 88-105 | 146-175 | 76-95 | 81-105 | 30-35 | 100 | 0 | 15-25 | - | No | Average, MedScrolls, Gems |
+| a lesser demon | 105-120 | 141-165 | 111-130 | 136-155 | 25-35 | 40-50 | 20-30 | 30-40 | 30-40 | No | Average |
+| a lesser devil | 186-203 | 376-405 | 76-95 | 201-225 | 45-60 | 50-60 | 30-40 | 20-30 | 30-40 | No | Average |
+| a shadow demon | 186-203 | 276-305 | 46-65 | 201-225 | 45-60 | 50-60 | 30-40 | 20-30 | 30-40 | No | Average, Average, MedScrolls |
+| a shadow hound | 64-98 | 96-120 | 76-95 | 91-115 | 15-20 | 10-15 | 20-25 | 10-15 | 10-15 | No | - |
+| a succubus | 312-353 | 488-620 | 121-170 | 498-657 | 80-90 | 70-80 | 40-50 | 50-60 | 50-60 | No | FilthyRich, MedScrolls |
+| an afreet | 286-303 | 476-505 | 266-285 | 171-195 | 50-60 | 60-70 | - | 30-40 | 40-50 | No | Rich, Average, Gems |
+| an ifreet | 286-303 | 476-505 | 266-285 | 171-195 | 50-60 | 60-70 | - | 30-40 | 40-50 | No | Rich, Average, Gems |
+| demonic chest | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | - |
+| manacle of the sea devil | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | FilthyRich, Rich, MedScrolls |
+| scimitar of  | 402-431 | 436-485 | 196-215 | 131-155 | 45-50 | 30-40 | 25-35 | 30-40 | 30-40 | No | Rich, Average |
+| staff of the abyss | 286-303 | 476-505 | 76-95 | 301-325 | 45-60 | 50-60 | 30-40 | 20-30 | 30-40 | No | Rich, Average, FilthyRich |
+| sword  | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | FilthyRich, Rich, MedScrolls |
+| sword of  | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | FilthyRich, Rich, MedScrolls |
+| sword of  | 592-711 | 986-1185 | 177-255 | 151-250 | - | - | - | - | - | No | FilthyRich, Rich, MedScrolls |
+| sword of  | 286-303 | 476-505 | 76-95 | 301-325 | - | - | - | - | - | No | Rich, Average, MedScrolls |
+| sword of  | 286-303 | 476-505 | 76-95 | 301-325 | 45-60 | 50-60 | 30-40 | 20-30 | 30-40 | No | Rich, Average, MedScrolls |
+
+## Tameable Members
+
+| Name | Min Taming Skill | Control Slots |
+|------|-----------------|---------------|
+| FireMephit | 83.1 | 2 |
+| Imp | 83.1 | 2 |
