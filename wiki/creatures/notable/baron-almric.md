@@ -47,5 +47,5 @@ Baron Almric is a unique undead noble, a powerful vampire lord who haunts the da
 
 ## Loot
 
-- LootPack.FilthyRich
-- LootPack.Rich
+- [FilthyRich](../../systems/loot-tables/monster-packs.md#filthyrich)
+- [Rich](../../systems/loot-tables/monster-packs.md#rich)

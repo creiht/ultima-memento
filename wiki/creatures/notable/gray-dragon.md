@@ -40,5 +40,5 @@ The Gray Dragon is a unique and powerful dragon variant, distinguished by its un
 
 ## Loot
 
-- LootPack.Rich
-- LootPack.MedScrolls
+- [Rich](../../systems/loot-tables/monster-packs.md#rich)
+- [Med Scrolls](../../systems/loot-tables/utility-packs.md#scrolls)

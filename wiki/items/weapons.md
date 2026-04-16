@@ -198,3 +198,10 @@ Weapons can be further improved using [Sharpening Stones, Bow Strings, and Weigh
 - [Weapons Guide](weapons-guide.md) — extended stats, special moves, material bonuses
 - [Sharpening](sharpening.md) — sharpening stones, bow strings, weighting stones
 - [Artifacts — Weapons](artifacts/weapons.md) — named artifact weapons
+
+## Sources — Loot Tables
+
+Weapons drop as part of the magic item pools in every loot pack. See:
+- [Magic Item Pools](../systems/loot-tables/magic-item-pools.md) — item type weights and intensity scaling
+- [Monster Packs](../systems/loot-tables/monster-packs.md) — creature body-drop tiers
+- [Treasure Packs](../systems/loot-tables/treasure-packs.md) — chest loot tiers

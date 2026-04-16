@@ -11,7 +11,7 @@ Welcome to the Ultima Memento player wiki! Ultima Memento is a custom Ultima Onl
 | [Magic](magic/README.md) | The 19 magic and spell systems — Magery, Necromancy, Druidism, Chivalry, and more |
 | [Crafting](crafting/README.md) | 22 crafting professions — Blacksmithy, Alchemy, Tailoring, Tinkering, and more |
 | [Quests](quests/README.md) | Quest types and guides — Assassin, Epic, Jester, Pagan, Underworld, and more |
-| [Creatures](creatures/README.md) | Creature families, stats, loot tables, and taming information |
+| [Creatures](creatures/README.md) | Creature families, stats, loot tables, and taming information. See [Loot Tables](systems/loot-tables/README.md) for how packs work. |
 | [Items](items/README.md) | Item categories, properties, special uses, and how to obtain them |
 | [Commands](commands/README.md) | Player and admin commands reference |
 | [World](world/README.md) | Facets, regions, landmarks, and points of interest |

@@ -45,4 +45,7 @@ Khumash-Gor is a unique and fearsome creature, a powerful boss-level encounter f
 
 ## Loot
 
-- LootPack.FilthyRich
+- [FilthyRich](../../systems/loot-tables/monster-packs.md#filthyrich)
+
+*Special drops (Zealan Tombs only):* Lucky or 1-in-10 chance — `PaganArtifact` (variant 16, 100–150 pagan points). See [Special Drops](../../systems/loot-tables/special-drops.md#zealan-tombs).  
+*Also:* `ChampionSkull` ~11% (Fame ≥ 20,000)

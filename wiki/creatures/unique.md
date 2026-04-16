@@ -12,26 +12,26 @@ Unique creatures are one-of-a-kind bosses and special encounters. These include 
 
 | Name | Hits | Str | Dex | Int | Phys Resist | Fire Resist | Cold Resist | Poison Resist | Energy Resist | Tameable | Notable Loot |
 |------|------|-----|-----|-----|-------------|-------------|-------------|---------------|---------------|----------|--------------|
-| Almric | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | FilthyRich, Rich |
-| Exodus | 400-500 | 500-700 | 177-255 | 151-250 | 45-60 | 20-40 | 20-40 | 100 | 20-40 | No | FilthyRich, Rich, IronIngot, PowerCrystal, ArcaneGem, ClockworkAssembly, BottleOil, Gears |
-| Hydros | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | FilthyRich, Rich, HighPotions |
-| Khumash-Gor | 658-711 | 1096-1185 | 686-775 | 86-175 | 65-75 | 60-70 | 60-70 | 80-90 | 60-70 | No | FilthyRich |
-| Lithos | 558-611 | 896-985 | 86-175 | 586-675 | 65-75 | 40-50 | 40-50 | 40-50 | 40-50 | No | FilthyRich |
+| Almric | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Rich](../systems/loot-tables/monster-packs.md#rich) |
+| Exodus | 400-500 | 500-700 | 177-255 | 151-250 | 45-60 | 20-40 | 20-40 | 100 | 20-40 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Rich](../systems/loot-tables/monster-packs.md#rich), IronIngot, PowerCrystal, ArcaneGem, ClockworkAssembly, BottleOil, Gears |
+| Hydros | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Rich](../systems/loot-tables/monster-packs.md#rich), [HighPotions](../systems/loot-tables/utility-packs.md#highpotions) |
+| Khumash-Gor | 658-711 | 1096-1185 | 686-775 | 86-175 | 65-75 | 60-70 | 60-70 | 80-90 | 60-70 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich) |
+| Lithos | 558-611 | 896-985 | 86-175 | 586-675 | 65-75 | 40-50 | 40-50 | 40-50 | 40-50 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich) |
 | Mangar | 286-303 | 476-505 | 76-95 | 301-325 | 45-60 | 50-60 | 30-40 | 20-30 | 30-40 | No | - |
 | Naxatilor | 286-303 | 476-505 | 76-95 | 301-325 | 45-60 | 50-60 | 30-40 | 20-30 | 30-40 | No | - |
-| Pyros | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | FilthyRich, Rich, MedScrolls |
+| Pyros | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Rich](../systems/loot-tables/monster-packs.md#rich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
 | Serpent of Chaos | 286-303 | 476-505 | 266-285 | 171-195 | 50-60 | 60-70 | 30-40 | 30-40 | 30-40 | No | - |
 | Serpent of Order | 286-303 | 476-505 | 266-285 | 171-195 | 50-60 | 30-40 | 60-70 | 30-40 | 30-40 | No | - |
-| SlasherOfVoid | 658-711 | 1096-1185 | 86-175 | 686-775 | 65-75 | 80-90 | 60-70 | 60-70 | 60-70 | No | FilthyRich, Gems |
-| Stratos | 558-599 | 898-1030 | 68-200 | 488-620 | 65-75 | 50-60 | 45-55 | 20-30 | 70-80 | No | FilthyRich, Gems |
-| Tarjan | 286-303 | 476-505 | 76-95 | 301-325 | 45-60 | 50-60 | 30-40 | 20-30 | 30-40 | No | Rich, Average, MedScrolls |
-| a gray dragon | 241-258 | 401-430 | 133-152 | 101-140 | 45-50 | 50-60 | 40-50 | 20-30 | 30-40 | No | Rich, MedScrolls |
+| SlasherOfVoid | 658-711 | 1096-1185 | 86-175 | 686-775 | 65-75 | 80-90 | 60-70 | 60-70 | 60-70 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
+| Stratos | 558-599 | 898-1030 | 68-200 | 488-620 | 65-75 | 50-60 | 45-55 | 20-30 | 70-80 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
+| Tarjan | 286-303 | 476-505 | 76-95 | 301-325 | 45-60 | 50-60 | 30-40 | 20-30 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
+| a gray dragon | 241-258 | 401-430 | 133-152 | 101-140 | 45-50 | 50-60 | 40-50 | 20-30 | 30-40 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls) |
 | a sentinel | 592-711 | 986-1185 | 177-255 | 1066-1145 | 40-60 | 40-60 | 40-60 | 40-60 | 40-60 | No | - |
-| a spectre | 103-120 | 171-200 | 126-145 | 276-305 | 40-60 | 20-30 | 50-60 | 55-65 | 40-50 | No | Rich, MedScrolls, GnarledStaff |
-| plate tunic of anarchy | 300 | 350 | 150 | 120 | 40 | 30 | 30 | 30 | 30 | No | FilthyRich, Average, Rich |
-| plate tunic of insanity | 300 | 350 | 150 | 120 | 40 | 30 | 30 | 30 | 30 | No | FilthyRich, Average, Rich |
-| plate tunic of wantoness | 300 | 350 | 150 | 120 | 40 | 30 | 30 | 30 | 30 | No | FilthyRich, Average, Rich |
-| shadowlord robe | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | FilthyRich, Rich |
+| a spectre | 103-120 | 171-200 | 126-145 | 276-305 | 40-60 | 20-30 | 50-60 | 55-65 | 40-50 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [MedScrolls](../systems/loot-tables/utility-packs.md#scrolls), GnarledStaff |
+| plate tunic of anarchy | 300 | 350 | 150 | 120 | 40 | 30 | 30 | 30 | 30 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [Rich](../systems/loot-tables/monster-packs.md#rich) |
+| plate tunic of insanity | 300 | 350 | 150 | 120 | 40 | 30 | 30 | 30 | 30 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [Rich](../systems/loot-tables/monster-packs.md#rich) |
+| plate tunic of wantoness | 300 | 350 | 150 | 120 | 40 | 30 | 30 | 30 | 30 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Average](../systems/loot-tables/monster-packs.md#average), [Rich](../systems/loot-tables/monster-packs.md#rich) |
+| shadowlord robe | 592-711 | 986-1185 | 177-255 | 151-250 | 65-80 | 60-80 | 50-60 | 100 | 40-50 | No | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Rich](../systems/loot-tables/monster-packs.md#rich) |
 
 ## Individual Pages
 

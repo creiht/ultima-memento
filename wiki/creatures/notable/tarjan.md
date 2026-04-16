@@ -46,6 +46,6 @@ Tarjan is the Mad God, a legendary villain from the Bard's Tale series. An incre
 
 ## Loot
 
-- LootPack.Rich
-- LootPack.Average
-- LootPack.MedScrolls
+- [Rich](../../systems/loot-tables/monster-packs.md#rich)
+- [Average](../../systems/loot-tables/monster-packs.md#average)
+- [Med Scrolls](../../systems/loot-tables/utility-packs.md#scrolls)

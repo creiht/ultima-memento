@@ -41,7 +41,7 @@ Animals are the natural fauna of the world — bears, birds, canines, felines, r
 | a lorikeet | - | 10 | 25-35 | 10 | - | - | - | - | - | Yes | - |
 | a penguin | 3 | 5 | 15 | 5 | 1-5 | - | - | - | - | Yes | - |
 | a roadrunner | - | 10 | 25-35 | 10 | - | - | - | - | - | Yes | - |
-| a seagull | - | 10 | 25-35 | 10 | - | - | - | - | - | Yes | SomeRandomNote |
+| a seagull | - | 10 | 25-35 | 10 | - | - | - | - | - | Yes | — |
 | a turkey | 3 | 15 | 25 | 5 | 3-8 | - | - | - | - | Yes | - |
 | an eagle | 20-27 | 31-47 | 36-60 | 8-20 | 20-25 | 10-15 | 20-25 | 5-10 | 5-10 | Yes | - |
 | an ostrich | 48-62 | 76-100 | 66-90 | 41-65 | 25-30 | 10-20 | 10-30 | 20-30 | 10-20 | Yes | - |
@@ -60,9 +60,9 @@ Animals are the natural fauna of the world — bears, birds, canines, felines, r
 | a jackal | 34-48 | 56-80 | 56-75 | 11-25 | 15-20 | 5-10 | 10-15 | 5-10 | 5-10 | Yes | - |
 | a mad dog | 34-48 | 56-80 | 56-75 | 31-55 | 15-20 | 10-15 | 20-25 | 10-15 | 10-15 | Yes | - |
 | a timber wolf | 34-48 | 56-80 | 56-75 | 11-25 | 15-20 | 5-10 | 10-15 | 5-10 | 5-10 | Yes | - |
-| a werewolf | 200-250 | 80-120 | 80-120 | 30-50 | 35-45 | 25-30 | 25-30 | 10-20 | 10-20 | No | Average, Rich |
+| a werewolf | 200-250 | 80-120 | 80-120 | 30-50 | 35-45 | 25-30 | 25-30 | 10-20 | 10-20 | No | [Average](../systems/loot-tables/monster-packs.md#average), [Rich](../systems/loot-tables/monster-packs.md#rich) |
 | a white wolf | 34-48 | 56-80 | 56-75 | 31-55 | 15-20 | 10-15 | 20-25 | 10-15 | 10-15 | Yes | - |
-| a winter wolf | 66-125 | 102-150 | 81-105 | 36-60 | 25-35 | - | 30-40 | 10-20 | 10-20 | Yes | Average, Meager |
+| a winter wolf | 66-125 | 102-150 | 81-105 | 36-60 | 25-35 | - | 30-40 | 10-20 | 10-20 | Yes | [Average](../systems/loot-tables/monster-packs.md#average), [Meager](../systems/loot-tables/monster-packs.md#meager) |
 | a wolf man | 80-120 | 100-140 | 90-110 | 72-100 | 30-35 | 10-20 | 5-10 | 5-10 | 10-15 | No | - |
 | a worg | 58-72 | 96-120 | 81-105 | 36-60 | 20-25 | 10-20 | 5-10 | 5-10 | 10-15 | Yes | - |
 
@@ -79,19 +79,19 @@ Animals are the natural fauna of the world — bears, birds, canines, felines, r
 | Name | Hits | Str | Dex | Int | Phys Resist | Fire Resist | Cold Resist | Poison Resist | Energy Resist | Tameable | Notable Loot |
 |------|------|-----|-----|-----|-------------|-------------|-------------|---------------|---------------|----------|--------------|
 | LionRiding | 64-88 | 112-160 | 120-190 | 50-76 | 30-35 | 5-10 | 10-15 | 5-10 | - | Yes | - |
-| PredatorHellCatRiding | 97-131 | 161-185 | 96-115 | 76-100 | 25-35 | 30-40 | - | - | 5-15 | Yes | Average |
+| PredatorHellCatRiding | 97-131 | 161-185 | 96-115 | 76-100 | 25-35 | 30-40 | - | - | 5-15 | Yes | [Average](../systems/loot-tables/monster-packs.md#average) |
 | SabretoothTigerRiding | - | 400 | 300 | 120 | 25-35 | - | 60-80 | 15-25 | 10-15 | Yes | - |
 | SnowLion | 64-88 | 112-160 | 120-190 | 50-76 | 30-35 | 5-10 | 25-35 | 5-10 | - | Yes | - |
 | TigerRiding | 64-88 | 112-160 | 120-190 | 50-76 | 30-35 | 5-10 | 10-15 | 5-10 | - | Yes | - |
 | WhiteTigerRiding | 64-88 | 112-160 | 120-190 | 50-76 | 30-35 | 5-10 | 10-15 | 5-10 | - | Yes | - |
 | a bobcat | 64-88 | 112-160 | 120-190 | 50-76 | 30-35 | 5-10 | 10-15 | 5-10 | - | Yes | - |
-| a cat | 58-75 | 96-125 | 86-105 | 141-165 | 35-40 | 40-50 | 20-30 | 10-20 | 20-30 | No | Average, LowPotions |
+| a cat | 58-75 | 96-125 | 86-105 | 141-165 | 35-40 | 40-50 | 20-30 | 10-20 | 20-30 | No | [Average](../systems/loot-tables/monster-packs.md#average), [LowPotions](../systems/loot-tables/utility-packs.md#lowpotions) |
 | a cat | 6 | 9 | 35 | 5 | 5-10 | - | - | - | - | Yes | - |
-| a cat | 58-75 | 96-125 | 86-105 | 141-165 | 35-40 | 40-50 | 20-30 | 10-20 | 20-30 | No | Average, LowPotions |
+| a cat | 58-75 | 96-125 | 86-105 | 141-165 | 35-40 | 40-50 | 20-30 | 10-20 | 20-30 | No | [Average](../systems/loot-tables/monster-packs.md#average), [LowPotions](../systems/loot-tables/utility-packs.md#lowpotions) |
 | a cheetah | 34-48 | 56-80 | 66-85 | 26-50 | 20-25 | 5-10 | 10-15 | 5-10 | - | Yes | - |
 | a cougar | 34-48 | 56-80 | 66-85 | 26-50 | 20-25 | 5-10 | 10-15 | 5-10 | - | Yes | - |
 | a crag cat | - | 400 | 300 | 120 | 25-35 | - | 60-80 | 15-25 | 10-15 | Yes | - |
-| a hell cat | 48-67 | 51-100 | 52-150 | 13-85 | 25-35 | 80-90 | - | - | 15-20 | Yes | Meager |
+| a hell cat | 48-67 | 51-100 | 52-150 | 13-85 | 25-35 | 80-90 | - | - | 15-20 | Yes | [Meager](../systems/loot-tables/monster-packs.md#meager) |
 | a jaguar | 64-88 | 112-160 | 120-190 | 50-76 | 30-35 | 5-10 | 10-15 | 5-10 | - | Yes | - |
 | a panther | 64-88 | 112-160 | 120-190 | 50-76 | 30-35 | 5-10 | 10-15 | 5-10 | - | Yes | - |
 | a sabretooth cub | 27-41 | 41-71 | 47-77 | 27-57 | 20-25 | - | 5-10 | - | - | Yes | - |
@@ -110,7 +110,7 @@ Animals are the natural fauna of the world — bears, birds, canines, felines, r
 | a gazelle | 27-41 | 41-71 | 47-77 | 27-57 | 20-25 | - | 5-10 | - | - | Yes | - |
 | a giraffe | 25-37 | 31-59 | 46-65 | 26-40 | 25-30 | - | - | - | - | Yes | - |
 | a goat | 12 | 19 | 15 | 5 | 5-15 | - | - | - | - | Yes | - |
-| a gorakong | 202-231 | 336-385 | 96-115 | 281-305 | 45-55 | 30-40 | 30-40 | 40-50 | 40-50 | Yes | Poor, Banana |
+| a gorakong | 202-231 | 336-385 | 96-115 | 281-305 | 45-55 | 30-40 | 30-40 | 40-50 | 40-50 | Yes | [Poor](../systems/loot-tables/monster-packs.md#poor), Banana |
 | a gorilla | 38-51 | 53-95 | 36-55 | 36-60 | 20-25 | 5-10 | 10-15 | - | - | Yes | Banana |
 | a grum | 146-160 | 176-200 | 26-45 | 23-47 | 20-30 | - | 15-20 | 10-15 | - | Yes | - |
 | a llama | 15-27 | 21-49 | 36-55 | 16-30 | 15-20 | - | - | - | - | Yes | - |
@@ -145,11 +145,11 @@ Animals are the natural fauna of the world — bears, birds, canines, felines, r
 | GiantHawk | 76-93 | 126-155 | 81-105 | 16-40 | 25-35 | - | 15-25 | 5-10 | 5-10 | Yes | - |
 | Horse | 28-45 | 22-98 | 56-75 | 6-10 | 15-20 | - | - | - | - | Yes | - |
 | RidableLlama | 15-27 | 21-49 | 56-75 | 16-30 | 10-15 | 5-10 | 5-10 | 5-10 | 5-10 | Yes | - |
-| Roc | 901-1100 | 1201-1410 | 171-270 | 301-325 | 55-70 | 70-90 | 15-25 | 40-50 | 40-50 | Yes | FilthyRich, Gems |
+| Roc | 901-1100 | 1201-1410 | 171-270 | 301-325 | 55-70 | 70-90 | 15-25 | 40-50 | 40-50 | Yes | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
 | SeaHorse | - | - | - | - | - | - | - | - | - | No | - |
 | SilverSteed | - | - | - | - | - | - | - | - | - | Yes | - |
 | SnowOstard | 71-88 | 94-170 | 56-75 | 6-10 | 15-20 | - | 15-20 | - | - | Yes | - |
-| YoungRoc | 401-600 | 301-410 | 171-270 | 301-325 | 45-70 | 60-80 | 5-15 | 30-40 | 30-40 | Yes | FilthyRich, Gems |
+| YoungRoc | 401-600 | 301-410 | 171-270 | 301-325 | 45-70 | 60-80 | 5-15 | 30-40 | 30-40 | Yes | [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [Gems](../systems/loot-tables/utility-packs.md#gems) |
 | ZebraRiding | 28-45 | 22-98 | 56-75 | 6-10 | 15-20 | - | - | - | - | Yes | - |
 | a giant vulture | 76-93 | 126-155 | 81-105 | 16-40 | 25-35 | - | 15-25 | 5-10 | 5-10 | Yes | - |
 | a skeletal steed | 41-50 | 91-100 | 46-55 | 46-60 | 50-60 | - | 90-95 | 100 | 10-15 | No | - |
@@ -159,25 +159,25 @@ Animals are the natural fauna of the world — bears, birds, canines, felines, r
 
 | Name | Hits | Str | Dex | Int | Phys Resist | Fire Resist | Cold Resist | Poison Resist | Energy Resist | Tameable | Notable Loot |
 |------|------|-----|-----|-----|-------------|-------------|-------------|---------------|---------------|----------|--------------|
-| a bat | 55-66 | 91-110 | 91-115 | 26-50 | 35-45 | 15-25 | 15-25 | 60-70 | 40-50 | No | Poor, BatWing |
-| a diseased rat | 46-59 | 52-94 | 66-85 | 16-30 | 15-20 | 5-10 | - | 25-35 | - | Yes | Poor |
+| a bat | 55-66 | 91-110 | 91-115 | 26-50 | 35-45 | 15-25 | 15-25 | 60-70 | 40-50 | No | [Poor](../systems/loot-tables/monster-packs.md#poor), BatWing |
+| a diseased rat | 46-59 | 52-94 | 66-85 | 16-30 | 15-20 | 5-10 | - | 25-35 | - | Yes | [Poor](../systems/loot-tables/monster-packs.md#poor) |
 | a ferret | 45-50 | 41-48 | 55 | 75 | 45-50 | 10-14 | 30-40 | 21-25 | 20-25 | Yes | - |
-| a fire bat | 49-63 | 81-105 | 91-115 | 96-120 | 15-20 | 65-80 | - | 5-10 | 5-10 | No | Average, SulfurousAsh |
-| a giant bat | 35-46 | 31-50 | 31-55 | 1-5 | 35-45 | 15-25 | 15-25 | 60-70 | 40-50 | No | Poor, BatWing |
-| a giant rat | 26-39 | 32-74 | 46-65 | 16-30 | 15-20 | 5-10 | - | 25-35 | - | Yes | Poor |
+| a fire bat | 49-63 | 81-105 | 91-115 | 96-120 | 15-20 | 65-80 | - | 5-10 | 5-10 | No | [Average](../systems/loot-tables/monster-packs.md#average), SulfurousAsh |
+| a giant bat | 35-46 | 31-50 | 31-55 | 1-5 | 35-45 | 15-25 | 15-25 | 60-70 | 40-50 | No | [Poor](../systems/loot-tables/monster-packs.md#poor), BatWing |
+| a giant rat | 26-39 | 32-74 | 46-65 | 16-30 | 15-20 | 5-10 | - | 25-35 | - | Yes | [Poor](../systems/loot-tables/monster-packs.md#poor) |
 | a jack rabbit | 9 | 15 | 25 | 5 | 2-5 | - | - | - | - | Yes | - |
 | a mouse | 6 | 9 | 25 | 6-10 | 5-10 | - | - | 15-25 | 5-10 | Yes | - |
 | a rabbit | 4-6 | 6-10 | 26-38 | 6-14 | 5-10 | - | - | - | - | Yes | - |
 | a rabbit | 4-6 | 6-10 | 26-38 | 6-14 | 5-10 | - | - | - | - | Yes | - |
 | a rat | 6 | 4 | 12 | 2 | 5-10 | - | - | - | - | Yes | RawRibs, BeetleShell, EyeOfToad, DriedToad, SilverWidow |
-| a rat | 6 | 9 | 35 | 5 | 5-10 | - | - | 5-10 | - | Yes | Poor |
-| a sewer rat | 6 | 9 | 25 | 6-10 | 5-10 | - | - | 15-25 | 5-10 | Yes | Poor |
-| a sewer rat | 36-49 | 52-94 | 66-75 | 16-30 | 35-40 | 25-30 | - | 45-55 | - | No | Meager |
+| a rat | 6 | 9 | 35 | 5 | 5-10 | - | - | 5-10 | - | Yes | [Poor](../systems/loot-tables/monster-packs.md#poor) |
+| a sewer rat | 6 | 9 | 25 | 6-10 | 5-10 | - | - | 15-25 | 5-10 | Yes | [Poor](../systems/loot-tables/monster-packs.md#poor) |
+| a sewer rat | 36-49 | 52-94 | 66-75 | 16-30 | 35-40 | 25-30 | - | 45-55 | - | No | [Meager](../systems/loot-tables/monster-packs.md#meager) |
 | a squirrel | 42-50 | 44-50 | 35 | 5 | 30-34 | 10-14 | 30-35 | 20-25 | 20-25 | Yes | - |
-| a stirge | 55-66 | 91-110 | 91-115 | 26-50 | 35-45 | 15-25 | 15-25 | 60-70 | 40-50 | No | Poor, BatWing |
-| a vampire bat | 55-66 | 91-110 | 91-115 | 26-50 | 35-45 | 15-25 | 15-25 | 60-70 | 40-50 | No | Poor, BatWing |
+| a stirge | 55-66 | 91-110 | 91-115 | 26-50 | 35-45 | 15-25 | 15-25 | 60-70 | 40-50 | No | [Poor](../systems/loot-tables/monster-packs.md#poor), BatWing |
+| a vampire bat | 55-66 | 91-110 | 91-115 | 26-50 | 35-45 | 15-25 | 15-25 | 60-70 | 40-50 | No | [Poor](../systems/loot-tables/monster-packs.md#poor), BatWing |
 | a weasel | 45-50 | 41-48 | 55 | 75 | 45-50 | 10-14 | 30-40 | 21-25 | 20-25 | Yes | - |
-| an albino bat | 55-66 | 91-110 | 91-115 | 26-50 | 35-45 | 15-25 | 15-25 | 60-70 | 40-50 | No | Poor |
+| an albino bat | 55-66 | 91-110 | 91-115 | 26-50 | 35-45 | 15-25 | 15-25 | 60-70 | 40-50 | No | [Poor](../systems/loot-tables/monster-packs.md#poor) |
 
 ## Tameable Members
 

@@ -30,3 +30,7 @@ Gems are precious stones found throughout the world. They are stackable, lightwe
 - **Trade Goods**: Gems can be sold to merchants for gold.
 - **Light Source**: All gems emit a small light (Circle150) when on the ground.
 - **Currency Conversion**: Crystals can be converted to gold at a rate of 5 gold per crystal by double-clicking them in your bank box.
+
+## Sources — Loot Tables
+
+Gems drop from the `Gems` utility pack (always drops one gem). Used in [Monster Packs](../systems/loot-tables/monster-packs.md) (Poor tier) and guaranteed in all [Treasure Packs](../systems/loot-tables/treasure-packs.md). See [Utility Packs — Gems](../systems/loot-tables/utility-packs.md#gems).

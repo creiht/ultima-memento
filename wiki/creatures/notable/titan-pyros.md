@@ -50,6 +50,8 @@ Pyros, the Lord of Flame, is the Titan of Fire from Ultima VIII: Pagan. A primor
 
 ## Loot
 
-- LootPack.FilthyRich
-- LootPack.Rich
-- LootPack.MedScrolls
+- [FilthyRich](../../systems/loot-tables/monster-packs.md#filthyrich)
+- [Rich](../../systems/loot-tables/monster-packs.md#rich)
+- [Med Scrolls](../../systems/loot-tables/utility-packs.md#scrolls)
+
+*Special drops:* `DemonClaw` 10% (demon type). `ChampionSkull` ~11% (Fame ≥ 20,000). See [Special Drops](../../systems/loot-tables/special-drops.md#demon-claw).

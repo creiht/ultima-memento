@@ -215,3 +215,7 @@ Artifacts are unique named items with powerful fixed properties. See [artifacts/
 - [Potions](potions.md) — alchemy products using reagents
 - [Relics](relics.md) — collectible dungeon treasure
 - [Magic Systems](../../magic/) — individual spell school documentation
+
+## Sources — Loot Tables
+
+Scrolls drop from [Low](../systems/loot-tables/utility-packs.md#scrolls), [Med](../systems/loot-tables/utility-packs.md#scrolls), and [High](../systems/loot-tables/utility-packs.md#scrolls) Scroll utility packs included in all [Treasure Packs](../systems/loot-tables/treasure-packs.md). See [Utility Packs — Scrolls](../systems/loot-tables/utility-packs.md#scrolls).

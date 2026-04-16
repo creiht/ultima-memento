@@ -116,3 +116,10 @@ Barding that can be equipped on mounts for additional protection.
 ## Material Bonuses
 
 Armor crafted from different materials receives bonus resistances. See the [Armor Guide](armor-guide.md) for complete material bonus tables.
+
+## Sources — Loot Tables
+
+Armor drops as part of the magic item pools in every loot pack. See:
+- [Magic Item Pools](../systems/loot-tables/magic-item-pools.md) — armor is the most common item type in all pools
+- [Monster Packs](../systems/loot-tables/monster-packs.md) — creature body-drop tiers
+- [Treasure Packs](../systems/loot-tables/treasure-packs.md) — chest loot tiers

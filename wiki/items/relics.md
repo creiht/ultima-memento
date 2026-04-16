@@ -58,3 +58,7 @@ When double-clicked after identification, crystal balls show a random vision (a 
 ## Home Decoration
 
 Many relics (paintings, banners, rugs, statues, candelabras) function as home decorations and can be placed in player houses. Bear rug relics are full addon pieces. Light relics are functional light sources.
+
+## Sources — Loot Tables
+
+Relics (DDRelic* items) drop from the [Semi-Artifact pool](../systems/loot-tables/artifact-pools.md#semi-artifacts) which is included in Rich and higher monster packs. Named relics also appear in the `RandomSArty()` pool.

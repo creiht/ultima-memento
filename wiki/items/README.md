@@ -1,6 +1,6 @@
 # Items Overview
 
-This section documents all item categories available in Ultima Memento. Items are found throughout the world via crafting, looting, questing, and purchasing from merchants.
+This section documents all item categories available in Ultima Memento. Items are found throughout the world via crafting, looting, questing, and purchasing from merchants. For details on how items drop from creatures and chests, see [Loot Tables](../systems/loot-tables/README.md).
 
 ## Item Categories
 

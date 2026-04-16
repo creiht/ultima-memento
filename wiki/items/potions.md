@@ -156,3 +156,7 @@ Potions are crafted using the **Alchemy** skill at a heat source with the approp
 - [Alchemy](../../crafting/) — crafting skill for potions
 - [Poisoning](../../skills/) — applying poisons to weapons
 - [Healing](../../skills/) — uses bandages rather than potions
+
+## Sources — Loot Tables
+
+Potions drop from [Low](../systems/loot-tables/utility-packs.md#lowpotions), [Med](../systems/loot-tables/utility-packs.md#medpotions), and [High](../systems/loot-tables/utility-packs.md#highpotions) Potion utility packs, included in every monster and treasure pack tier. See [Utility Packs](../systems/loot-tables/utility-packs.md#potions).

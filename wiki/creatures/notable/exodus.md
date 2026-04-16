@@ -49,8 +49,8 @@ Exodus is a legendary being — part machine, part daemon — originally created
 
 ## Loot
 
-- LootPack.FilthyRich
-- LootPack.Rich
+- [FilthyRich](../../systems/loot-tables/monster-packs.md#filthyrich)
+- [Rich](../../systems/loot-tables/monster-packs.md#rich)
 - IronIngot
 - PowerCrystal
 - ArcaneGem

@@ -50,6 +50,6 @@ Hydros, the Lurker, is the Titan of Water from Ultima VIII: Pagan. A primordial 
 
 ## Loot
 
-- LootPack.FilthyRich
-- LootPack.Rich
-- LootPack.HighPotions
+- [FilthyRich](../../systems/loot-tables/monster-packs.md#filthyrich)
+- [Rich](../../systems/loot-tables/monster-packs.md#rich)
+- [High Potions](../../systems/loot-tables/utility-packs.md#highpotions)

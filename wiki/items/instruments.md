@@ -47,3 +47,7 @@ Instruments are crafted via **Carpentry** (wood instruments) or **Tinkering** (m
 - Craft via Carpentry or Tinkering
 - Purchase from bard shops and music vendors
 - Loot from monsters and treasure chests
+
+## Sources — Loot Tables
+
+Instruments drop directly from monster and treasure packs as a small-chance bonus entry (0.04–8% depending on tier). See [Monster Packs](../systems/loot-tables/monster-packs.md) and [Utility Packs — Music](../systems/loot-tables/utility-packs.md#music).

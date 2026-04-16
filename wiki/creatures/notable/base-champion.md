@@ -16,7 +16,7 @@ All champion bosses inherit from `BaseChampion`, which provides:
 - **Artifact Reward Chance** — Chance to drop artifact items
 - **Treasure Chest Reward Chance** — Chance to spawn a treasure chest
 
-Champions can drop decorative items (monster statuettes, tiles) and Power Scrolls as special rewards.
+Champions can drop decorative items (monster statuettes, tiles) and Power Scrolls as special rewards. For full reward details, see [Champion Rewards](../../systems/loot-tables/champion-rewards.md).
 
 ## Champion Bosses
 

@@ -92,3 +92,9 @@ Light sources play a sound effect when equipped/unequipped and allow spell casti
 |------|--------|------------|---------------|
 | Old Sword Talisman | 1.0 | +25 Alchemy, +5 Regen Hits, +5 Regen Stam, +20 Bonus Hits, -50 Mana | Special quest/reward, owner-bound |
 | Barbaric Talisman | 1.0 | +80 Camping, +50 Cooking | Savage encounters, owner-bound |
+
+## Sources — Loot Tables
+
+Trinkets (rings, bracelets, earrings, necklaces) drop as part of the magic item pools. See:
+- [Magic Item Pools](../systems/loot-tables/magic-item-pools.md) — trinket weights per pool tier
+- [Monster Packs](../systems/loot-tables/monster-packs.md) and [Treasure Packs](../systems/loot-tables/treasure-packs.md)

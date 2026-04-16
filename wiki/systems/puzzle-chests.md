@@ -22,7 +22,7 @@ Puzzle chests are locked containers found on pedestals throughout the world. To 
 
 ## Rewards
 
-Successfully solving the puzzle releases the chest, and you take it and its contents. The treasure inside varies based on the chest's level and location.
+Successfully solving the puzzle releases the chest, and you take it and its contents. The treasure inside varies based on the chest's level and location — see [Chest Containers](loot-tables/chest-containers.md) for full details on how levels map to treasure tiers.
 
 ## Requirements
 

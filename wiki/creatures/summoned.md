@@ -17,7 +17,7 @@ Summoned creatures are magically conjured beings that serve their summoner tempo
 | a blade spirit | 160 | 150 | 150 | 100 | 30-40 | 40-50 | 30-40 | 100 | 20-30 | No | - |
 | a blade spirit | - | 150 | 150 | 100 | 30-40 | 40-50 | 30-40 | 100 | 20-30 | No | - |
 | a death vortex | 200 | 200 | 200 | 100 | 40-50 | 40-50 | 40-50 | 40-50 | 40-50 | No | - |
-| a fairy | 118-135 | 196-225 | 196-225 | 196-225 | 35-45 | 20-40 | 10-30 | 5-10 | 50-70 | No | Rich, Average |
+| a fairy | 118-135 | 196-225 | 196-225 | 196-225 | 35-45 | 20-40 | 10-30 | 5-10 | 50-70 | No | [Rich](../systems/loot-tables/monster-packs.md#rich), [Average](../systems/loot-tables/monster-packs.md#average) |
 | a fire elemental | - | 200 | 200 | 100 | 50-60 | 70-80 | 0-10 | 50-60 | 50-60 | No | - |
 | a fire elemental | - | 300 | 300 | 200 | 60-70 | 80-90 | 0-10 | 60-70 | 60-70 | No | - |
 | a manure golem | 76-93 | 126-155 | 66-85 | 71-92 | 30-35 | 10-20 | 10-20 | 15-25 | 15-25 | No | - |

@@ -48,6 +48,6 @@ The Bane of Insanity is one of the three Banes — a maddening entity that drive
 
 ## Loot
 
-- LootPack.FilthyRich
-- LootPack.Average
-- LootPack.Rich
+- [FilthyRich](../../systems/loot-tables/monster-packs.md#filthyrich)
+- [Average](../../systems/loot-tables/monster-packs.md#average)
+- [Rich](../../systems/loot-tables/monster-packs.md#rich)

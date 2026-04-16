@@ -13,3 +13,4 @@ An index of the major game systems in Ultima Memento.
 | [Taxidermy](taxidermy.md) | Mount creature heads and stuff animal corpses as decorative trophies |
 | [Temptations](temptations.md) | Permanent gameplay modifiers that grant powerful benefits at the cost of significant drawbacks |
 | [Puzzle Chests](puzzle-chests.md) | Solve a color-coded cylinder puzzle to unlock guarded treasure chests |
+| [Loot Tables](loot-tables/README.md) | All loot systems: monster packs, treasure chests, special drops, champion rewards, paragon drops, and fishing loot |

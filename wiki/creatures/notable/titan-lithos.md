@@ -43,4 +43,4 @@ Lithos, the Mountain King, is the Titan of Earth from Ultima VIII: Pagan. A prim
 
 ## Loot
 
-- LootPack.FilthyRich
+- [FilthyRich](../../systems/loot-tables/monster-packs.md#filthyrich)

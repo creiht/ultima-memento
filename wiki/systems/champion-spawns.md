@@ -32,14 +32,15 @@ Champion spawns are large-scale PvE encounters where players fight through escal
 
 ## Rewards
 
-Rewards scale with the spawn's **size** and **difficulty** settings:
+Rewards scale with the spawn's **size** and **difficulty** settings. See [Champion Rewards](loot-tables/champion-rewards.md) for full formulas.
 
-- **Gold**: Base 30 % chance, scaling up to 100 % with higher difficulty and size.
-- **Boss item**: 100 % drop chance.
-- **Artifact**: 0–100 % chance depending on difficulty and size; awarded to a random participant weighted by damage dealt.
-- **Power Scrolls**: 2–10 scrolls depending on difficulty and size.
-- **Treasure Chest**: 0–100 % chance depending on difficulty and size.
-- **Scrolls of Transcendence**: 0.1 % chance per creature kill during the spawn (level 1–5, random).
+- **Gold**: `25 + 10×difficulty + 5×size` % chance, cap 100%. Scatters in a 12-tile radius around the boss.
+- **Boss item**: 100% drop chance. A random magic item enchanted at maximum level (500), labeled *Belonged to: [BossName]*.
+- **Artifact**: `10×difficulty + 5×size` % chance; from [Artifact pool](loot-tables/artifact-pools.md#artifacts).
+- **Power Scrolls**: `1 + difficulty + size÷3` scrolls distributed to participants (levels 5/10/15/20/25 at 35/30/20/10/5%).
+- **Treasure Chest**: `20×difficulty + 10×size` % chance; a level-10 chest ([TMegaRich tier](loot-tables/chest-containers.md)).
+- **Boss body loot**: [UltraRich](loot-tables/monster-packs.md#ultrarich) ×3 (varies by boss — check individual boss pages).
+- **Hoard Minion Familiar**: 100% guaranteed drop.
 
 ## Useful Slayer Weapons
 

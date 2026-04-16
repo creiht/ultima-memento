@@ -1,6 +1,6 @@
 # Creatures
 
-A comprehensive guide to all creature families in Ultima Memento. Each creature belongs to one of 22 families.
+A comprehensive guide to all creature families in Ultima Memento. Each creature belongs to one of 22 families. Loot pack tiers (Poor, Rich, FilthyRich, etc.) are documented in [Loot Tables](../systems/loot-tables/README.md).
 
 [Back to Wiki Index](../README.md)
 

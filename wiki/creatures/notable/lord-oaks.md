@@ -52,4 +52,11 @@ Lord Oaks is a Champion Boss who leads the Forest Lord champion spawn. A powerfu
 
 ## Loot
 
-- LootPack.UltraRich
+Body loot (`GenerateLoot`): [UltraRich](../../systems/loot-tables/monster-packs.md#ultrarich) ×3 (three independent rolls)
+
+**Champion Rewards** (see [Champion Rewards](../../systems/loot-tables/champion-rewards.md)):
+- Guaranteed: Boss item (max-enchant, level 500), `HoardMinionFamiliarItem`, power scrolls
+- 30% chance: Thematic DecorativeList item (see source)
+- Scales with spawn size and difficulty: gold scatter, extra artifact, treasure chest
+
+*Special drops:* `ChampionSkull` ~10% (Fame ≥ 20,000)

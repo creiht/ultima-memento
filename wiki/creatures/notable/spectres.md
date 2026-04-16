@@ -49,6 +49,6 @@ Spectres are powerful undead spirits — ghostly manifestations that haunt the l
 
 ## Loot
 
-- LootPack.Rich
-- LootPack.MedScrolls
+- [Rich](../../systems/loot-tables/monster-packs.md#rich)
+- [Med Scrolls](../../systems/loot-tables/utility-packs.md#scrolls)
 - GnarledStaff

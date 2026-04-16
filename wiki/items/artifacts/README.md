@@ -70,3 +70,7 @@ The Sage uses **70% legend accuracy** — occasionally the hint may be slightly 
 | [Trinkets](trinkets.md) | 3 | Talismans |
 | [Minor](minor.md) | 12 | Utility and flavor artifacts |
 | **Total** | **354** | |
+
+## Loot Drop Chances
+
+Artifacts drop randomly from the `m_ArtyTypes` pool (~384 entries) via `Loot.RandomArty()`. See [Artifact Pools](../../systems/loot-tables/artifact-pools.md) for the full drop-chance table by loot tier and source (monster packs, paragons, champion rewards).

@@ -27,28 +27,31 @@ Containers are items that hold other items. They range from player backpacks and
 
 ## Loot Containers (World)
 
-| Container | Where Found | Notes |
-|-----------|-------------|-------|
-| Dungeon Chest | Dungeons | Contains leveled loot, may be trapped/locked |
-| Treasure Chest | Various | Standard loot container |
-| Treasure Map Chest | Dug up via treasure maps | Contains valuable loot scaled by map level |
-| Land Chest | Overworld | Random loot container found in wilderness |
-| Pirate Chest | Ships, sea encounters | Nautical-themed loot |
-| Sunken Chest | Underwater/fishing | Retrieved by fishing or diving |
-| Sunken Bag | Underwater/fishing | Smaller underwater loot container |
-| Water Chest | Coastal areas | Found near water |
-| Grave Chest | Graveyards | Found in graveyards and crypts |
-| Hidden Chest | Various | Concealed containers requiring detection |
-| Hidden Box | Various | Small concealed container |
-| Paragon Chest | Paragon creatures | Dropped by paragon-level monsters |
-| Inn Chest | Inns | Found in inn rooms |
-| Food Chest | Kitchens, dining areas | Contains food items |
-| Corpse Chest | Various | Lootable remains |
-| Bone Container | Dungeons, graveyards | Skeletal-themed container |
-| Buried Body / Buried Chest | Underground | Discovered via digging |
-| Dust Pile | Various | Small loot pile |
-| Gypsy Shelf | Gypsy camps | Themed container |
-| Loot Bag | Monster drops | Standard loot drop container |
+See [Chest Containers](../systems/loot-tables/chest-containers.md) for how chest levels map to treasure tiers.
+
+| Container | Where Found | Loot Table | Notes |
+|-----------|-------------|-----------|-------|
+| Dungeon Chest | Dungeons | [Level 1–10](../systems/loot-tables/chest-containers.md) | May be trapped/locked |
+| Treasure Chest | Various | [Level 1–10](../systems/loot-tables/chest-containers.md) | Standard loot container |
+| Treasure Map Chest | Dug up via treasure maps | [Multi-fill by map level](../systems/loot-tables/chest-containers.md#treasure-map-chests) | Filled 1–4+ times based on map level |
+| Land Chest | Overworld | [Level 1–6](../systems/loot-tables/chest-containers.md) | Found in wilderness |
+| Pirate Chest | Ships, sea encounters | [Level 1–5](../systems/loot-tables/chest-containers.md) | Nautical-themed |
+| Sunken Chest | Underwater/fishing | [Level 1–5](../systems/loot-tables/chest-containers.md) | Retrieved by fishing or diving |
+| Sunken Bag | Underwater/fishing | [Level 1–3](../systems/loot-tables/chest-containers.md) | Smaller container |
+| Water Chest | Coastal areas | [Level 1–4](../systems/loot-tables/chest-containers.md) | Found near water |
+| Grave Chest | Graveyards | [Level 1–4](../systems/loot-tables/chest-containers.md) | Graveyards and crypts |
+| Hidden Chest | Various | [Level 1–8](../systems/loot-tables/chest-containers.md) | Requires detection |
+| Hidden Box | Various | [Level 1–5](../systems/loot-tables/chest-containers.md) | Small concealed container |
+| Paragon Chest | Paragon creatures | [Paragon level](../systems/loot-tables/paragon-drops.md) | Dropped by paragons (10% chance) |
+| Inn Chest | Inns | [Level 1–3](../systems/loot-tables/chest-containers.md) | Found in inn rooms |
+| Food Chest | Kitchens, dining areas | — | Contains food items |
+| Corpse Chest | Dragon/large creature drops | [Level 1–10](../systems/loot-tables/special-drops.md#corpse-chests-dragon--sea-creature) | Fame-based drop from DropRelic |
+| Corpse Sailor | Sea creature drops | [Level 1–10](../systems/loot-tables/special-drops.md#corpse-chests-dragon--sea-creature) | Fame-based sea creature drop |
+| Bone Container | Dungeons, graveyards | [Level 1–4](../systems/loot-tables/chest-containers.md) | Skeletal-themed |
+| Buried Body / Buried Chest | Underground | [Level 1–5](../systems/loot-tables/chest-containers.md) | Discovered via digging |
+| Dust Pile | Various | [Level 1–2](../systems/loot-tables/chest-containers.md) | Small loot pile |
+| Gypsy Shelf | Gypsy camps | [Level 1–3](../systems/loot-tables/chest-containers.md) | Themed container |
+| Loot Bag | Monster drops | — | Standard loot drop container |
 
 ## Container Features
 

@@ -49,5 +49,11 @@ Neira the Necromancer is a Champion Boss who leads the Unholy Terror champion sp
 
 ## Loot
 
-- LootPack.UltraRich
-- LootPack.Meager
+Body loot (`GenerateLoot`): [UltraRich](../../systems/loot-tables/monster-packs.md#ultrarich) ×3, [Meager](../../systems/loot-tables/monster-packs.md#meager)
+
+**Champion Rewards** (see [Champion Rewards](../../systems/loot-tables/champion-rewards.md)):
+- Guaranteed: Boss item (max-enchant, level 500), `HoardMinionFamiliarItem`, power scrolls
+- 30% chance: Thematic DecorativeList item (see source)
+- Scales with spawn size and difficulty: gold scatter, extra artifact, treasure chest
+
+*Special drops:* `ChampionSkull` ~10% (Fame ≥ 20,000)

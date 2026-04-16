@@ -30,3 +30,7 @@ All quivers share these base stats:
 - **Damage Increase**: Quivers can potentially provide a damage increase bonus to ranged attacks.
 - **Lower Ammo Cost**: Some quivers may reduce ammunition consumption.
 - **Craftable**: Quivers can be crafted via the Bowcraft skill and benefit from material bonuses.
+
+## Sources — Loot Tables
+
+Quivers drop as a small-chance bonus entry in monster and treasure packs (0.02–6% depending on tier). See [Monster Packs](../systems/loot-tables/monster-packs.md) and [Magic Item Pools](../systems/loot-tables/magic-item-pools.md).

@@ -50,5 +50,5 @@ Shadowlords are the three dark lords from Ultima V — manifestations of the ant
 
 ## Loot
 
-- LootPack.FilthyRich
-- LootPack.Rich
+- [FilthyRich](../../systems/loot-tables/monster-packs.md#filthyrich)
+- [Rich](../../systems/loot-tables/monster-packs.md#rich)
