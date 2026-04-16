@@ -8,6 +8,11 @@ Blacksmithy is the art of forging metal weapons, armor, and shields at an anvil 
 - **Facility Required**: Anvil and Forge (within 2 tiles)
 - **Supports**: Repair, Breakdown, Enhancement
 
+## Materials
+
+Blacksmithy uses **Metal Ingots** across 16 standard tiers (Iron → Dwarven) plus 16 Sci-Fi metal tiers. Higher tiers require higher Blacksmithing skill and confer better stat bonuses on crafted items. Full tier tables, hues, stat bonuses, and source information are on the [Mining](mining.md) page.
+
+
 ## Metal Tiers
 
 Iron, Dull Copper, Shadow Iron, Copper, Bronze, Gold, Agapite, Verite, Valorite, Nepturite, Obsidian, Steel, Brass, Mithril, Xormite, Dwarven

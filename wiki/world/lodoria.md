@@ -55,6 +55,21 @@ Lodoria is a vast continent featuring many classic Ultima Online dungeons alongs
 
 Skara Brae is a quest-driven area located on the Lodoria map. It has special entry requirements and quest objectives that must be completed before characters can leave. A warning is displayed before entering.
 
+## Special Materials & Harvests
+
+| Resource | Details |
+|---|---|
+| Standard Ore (Iron–Valorite) | Available at any mountain or cave wall |
+| Standard Wood (Regular–Walnut) | Available at any tree |
+| **Ebony wood** | Chopping Ash/Cherry/Golden Oak/Hickory/Mahogany in **NecromancerRegion** dungeons (e.g. Castle of Dracula, Crypts of Dracula) replaces those tiers with Ebony |
+| **Ghostwood** | Chopping Oak/Pine/Rosewood/Walnut in NecromancerRegion dungeons replaces those tiers with Ghostwood |
+
+Any dungeon flagged as a `NecromancerRegion` in the region system will trigger the Ebony/Ghostwood wood mutation. Bring your axe into undead-heavy dungeons if you need these premium woods.
+
+For Lodoria shipwreck fishing coordinates, see [Fishing](../crafting/fishing.md).
+
+See also: [Grave Robbing](../crafting/grave-robbing.md) — graves in Lodoria dungeons are valid sites.
+
 ## Unique Features
 
 - **Classic UO Dungeons**: Many of the original Ultima Online dungeons (Covetous, Deceit, Despise, Destard, Hythloth, Shame, Wrong) are located here

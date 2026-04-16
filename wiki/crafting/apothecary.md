@@ -5,6 +5,7 @@ The Apothecary is an advanced alchemy profession that creates powerful potions f
 - **Skill**: Alchemy (minimum 70.0)
 - **Tool**: Mortar and Pestle
 - **Primary Resources**: Rare creature reagents, Bottles
+- **Materials Note**: Bottles are crafted via [Glassblowing](glassblowing.md) using **Sand** from beach mining; see [Mining](mining.md) for sand harvest details.
 - **Location Requirement**: Savaged Empire apothecary workshop
 
 ## Invisibility Potions

@@ -8,7 +8,34 @@ Masonry (Stone Working) creates stone furniture, statues, containers, and tombst
 - **Prerequisite**: Must learn Masonry from a special book
 - **Supports**: Breakdown
 
-## Granite Types
+## Materials
+
+Masonry uses **Granite** — each granite tier corresponds to the same ore tier mined in [Mining](mining.md). Granite is produced when Mining at 100+ skill with the Stone Mining toggle enabled (10% chance per swing).
+
+### Granite Tier Reference
+
+| Granite | Corresponding Ore | Source Region |
+|---|---|---|
+| Standard (Iron) | Iron | Any mining tile |
+| Dull Copper | Dull Copper | Any mining tile |
+| Shadow Iron | Shadow Iron | Any mining tile |
+| Copper | Copper | Any mining tile |
+| Bronze | Bronze | Any mining tile |
+| Gold | Gold | Any mining tile |
+| Agapite | Agapite | Any mining tile |
+| Verite | Verite | Any mining tile |
+| Valorite | Valorite | Any mining tile |
+| Nepturite | Nepturite | Sea areas / Shipwreck Grotto / Barnacled Cavern |
+| Obsidian | Obsidian | Serpent Island |
+| Steel | Steel | Savaged Empire |
+| Brass | Brass | Umber Veil |
+| Mithril | Mithril | Underworld (non-Savaged maps) |
+| Xormite | Xormite | Underworld (Savaged Empire map) |
+| Dwarven | Dwarven | Rich Vein nodes only |
+
+Full ore/granite tier stats are on the [Mining](mining.md) page.
+
+## Granite Types (legacy list)
 
 Standard, Dull Copper, Shadow Iron, Copper, Bronze, Gold, Agapite, Verite, Valorite, Nepturite, Obsidian, Steel, Brass, Mithril, Xormite, Dwarven
 

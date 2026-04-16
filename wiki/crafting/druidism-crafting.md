@@ -5,6 +5,7 @@ Druidic Herbalism creates nature-themed brews and concoctions. This is distinct 
 - **Skill**: Druidism (primary), Veterinary (secondary)
 - **Tool**: Druid's Cauldron
 - **Primary Resources**: Exotic Reagents, Standard Reagents, Jars
+- **Materials Note**: Jars are crafted via [Glassblowing](glassblowing.md) using **Sand** (see [Mining](mining.md)); Bark Fragments are a [Lumberjacking](lumberjacking.md) bonus drop used in some druid recipes.
 
 ## Brews
 

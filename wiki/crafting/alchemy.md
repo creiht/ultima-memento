@@ -5,6 +5,7 @@ Alchemy is the art of brewing potions, elixirs, and mixtures from reagents.
 - **Skill**: Alchemy
 - **Tool**: Mortar and Pestle
 - **Primary Resources**: Reagents, Empty Bottles, Empty Jars
+- **Materials Note**: Empty bottles are crafted via [Glassblowing](glassblowing.md) from **Sand** (mined at beaches — see [Mining](mining.md)); jars are also Glassblowing products.
 
 ## Potions
 

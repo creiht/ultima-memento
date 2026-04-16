@@ -7,6 +7,10 @@ Shelves crafting creates storage furniture including armoires, cabinets, chests,
 - **Primary Resource**: Wood (Boards)
 - **Supports**: Breakdown
 
+## Materials
+
+Shelves uses **Wood Boards** (Regular → Elven, plus Sci-Fi woods). Full wood tier details, hues, and sources are on the [Lumberjacking](lumberjacking.md) page.
+
 ## Wood Types
 
 Regular, Ash, Cherry, Ebony, Golden Oak, Hickory, Mahogany, Oak, Pine, Ghost, Rosewood, Walnut, Petrified, Driftwood, Elven

@@ -5,6 +5,7 @@ Cooking prepares food from raw ingredients. Some recipes require an oven or heat
 - **Skill**: Cooking
 - **Tool**: Culinary Set
 - **Primary Resources**: Various raw foods, dough, flour
+- **Materials Note**: Raw fish (from [Fishing](fishing.md)) is used in sushi and miso soup recipes; jars and bottles for sauces/mixtures come from [Glassblowing](glassblowing.md).
 
 ## Ingredients
 

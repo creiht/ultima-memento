@@ -5,6 +5,7 @@ Witchery (Witch Brewing) creates dark brews and concoctions for necromantic purp
 - **Skill**: Forensics (primary), Necromancy (secondary)
 - **Tool**: Witch's Cauldron
 - **Primary Resources**: Witch Reagents (from undead/dark creatures), Standard Reagents, Jars
+- **Materials Note**: Jars come from [Glassblowing](glassblowing.md) (Sand → Glass, see [Mining](mining.md)); **Grave Dust** used in some witch recipes comes from [Grave Robbing](grave-robbing.md).
 
 ## Brews
 

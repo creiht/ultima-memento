@@ -5,6 +5,7 @@ Inscription covers scribing spell scrolls and creating books. Scribes can write 
 - **Skill**: Inscription
 - **Tool**: Scribe's Pen
 - **Primary Resources**: Blank Scrolls, Reagents, Leather, Beeswax
+- **Materials Note**: Blank Scrolls come from [Lumberjacking](lumberjacking.md) (Bark Fragments → crafted scrolls via Cartography), or from the lumberjacking bonus drop; Leather covers use standard [Leatherworking](leatherworking.md) hides.
 - **Supports**: Breakdown, Enhancement
 
 ## Spell Scrolls

@@ -5,6 +5,7 @@ Wax Crafting creates candles, wax polish, encaustic paintings, and wax sculpture
 - **Skill**: Cooking
 - **Tool**: Wax Crafting Pot
 - **Primary Resource**: Beeswax
+- **Materials Note**: Beeswax comes from beekeeping (Apiculture system); some wax recipes also use **Feathers** (carved from birds/harpies via skinning knife) and [Leather](leatherworking.md) scraps.
 - **Supports**: Breakdown
 
 ## Candles

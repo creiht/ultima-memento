@@ -2,6 +2,21 @@
 
 Ultima Memento features 85+ dungeons spread across all lands. Dungeons contain monsters, treasure chests, traps, and unique challenges. Monster difficulty scales based on the dungeon's tier rating.
 
+## Special Material Behaviour by Dungeon
+
+Certain dungeons have unique harvesting properties:
+
+| Dungeon | Land | Special Material | Notes |
+|---|---|---|---|
+| the Mines of Morinia | Sosaria (1022, 1369) | +66% ore yield | 2-in-3 chance of using the boosted harvest formula per swing |
+| Any **NecromancerRegion** dungeon | Various | Ebony / Ghostwood wood | Chopping lower-tier wood (Ash/Cherry/GoldenOak/Hickory/Mahogany) → Ebony; higher-tier (Oak/Pine/Rosewood/Walnut) → Ghostwood |
+| the Castle of Dracula | Lodoria (466, 3794) | Ebony / Ghostwood wood | Necromancer-themed — likely NecromancerRegion flagged |
+| the Crypts of Dracula | Lodoria (466, 3794) | Ebony / Ghostwood wood | Necromancer-themed — likely NecromancerRegion flagged |
+| Any Underworld dungeon | Underworld | Mithril ore, Petrified wood | All ore mutations → Mithril; all wood → Petrified (except on SE map → Xormite) |
+| the Ancient Sky Ship | Underworld (66, 561) | All Sci-Fi materials | Droids/alien creatures drop sci-fi metals, leathers, scales, bones, woods |
+
+> NecromancerRegion dungeons are identified by the region class `NecromancerRegion`. The Castle/Crypts of Dracula are listed as likely candidates; confirm by testing wood-chopping in those areas.
+
 ## Dungeon Mechanics
 
 - **Line of Sight**: When enabled, creatures in dungeons are hidden behind walls and doors until they detect you

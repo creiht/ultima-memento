@@ -7,6 +7,10 @@ Tinkering creates tools, parts, jewelry, utensils, wizard weapons, and miscellan
 - **Primary Resource**: Metal Ingots, Wood (Boards)
 - **Supports**: Repair, Breakdown, Enhancement
 
+## Materials
+
+Tinkering uses **Metal Ingots** (Iron through Dwarven, plus Sci-Fi metals) and **Wood Boards** (Regular through Elven, plus Sci-Fi woods). Full tier tables, hues, stat bonuses, and harvest sources are on the [Mining](mining.md) and [Lumberjacking](lumberjacking.md) pages.
+
 ## Metal Tiers
 
 Iron, Dull Copper, Shadow Iron, Copper, Bronze, Gold, Agapite, Verite, Valorite, Nepturite, Obsidian, Steel, Brass, Mithril, Xormite, Dwarven

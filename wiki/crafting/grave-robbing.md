@@ -41,7 +41,11 @@ At higher levels, you have a chance to find relics (~2% each):
 
 ## Uses
 
-- Bones are used in Bonecrafting
-- Grave Dust is a Necromancy reagent
-- Fertile Dirt is useful for gardening
-- Relics are valuable collectibles
+- **Bones** (raw) are the **Brittle** tier starting material for [Bonecrafting](bonecrafting.md). Bring them to a bonecrafting tool to carve armor.
+- **Grave Dust** is a Necromancy reagent
+- **Fertile Dirt** is useful for gardening
+- **Relics** are valuable collectibles
+
+## See Also
+
+- [Bonecrafting](bonecrafting.md) — full tier table for Brittle and all higher skeletal materials

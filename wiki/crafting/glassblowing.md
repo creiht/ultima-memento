@@ -6,6 +6,10 @@ Glassblowing creates bottles, jars, flasks, and decorative glass items. Requires
 - **Tool**: Blowpipe
 - **Primary Resource**: Sand (mined from beaches)
 - **Facility Required**: Forge
+
+## Materials
+
+Glassblowing uses **Sand**, which is mined from beach tiles with a Pickaxe or Spade at 100.0+ Mining skill with the Sand Mining toggle enabled. Banks hold 6–12 sand and respawn every 10–20 minutes. See [Mining](mining.md) for full details.
 - **Prerequisite**: Must learn Glassblowing from a special book
 
 ## Craftable Items

@@ -52,6 +52,24 @@ Monster difficulty scales by dungeon tier:
 
 The difficulty increase affects creature attributes, skills, fame, karma, statistics, taming requirements, and gold drops.
 
+## Region-Locked Premium Materials
+
+Certain premium crafting materials can only be obtained in specific facets or regions. See [crafting/README.md](../crafting/README.md) for complete material tier details.
+
+| Facet / Region | Premium Material | Notes |
+|---|---|---|
+| Sea exploration + Shipwreck Grotto / Barnacled Cavern | Nepturite ore, Driftwood logs | Mine Agapite/Verite/Valorite veins in sea regions for 50% mutation chance |
+| Serpent Island | Obsidian ore | 50% mutation on Agt/Ver/Val veins |
+| Savaged Empire | Steel ore | 50% mutation on Agt/Ver/Val veins |
+| Umber Veil (Sosaria sub-region) | Brass ore | 50% mutation on Agt/Ver/Val veins |
+| Underworld (Sosaria/Lodoria/IslesDread/Serpent maps) | Mithril ore, Petrified wood | All Agt/Ver/Val mutations; all non-Regular wood mutations |
+| Underworld (Savaged Empire map) | Xormite ore | 50% mutation on Agt/Ver/Val veins |
+| NecromancerRegion dungeons (various maps) | Ebony wood (lower tiers), Ghostwood (higher tiers) | Triggered by region type on wood chop |
+| Isles of Dread | Boosted ore & wood yield | ConsumedPerIslesDreadHarvest: base + ceil(base/2) + 2 |
+| the Mines of Morinia (Sosaria) | +66% ore yield | 2-in-3 chance of boosted harvest per swing |
+| Kuldar + ancient sky ship (Sosaria) | Sci-Fi metals, leathers, scales, bones, woods | Dropped by droids and alien creatures |
+
 ## See Also
 
 - [Dungeons](dungeons.md) — Complete dungeon listing by land
+- [Crafting Systems](../crafting/README.md) — All crafting professions and material tiers

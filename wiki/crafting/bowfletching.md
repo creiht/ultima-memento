@@ -7,6 +7,10 @@ Bow Fletching covers crafting bows, crossbows, ammunition, and related wood item
 - **Primary Resource**: Wood (Boards), Feathers, Shafts
 - **Supports**: Repair, Breakdown, Enhancement
 
+## Materials
+
+Bow Fletching uses **Wood Boards** (Regular → Elven, plus Sci-Fi woods) and **Feathers** (from bird/harpy/chicken creature carves). Full wood tier tables, hues, and sources are on the [Lumberjacking](lumberjacking.md) page.
+
 ## Wood Types
 
 Regular, Ash, Cherry, Ebony, Golden Oak, Hickory, Mahogany, Oak, Pine, Ghost, Rosewood, Walnut, Petrified, Driftwood, Elven

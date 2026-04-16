@@ -7,6 +7,10 @@ Carpentry covers crafting furniture, wooden weapons, instruments, and crafting s
 - **Primary Resource**: Wood (Boards)
 - **Supports**: Repair, Breakdown, Enhancement
 
+## Materials
+
+Carpentry uses **Wood Boards** across 15 standard tiers (Regular → Elven) plus 8 Sci-Fi wood tiers. Higher tiers require higher Carpentry skill and improve item stats. Full tier tables, hues, stat bonuses, and harvest sources are on the [Lumberjacking](lumberjacking.md) page.
+
 ## Wood Types
 
 Regular, Ash, Cherry, Ebony, Golden Oak, Hickory, Mahogany, Oak, Pine, Ghost, Rosewood, Walnut, Petrified, Driftwood, Elven

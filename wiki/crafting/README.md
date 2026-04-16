@@ -49,14 +49,37 @@ Ultima Memento features an extensive crafting system with over 20 professions, m
 
 Many crafting professions support multiple material tiers that unlock at higher skill levels. Using higher-tier materials generally produces items with better stats. The material tiers vary by resource type:
 
-- **Metals**: Iron, Dull Copper, Shadow Iron, Copper, Bronze, Gold, Agapite, Verite, Valorite, Nepturite, Obsidian, Steel, Brass, Mithril, Xormite, Dwarven
-- **Wood**: Regular, Ash, Cherry, Ebony, Golden Oak, Hickory, Mahogany, Oak, Pine, Ghost, Rosewood, Walnut, Petrified, Driftwood, Elven
-- **Leather**: Regular, Horned, Barbed, Necrotic, Volcanic, Frozen, Spined, Goliath, Draconic, Hellish, Dinosaur, Alien
-- **Fabric**: Regular, Furry, Wooly, Silk, Haunted, Arctic, Pyre, Venomous, Mysterious, Vile, Divine, Fiendish
-- **Scales**: Red, Yellow, Black, Green, White, Blue, Dinosaur, Metallic, Brazen, Umber, Violet, Platinum, Cadalyte
-- **Bones**: Brittle, Drow, Orc, Reptile, Ogre, Troll, Gargoyle, Minotaur, Lycan, Shark, Colossal, Mystical, Vampire, Lich, Sphinx, Devil, Draco, Xeno
-- **Skins**: Demon, Dragon, Nightmare, Snake, Troll, Unicorn, Icy, Lava, Seaweed, Dead
-- **Gemstone Blocks**: Amethyst, Emerald, Garnet, Ice, Jade, Marble, Onyx, Quartz, Ruby, Sapphire, Silver, Spinel, Star Ruby, Topaz, Caddellite
+- **Metals** (16 standard + 16 sci-fi): Iron → Dwarven, plus Agrinium/Beskar/Carbonite/Cortosis/Durasteel/Durite/Farium/Laminasteel/Neuranium/Phrik/Promethium/Quadranium/Songsteel/Titanium/Trimantium/Xonolite → see [Mining](mining.md)
+- **Wood** (15 standard + 8 sci-fi): Regular → Elven, plus Borl/Cosian/Greel/Japor/Kyshyyyk/Laroon/Teej/Veshok → see [Lumberjacking](lumberjacking.md)
+- **Leather** (12 standard + 11 sci-fi): Regular → Alien, plus Adesote/Biomesh/Cerlin/Durafiber/Flexicris/Hypercloth/Nylar/Nylonite/Polyfiber/Syncloth/Thermoweave → see [Leatherworking](leatherworking.md)
+- **Fabric** (12 tiers): Regular → Fiendish; including Furry/Wooly/Haunted/Venomous/Vile → see [Tailoring](tailoring.md)
+- **Scales** (13 standard + 4 sci-fi): Crimson → Cadalyte, plus Gorn/Trandoshan/Silurian/Krayt → see [Draconic](draconic.md)
+- **Bones** (18 standard + 9 sci-fi + 15 spec): Brittle → Xeno; Andorian/Cardassian/Martian/Rodian/Tusken/Twi'lek/Xindi/Zabrak; Spectral/Dread/Ghoulish/Wyrm/Holy/Bloodless/Gilded/Demilich/Wintry/Fire/Cold/Venom/Energy/Exodus/Turtle Shell → see [Bonecrafting](bonecrafting.md)
+- **Skins** (10 tiers): Demon/Dragon/Nightmare/Snake/Troll/Unicorn/Icy/Lava/Seaweed/Dead → see [Stitching](stitching.md)
+- **Gemstone Blocks** (15 tiers): Amethyst → Caddellite → see [Lapidary](lapidary.md)
+
+### Where Materials Come From
+
+- **Harvested**: Ores/granite/sand from mining ([Mining](mining.md)); logs from trees ([Lumberjacking](lumberjacking.md)); fish/wreck loot from water ([Fishing](fishing.md)); bones/relics from graves ([Grave Robbing](grave-robbing.md))
+- **Creature carving**: Leather hides, scales, skins, skeletal bones, and fabric are all carved from creature corpses using a skinning knife or bladed weapon
+- **Special nodes**: Rich Veins (Dwarven ore) and Rich Lumberjacking Sparkle nodes (Elven wood) are admin-placed unique nodes
+- **Ship cargo / Shipwrecks**: Dwarven/Xormite/Mithril/Obsidian/Nepturite ore crates from seafaring cargo; wreck relic loot from fishing near shipwrecks
+- **Quest/event rewards**: Spec bones and some rare fabric tiers (Silk, Arctic, Pyre, Mysterious, Divine, Fiendish) — exact sources to be updated as discovered
+
+### Region-Locked Premium Materials
+
+| Facet / Region | Premium Material |
+|---|---|
+| Sea exploration + Shipwreck Grotto / Barnacled Cavern | Nepturite ore, Driftwood |
+| Serpent Island | Obsidian ore |
+| Savaged Empire | Steel ore |
+| Umber Veil | Brass ore |
+| Underworld (non-Savaged maps) | Mithril ore, Petrified wood |
+| Underworld (Savaged Empire map) | Xormite ore |
+| NecromancerRegion dungeons | Ebony / Ghostwood |
+| Isles of Dread | Boosted ore & wood yield (+50% via ConsumedPerIslesDreadHarvest) |
+| the Mines of Morinia (Sosaria) | +66% ore yield (2-in-3 chance) |
+| Kuldar + ancient sky ship | Sci-Fi metals, leathers, scales, bones, woods |
 
 ## Repair, Breakdown & Enhancement
 

@@ -5,6 +5,7 @@ Cartography is the skill of creating maps and blank scrolls.
 - **Skill**: Cartography
 - **Tool**: Mapmaker's Pen
 - **Primary Resource**: Bark Fragments, Blank Scrolls, Blank Maps
+- **Materials Note**: **Bark Fragments** come from [Lumberjacking](lumberjacking.md) (90+ skill, ~10% chance per swing); Blank Scrolls require bark fragments processed into scrolls.
 
 ## Craftable Items
 

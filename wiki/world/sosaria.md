@@ -65,6 +65,30 @@ A bottle world in the east of the map (approx. 6166–7204 x, 829–2741 y). Fea
 ### Luna
 A small area (approx. 5856–6164 x, 2740–3018 y).
 
+## Special Materials & Harvests
+
+Sosaria supports all standard ore and wood tiers. Several sub-regions unlock premium materials:
+
+| Resource | Details |
+|---|---|
+| Standard Ore (Iron–Valorite) | Available at any mountain or cave wall |
+| Standard Wood (Regular–Walnut) | Available at any tree |
+| **Raw Gemstones** | 90+ Mining, 0.1% chance each per swing (Amber, Amethyst, Citrine, Diamond, Emerald, Ruby, Sapphire, Star Sapphire, Tourmaline) |
+| **Sand** | 100+ Mining, Sand Mining toggle, beach tiles; used in Glassblowing |
+| **Nepturite ore + Driftwood** | Mining/chopping in sea areas, Shipwreck Grotto, or Barnacled Cavern — 50% mutation on Agapite/Verite/Valorite swings |
+| **Brass ore** | Mining in the **Umber Veil** sub-region — 50% mutation on Agt/Ver/Val |
+| **Sci-Fi metals/leathers/scales/bones/woods** | **Kuldar** bottle world — drop from droids and alien creatures |
+| **+66% ore yield** | **the Mines of Morinia** dungeon — 2-in-3 chance of boosted yield per swing |
+
+### Sub-Region Details
+
+- **Umber Veil**: Mining Agapite/Verite/Valorite veins here has 50% chance to yield Brass ore instead.
+- **Kuldar (Bottle World)**: All sci-fi material families drop from Battle/Combat/Excavation/Maintenance/Security/Service Droids and alien humanoid creatures in this area.
+- **Shipwreck Grotto / Barnacled Cavern**: Mining here (sea region) yields Nepturite ore on 50% of Agt/Ver/Val swings; wood-chopping yields Driftwood on 50% of non-Regular swings.
+- **The Mines of Morinia**: Special ore bonus — 2 out of every 3 swings use the Isles of Dread yield formula, effectively giving ~66% more ore than standard mining.
+
+See [Fishing](../crafting/fishing.md) for Sosaria shipwreck fishing coordinates.
+
 ## Unique Features
 
 - **Starting Area**: All new characters begin in the Gypsy Forest on Sosaria

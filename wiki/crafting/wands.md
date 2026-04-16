@@ -25,3 +25,7 @@ Each wand corresponds to one of the 64 Magery spells (8 circles x 8 spells). The
 | Eighth | 115.0 | Valorite | 4 | 30 | 1 |
 
 Each wand requires the corresponding spell scroll(s) plus 4 of the appropriate metal ingot and 1 Arcane Gem.
+
+## Materials
+
+Wands consume **Metal Ingots** from Dull Copper through Valorite. Arcane Gems are rare drops from magical creatures and events. For full ore tier details (hues, stat bonuses, harvest sources), see [Mining](mining.md). Spell scrolls are obtained through Inscription or creature loot.

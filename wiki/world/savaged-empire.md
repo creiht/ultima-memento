@@ -37,6 +37,28 @@ The Savaged Empire is a primal jungle land filled with tribal villages, ancient 
 | the Tombs | |
 | the Undersea Castle | |
 
+## Special Materials & Harvests
+
+| Resource | Details |
+|---|---|
+| Standard Ore (Iron–Valorite) | Available at any mountain or cave wall |
+| **Steel ore** | Mining Agapite/Verite/Valorite veins in the Savaged Empire (above-ground, Land.Savaged) has a **50% chance** to yield Steel ore. Steel requires 105.0+ Blacksmithing and grants extra Physical/Fire resist and +50 Durability. |
+| Standard Wood (Regular–Walnut) | Available at any tree |
+| **Shipwreck Fishing** | 3 wreck sites at: (946, 821), (969, 217), (322, 661) |
+
+### Underworld Entrance (Savaged Empire)
+
+When the Underworld is accessed from the Savaged Empire map, underground mining yields **Xormite ore** (50% mutation on Agt/Ver/Val) instead of Mithril. Xormite requires 115.0+ Blacksmithing.
+
+### Special Crafting Workshops
+
+Several crafting professions require a workshop only found in the Savaged Empire:
+- [Lapidary](../crafting/lapidary.md) — Gemstone block crafting (anvil/forge)
+- [Stitching](../crafting/stitching.md) — Exotic skin armor crafting
+- [Apothecary](../crafting/apothecary.md) — Advanced potion brewing
+
+See [Mining](../crafting/mining.md) for full Steel and Xormite stats.
+
 ## Unique Features
 
 - **Safari Animals**: 50% chance to spawn safari animals (elephants, giraffes, cheetahs, zebras) by default
