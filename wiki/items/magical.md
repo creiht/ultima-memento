@@ -26,7 +26,7 @@ Many items in this category are base classes and systems for magical item genera
 - **Magical Armor**: Randomly generated armor with magical properties
 - **Magical Weapons**: Randomly generated weapons with bonuses
 - **Magical Clothing**: Clothes with stat/skill bonuses
-- **Artifacts**: Unique named items with powerful fixed properties
+- **Artifacts**: Unique named items with powerful fixed properties — see [artifacts/](artifacts/README.md) for the full catalogue (354 items across 12 categories)
 
 ## Wands & Staves
 

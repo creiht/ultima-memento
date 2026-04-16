@@ -19,6 +19,7 @@ This section documents all item categories available in Ultima Memento. Items ar
 | Gems | Precious stones and crystals | [gems.md](gems.md) |
 | Houses | Player housing components and addons | [houses.md](houses.md) |
 | Instruments | Musical instruments for bards | [instruments.md](instruments.md) |
+| Artifacts | Unique named items with fixed stats — weapons, armor, jewelry, and more | [artifacts/](artifacts/README.md) |
 | Magical | Magical items, scrolls, reagents, wands, and enchanted gear | [magical.md](magical.md) |
 | Misc | Miscellaneous items — tools, keys, lights, dyes, and more | [misc.md](misc.md) |
 | Potions | Alchemical potions and brews | [potions.md](potions.md) |

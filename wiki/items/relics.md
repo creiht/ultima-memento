@@ -2,6 +2,8 @@
 
 Relics are collectible treasure items found in dungeons and dangerous areas throughout the world. They must be **identified** before their gold value is revealed, and can then be sold to merchants.
 
+> **Relics vs. Artifacts:** Relics are primarily sell-for-gold collectibles/decorations. *Artifacts* are unique named equippable items with powerful fixed combat stats — see [artifacts/README.md](artifacts/README.md) for the full artifact catalogue.
+
 ## Common Properties
 
 All relics share these traits:
