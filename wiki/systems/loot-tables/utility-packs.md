@@ -24,7 +24,7 @@ Drops one random high-tier magic scroll (circles 7–8, top spells).
 
 > **Note:** The scroll tier tokens (`ClumsyScroll`, `ArchCureScroll`, `ChainLightningScroll`) are just placeholders; `Loot.RandomScroll(tier)` picks the actual scroll at generation time.
 
-See [Magical Items (Scrolls)](../../../items/magical.md) for the full scroll list.
+See [Magical Items (Scrolls)](../../items/magical.md) for the full scroll list.
 
 ---
 
@@ -36,7 +36,7 @@ Drops one random gem from `Loot.RandomGem()`.
 
 > In sci-fi regions, gems are replaced with themed crystal types (kyber, etaan, trilithium, lava, dilithium, dantari, vexxtal, nova, permafrost crystals).
 
-See [Gems](../../../items/gems.md) for details.
+See [Gems](../../items/gems.md) for details.
 
 ---
 
@@ -56,7 +56,7 @@ Drops one random high-tier potion.
 
 > **Tasting skill bonus**: A player with 30+ Tasting has a chance to upgrade potion tier — `LesserHeal` may become `Heal`, `Heal` may become `GreaterHeal`.
 
-See [Potions](../../../items/potions.md) for details.
+See [Potions](../../items/potions.md) for details.
 
 ---
 
@@ -73,4 +73,4 @@ Used by bard-type creatures.
 ### Music
 Drops one random musical instrument (same pool as the `BaseInstrument` entry in regular packs via `Loot.RandomInstrument()`).
 
-See [Instruments](../../../items/instruments.md).
+See [Instruments](../../items/instruments.md).

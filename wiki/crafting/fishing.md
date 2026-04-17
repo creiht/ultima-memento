@@ -26,7 +26,10 @@ Fishing (Seafaring) catches fish and other items from water, and is also the mea
 | Oyster | 80+ skill | 0.6% chance; may contain a pearl |
 | Prized / Wondrous / Truly Rare / Peculiar Fish | Any (deep water) | Skill-weighted chance |
 | Wet Clothes / Rusty Junk / Special Seaweed | Any | Skill-weighted chance |
-| Fishing Net / Special Net / Fabled Net / Neptune's Net | 50+ skill | Skill-weighted; must be on boat |
+| Fishing Net | 50+ skill | Skill-weighted; must be on boat |
+| Special Fishing Net | 80+ skill | Skill-weighted; must be on boat / deep water |
+| Fabled Fishing Net | 80+ skill (also appears at 90+) | Skill-weighted; must be on boat / deep water |
+| Neptune's Fishing Net | 90+ skill | Skill-weighted; must be on boat / deep water |
 | Corpse Sailor / Sunken Bag | 50+ skill | Skill-weighted; must be on boat |
 | Exotic New Fish | 50+ skill | Skill-weighted |
 | Treasure Map | 90+ skill (deep water) | Skill-weighted |

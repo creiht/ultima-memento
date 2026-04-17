@@ -32,7 +32,7 @@ Drag and drop collected parts onto the schematics data pad to add them.
 
 ## The Robot
 
-- Robots are **combat companions** that use 3 follower slots.
+- Robots are **combat companions** that use 5 follower slots. (The in-game Robot Schematics gump description states 3 slots, but the summoning code in `RobotItem.cs:113` unconditionally sets `ControlSlots = 5`. The runtime value is 5.)
 - They are controlled like tamed creatures (follow, stay, stop, dismiss).
 - Robots run on **charges** -- each summon uses one.
 - Recharge with **batteries**: each battery adds 1 charge (max 100).

@@ -49,11 +49,8 @@ Silvani is a Champion Boss associated with nature. A magical forest spirit, she 
 
 ## Loot
 
-Body loot (`GenerateLoot`): [UltraRich](../../systems/loot-tables/monster-packs.md#ultrarich) ×3 (three independent rolls)
+Body loot (`GenerateLoot`): [UltraRich](../../systems/loot-tables/monster-packs.md#ultrarich) ×2 (two independent rolls)
 
-**Champion Rewards** (see [Champion Rewards](../../systems/loot-tables/champion-rewards.md)):
-- Guaranteed: Boss item (max-enchant, level 500), `HoardMinionFamiliarItem`, power scrolls
-- 30% chance: Thematic DecorativeList item (see source)
-- Scales with spawn size and difficulty: gold scatter, extra artifact, treasure chest
+Silvani is a `BaseCreature` spawned by the Lord Oaks champion engine, not a `BaseChampion`, and therefore does not grant champion reward drops.
 
 *Special drops:* `ChampionSkull` ~10% (Fame ≥ 20,000)

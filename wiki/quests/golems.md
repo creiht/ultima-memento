@@ -52,7 +52,9 @@ Drag and drop materials onto the manual to add them. Requirements scale with gol
 | Type | Follower Slots | Notes |
 |------|----------------|-------|
 | Worker (no springs) | 5 | Carries items, cannot fight, immune to damage |
-| Fighter (with springs) | 3 | Fights alongside you |
+| Fighter (with springs) | 5 | Fights alongside you |
+
+> **Note:** The in-game Golem Manual gump text states the Fighter uses 3 follower slots, but the summoning code (`GolemPorterItem.cs:136`) unconditionally sets `ControlSlots = 5` for both golem types. The runtime value is 5.
 
 ## Charges
 

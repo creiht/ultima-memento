@@ -1,10 +1,10 @@
 # Jedi
 
-Jedi powers are psionic/psychic abilities fueled by positive Karma, [Psychology](../skills/psychology.md) skill, and [Swords](../skills/swords.md) skill. A Jedi must wear Jedi-themed clothing and wield a sword to use their abilities. Karan Crystals are consumed as a resource, stored in the Jedi Spellbook (datacron).
+Jedi powers are psionic/psychic abilities fueled by positive Karma, [Psychology](../skills/psychology.md) skill, and [Swords](../skills/swordsmanship.md) skill. A Jedi must wear Jedi-themed clothing and wield a sword to use their abilities. Karan Crystals are consumed as a resource, stored in the Jedi Spellbook (datacron).
 
 ## Requirements
 
-- **Skills:** [Psychology](../skills/psychology.md) and [Swords](../skills/swords.md) (both 10+ base)
+- **Skills:** [Psychology](../skills/psychology.md) 10+, [Swords](../skills/swordsmanship.md) 10+, and [Tactics](../skills/tactics.md) 10+ (source: `JediSpell.cs:137`)
 - **Karma:** Must be **positive** (>= 0)
 - **Equipment:** Jedi-themed robe/cloak/helm/talisman + sword equipped
 - **Resource:** Karan Crystals (stored in datacron)

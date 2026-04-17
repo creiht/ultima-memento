@@ -41,7 +41,9 @@ You need **7 components**, each obtained by skinning giant creatures:
 | Type | Description | Follower Slots |
 |------|-------------|----------------|
 | Slave (Porter) | Carries items, cannot fight, immune to damage | 5 |
-| Protector (Fighter) | Fights alongside you | 3 |
+| Protector (Fighter) | Fights alongside you | 5 |
+
+> **Note:** The in-game Frankenstein Journal gump text states the Protector uses 3 follower slots, but the summoning code (`FrankenPorterItem.cs:126`) unconditionally sets `ControlSlots = 5` for all Frankenstein creations. The runtime value is 5.
 
 ## Tips
 

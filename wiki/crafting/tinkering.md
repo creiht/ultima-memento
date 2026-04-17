@@ -61,6 +61,7 @@ Tinkering creates jewelry using ingots and gemstones. Each gem type produces bra
 
 | Gem | Skill Modifier | Gems Available |
 |---|---|---|
+| No Gem (plain) | +0 | none |
 | Amber | +5 | Amber |
 | Citrine | +10 | Citrine |
 | Ruby | +15 | Ruby |
@@ -72,11 +73,20 @@ Tinkering creates jewelry using ingots and gemstones. Each gem type produces bra
 | Diamond | +45 | Diamond |
 | Pearl | +50 | Oyster |
 
-Base skill ranges from 40.0 + gem modifier. Each piece requires 2-3 ingots and 1 gemstone.
+Base skill starts at 40.0 (no-gem plain jewelry) and scales up with the gem modifier. Each piece requires 2-3 ingots and (except for the plain no-gem tier) 1 gemstone.
+
+## Multi-Component Items
+
+Some tinkering items are assembled from previously crafted parts:
+
+| Item | Min Skill | Resources |
+|---|---|---|
+| Bola | 60.0 | 4 Bola Balls + 3 Leather |
+| Potion Keg | 75.0 | 1 Keg + 10 Bottles + 1 Barrel Lid + 1 Barrel Tap |
 
 ## Miscellaneous
 
-Candles, candelabras, globes, keys, lanterns, spyglass, wall torches, scales, throwing weapons, trumpets, wind chimes, and more.
+Candles, candelabras, globes, keys, lanterns, spyglass, wall torches, scales, throwing weapons, trumpets, wind chimes, and more. Note that candle items (Large Candle, Candelabra, Candelabra Stand) also require Beeswax in addition to ingots.
 
 ## Wizard Staves
 

@@ -8,7 +8,7 @@ Two distinct artifact pools exist in the game. Both are selected randomly with n
 
 ---
 
-## Artifacts (`m_ArtyTypes`)
+## <a id="artifacts"></a>Artifacts (`m_ArtyTypes`)
 
 **Accessor:** `Loot.RandomArty()` — selects one item at random from the full pool.  
 **Pool size:** ~384 entries (32 rows × 12 columns in source)  
@@ -32,22 +32,22 @@ These items have `ArtifactLevel > None` and are **not** further mutated by `Base
 
 ### Artifact Categories
 
-The pool spans all item categories. See the sub-pages under [Artifacts](../../../items/artifacts/) for full listings by type:
+The pool spans all item categories. See the sub-pages under [Artifacts](../../items/artifacts/README.md) for full listings by type:
 
-- [Artifact Weapons](../../../items/artifacts/weapons.md)
-- [Artifact Armor](../../../items/artifacts/armor.md)
-- [Artifact Shields & Offhands](../../../items/artifacts/offhands.md)
-- [Artifact Trinkets](../../../items/artifacts/trinkets.md)
-- [Artifact Clothing](../../../items/artifacts/clothing.md)
-- [Artifact Quivers](../../../items/artifacts/quivers.md)
-- [Artifact Instruments](../../../items/artifacts/instruments.md)
-- [Artifact Books](../../../items/artifacts/books.md)
-- [Artifact Armor Sets](../../../items/artifacts/armor-sets.md)
-- [Minor Artifacts](../../../items/artifacts/minor.md)
+- [Artifact Weapons](../../items/artifacts/weapons.md)
+- [Artifact Armor](../../items/artifacts/armor.md)
+- [Artifact Shields & Offhands](../../items/artifacts/offhands.md)
+- [Artifact Trinkets](../../items/artifacts/trinkets.md)
+- [Artifact Clothing](../../items/artifacts/clothing.md)
+- [Artifact Quivers](../../items/artifacts/quivers.md)
+- [Artifact Instruments](../../items/artifacts/instruments.md)
+- [Artifact Books](../../items/artifacts/books.md)
+- [Artifact Armor Sets](../../items/artifacts/armor-sets.md)
+- [Minor Artifacts](../../items/artifacts/minor.md)
 
 ---
 
-## Semi-Artifacts (`m_SArtyTypes`)
+## <a id="semi-artifacts"></a>Semi-Artifacts (`m_SArtyTypes`)
 
 **Accessor:** `Loot.RandomSArty(playOrient, mobile)` — selects from the standard or oriental variant.  
 **Pool size:** ~168 entries  

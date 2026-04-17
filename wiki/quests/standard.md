@@ -17,12 +17,12 @@ Visit a **Standard Quest Bulletin Board** found in taverns and public buildings.
 
 ## Quest Types
 
-### Monster Bounty (2/3 chance)
+### Monster Bounty (50% chance)
 - Kill a named creature in a specific dungeon region.
 - The creature's location, name, and region are specified in your quest log.
 - Travel to the dungeon and kill the correct creature type in the correct region.
 
-### Item Recovery (1/3 chance)
+### Item Recovery (50% chance)
 - Find a named item by killing creatures in the specified dungeon.
 - Items drop with a **7% chance** per kill in the correct region.
 - Items can also be found by opening loot containers in the dungeon.

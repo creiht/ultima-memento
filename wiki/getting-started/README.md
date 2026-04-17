@@ -48,7 +48,7 @@ Each skill you start with comes with relevant equipment in a labeled bag. For ex
 
 Ultima Memento features an **Avatar progression system** that persists across your character's lives. As you play, you earn coins from killing creatures and completing combat quests. These coins can be spent on upgrades such as:
 
-- **Stat cap increases** — raise your stat cap beyond the starting 250 (1 point per level, up to 150 levels)
+- **Stat cap increases** — activating the Avatar system resets your stat cap to 100; purchase up to 150 levels (1 point each) to restore it to 250
 - **Skill cap increases** — increase your maximum skill points (10 points per level, up to 70 levels)
 - **Skill gain rate boosts** — gain skills faster
 - **Coin gain rate boosts** — earn coins faster

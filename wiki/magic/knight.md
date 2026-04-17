@@ -5,7 +5,7 @@ The Knight school represents the holy combat abilities of paladins. These abilit
 ## Requirements
 
 - **Skill:** [Knightship](../skills/knightship.md)
-- **Karma:** Must be positive (>= 0)
+- **Karma:** Must be **non-negative** (≥ 0) — Karma of exactly 0 is allowed (source: `PaladinSpell.cs:40`)
 - **Tithing Points:** Consumed when casting abilities
 - **Stamina:** Most abilities also require stamina
 - **Spellbook:** Book of Chivalry

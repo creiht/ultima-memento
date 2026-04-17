@@ -12,7 +12,7 @@ One and two-handed bladed weapons. Default damage type: **Slashing** (exceptions
 
 | Weapon | Hands | Dmg (min-max) | Speed | STR Req | Notes |
 |--------|-------|--------------|-------|---------|-------|
-| Short Sword | 1H | 13–15 | 41 | 25 | |
+| Short Sword | 1H | 13–15 | 41 | 20 | |
 | Broadsword | 1H | 14–15 | 33 | 30 | |
 | Longsword | 1H | 15–16 | 30 | 35 | |
 | Thin Longsword | 1H | 15–16 | 30 | 35 | Reskin of Longsword |
@@ -101,7 +101,7 @@ Blunt weapons. Default damage type: **Blunt**.
 | Scepter | 1H | 14–17 | 30 | |
 | Maul | 2H | 14–16 | 32 | |
 | War Mace | 2H | 16–17 | 26 | |
-| Hammer Pick | 2H | 15–17 | 28 | Dual-purpose |
+| Hammer Pick | 1H | 15–17 | 28 | Dual-purpose |
 | War Hammer | 2H | 17–18 | 28 | |
 | Whips / BaseWhip | 1H | 10–12 | 44 | Flexible weapon variant |
 | Wizard Wand | 1H | 10–12 | 44 | Mage-themed bashing weapon |

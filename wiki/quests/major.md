@@ -23,7 +23,7 @@ Each journal quest requires you to find 3 unique items to aid you against the vi
 Once all 3 relics are found:
 1. Talk to citizens again to learn the villain's location.
 2. Travel to the named dungeon.
-3. Open the journal while inside the dungeon to **summon the villain**.
+3. Open the journal while inside the dungeon to **summon the villain**. This summon only fires if a citizen has already revealed the villain's location to you (i.e. the journal has an active citizen clue set). If you enter the dungeon before talking to a citizen, opening the journal will only show the regular gump — no summon.
 4. Defeat the villain in combat.
 5. Collect the quest's final artifact from the villain's remains.
 

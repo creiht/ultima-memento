@@ -40,7 +40,7 @@ The Underworld has special ore and wood mutations. Which ore you get depends on 
 | **Xormite ore** | Mining Agapite/Verite/Valorite veins in Underworld on the **Savaged Empire** map → 50% mutation to Xormite. Xormite requires 115.0+ Blacksmithing; grants Energy +30, Lower Req 25. |
 | **Petrified wood** | Chopping any non-Regular wood vein in the Underworld (any map) → 100% mutation to Petrified. Petrified requires 115.0+ Lumberjacking; grants Fire +25 weapon bonus, Durability +70. |
 | **Sci-Fi metals/materials** | The **Ancient Sky Ship** dungeon houses sci-fi droids and alien creatures — all sci-fi material families (metals, leathers, scales, bones, woods) drop here. |
-| **Waters of Ktulu fishing** | The "Waters of Ktulu" region in the Underworld counts as being near a major shipwreck at all times — fishing always yields wreck loot in addition to standard catches. |
+| **Underworld wreck fishing** | Wreck fishing in the Underworld is available within a specific area at approximately (578, 1370) — this is a hardcoded coordinate check in the fishing engine (`Fishing.cs`), not a named region. The "Waters of Ktulu" is a region on the Sosaria map, not the Underworld. |
 
 See [Mining](../crafting/mining.md) for full Mithril and Xormite stats. See [Lumberjacking](../crafting/lumberjacking.md) for Petrified stats. See [Fishing](../crafting/fishing.md) for Underworld fishing coordinate (578, 1370) and wreck loot details.
 

@@ -49,6 +49,8 @@ Source: `BaseCreature.cs:4818–4841`, ScaleType enum `BaseCreature.cs:120–136
 
 ## Sci-Fi Scales
 
+> **Note:** These materials can be obtained as loot drops but cannot currently be used in crafting — the sci-fi scale sub-resources are disabled in the Draconic craft menu.
+
 Sci-fi scales drop from Mutant Lizardmen (`ScaleType.SciFi`). Each carve yields one of four types at random (25% each).
 
 All sci-fi scales share: Arm +7, Dmg +3, all resistances +4, Durability +100, Lower Requirements 10.

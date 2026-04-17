@@ -1,10 +1,11 @@
 # Research (Ancient Magic)
 
-Research is a vast school of 64 ancient spells spanning 8 disciplines. It uses [Inscription](../skills/inscription.md) as the casting skill, with the higher of [Magery](../skills/magery.md) or [Necromancy](../skills/necromancy.md) determining minimum skill requirements. Spells can be cast using either a **Research Bag** (with prepared material components) or an **Ancient Spellbook** (consuming pages and quills).
+Research is a vast school of 64 ancient spells spanning 8 disciplines. The **minimum skill threshold** for casting a Research spell is checked against the higher of [Magery](../skills/magery.md) or [Necromancy](../skills/necromancy.md); [Inscription](../skills/inscribe.md) (Inscribe) is not used for the threshold but receives a skill-gain check on successful casting. Spells can be cast using either a **Research Bag** (with prepared material components) or an **Ancient Spellbook** (consuming pages and quills). (Source: `ResearchSpell.cs:21-22, 58-63`.)
 
 ## Requirements
 
-- **Casting Skill:** Higher of [Magery](../skills/magery.md) or [Necromancy](../skills/necromancy.md)
+- **Minimum-Skill Check:** Higher of [Magery](../skills/magery.md) or [Necromancy](../skills/necromancy.md)
+- **Skill-Gain Check:** [Inscription](../skills/inscribe.md) gains on successful casts
 - **Method A:** Research Bag (requires prepared spell components and reagents)
 - **Method B:** Ancient Spellbook (requires pages and quills; toggle with `[ancient` command)
 

@@ -13,7 +13,7 @@ This guide contains full stat tables for all weapon types, including damage, spe
 
 | Weapon | Min Dmg | Max Dmg | Speed | STR Req | Hands |
 |--------|---------|---------|-------|---------|-------|
-| Short Sword | 11 | 13 | 2.50 | 25 | 1H |
+| Short Sword | 13 | 15 | 2.75 | 20 | 1H |
 | Broadsword | 14 | 15 | 3.25 | 30 | 1H |
 | Longsword | 15 | 16 | 3.50 | 35 | 1H |
 | Thin Longsword | 15 | 17 | 3.50 | 35 | 1H |
@@ -25,7 +25,7 @@ This guide contains full stat tables for all weapon types, including damage, spe
 | Bone Harvester | 13 | 15 | 3.00 | 25 | 1H |
 | Kryss | 10 | 12 | 2.00 | 10 | 1H |
 | Crescent Blade | 11 | 14 | 2.50 | 55 | 2H |
-| Claymore | 18 | 20 | 3.75 | 60 | 2H |
+| Claymore | 18 | 19 | 4.00 | 85 | 2H |
 | Royal Sword | 14 | 15 | 3.25 | 30 | 1H |
 | Lance | 17 | 18 | 4.50 | 95 | 2H |
 | Elven Machete | 13 | 15 | 3.00 | 20 | 1H |
@@ -68,7 +68,7 @@ This guide contains full stat tables for all weapon types, including damage, spe
 | Pitchfork | 13 | 14 | 2.50 | 50 | 2H |
 | War Fork | 12 | 13 | 2.50 | 35 | 1H |
 | Pike | 14 | 16 | 3.00 | 50 | 2H |
-| Halberd | 18 | 19 | 4.25 | 95 | 2H |
+| Halberd | 19 | 20 | 4.25 | 95 | 2H |
 | Bardiche | 17 | 18 | 3.75 | 45 | 2H |
 | Scythe | 15 | 18 | 3.50 | 45 | 2H |
 | Bladed Staff | 14 | 16 | 3.00 | 40 | 2H |
@@ -80,23 +80,23 @@ This guide contains full stat tables for all weapon types, including damage, spe
 | Weapon | Min Dmg | Max Dmg | Speed | STR Req | Hands |
 |--------|---------|---------|-------|---------|-------|
 | Club | 11 | 13 | 2.50 | 40 | 1H |
-| Spiked Club | 11 | 13 | 2.50 | 40 | 1H |
+| Spiked Club | 12 | 14 | 2.75 | 45 | 1H |
 | Mace | 12 | 14 | 2.75 | 45 | 1H |
-| War Mace | 11 | 14 | 3.00 | 45 | 1H |
+| War Mace | 16 | 17 | 4.00 | 80 | 1H |
 | Maul | 14 | 16 | 3.50 | 45 | 2H |
 | War Hammer | 17 | 18 | 3.75 | 95 | 2H |
 | Hammer Pick | 15 | 17 | 3.75 | 45 | 1H |
 | Diamond Mace | 14 | 17 | 3.00 | 35 | 1H |
 | Scepter | 14 | 17 | 3.50 | 40 | 1H |
-| Whips | 10 | 12 | 2.00 | 20 | 1H |
+| Whips | 10 | 12 | 2.50 | 30 | 1H |
 
 ## Staves (Bludgeoning Skill)
 
 | Weapon | Min Dmg | Max Dmg | Speed | STR Req | Hands |
 |--------|---------|---------|-------|---------|-------|
 | Quarter Staff | 11 | 14 | 2.25 | 30 | 2H |
-| Black Staff | 13 | 16 | 2.75 | 35 | 2H |
-| Glacial Staff | 13 | 16 | 3.00 | 35 | 2H |
+| Black Staff | 13 | 16 | 2.75 | 20 | 2H |
+| Glacial Staff | 13 | 16 | 3.00 | 20 | 2H |
 | Gnarled Staff | 15 | 17 | 3.25 | 20 | 2H |
 | Wild Staff | 11 | 14 | 2.25 | 30 | 2H |
 | Shepherd's Crook | 13 | 15 | 2.75 | 20 | 2H |

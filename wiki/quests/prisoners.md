@@ -20,7 +20,7 @@ Prisoners are randomly generated from many creature races:
 
 | Race Category | Examples |
 |---------------|----------|
-| Humanoids | Bugbears, morlocks, hobgoblins, satyrs, centaurs, minotaurs |
+| Humanoids | Bugbears, morlocks, hobgoblins, satyrs, centaurs, minotaurs, mind flayers, gnolls, pixies |
 | Reptilians | Lizardmen, sakkhra, sleestax, grathek, kobolds |
 | Orcs/Goblins | Orcs, orx, urcs, goblins |
 | Aquatic | Tritun, neptar |
@@ -35,7 +35,7 @@ Prisoners are randomly generated from many creature races:
 | Warrior (melee) | 1x | Most common |
 | Archer (ranged) | 1.25x | Less common |
 | Mage (caster) | 1.5x | Least common |
-| Human Henchmen | 4,000-6,000+ | Special, come as standard henchman items |
+| Human Henchmen | 4,100-7,000 | Special, come as standard henchman items (cost depends on type: fighter/wizard 4,100–5,000; archer 5,100–6,000; elite type 6,100–7,000) |
 
 ## Henchman System
 

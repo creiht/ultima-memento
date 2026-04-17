@@ -65,6 +65,8 @@ Source: `BaseCreature.cs:4853–4919`, SkeletalType enum `BaseCreature.cs:138–
 
 ## Sci-Fi Bones
 
+> **Note:** The Andorian through Zabrak sci-fi bone tiers can be obtained as loot drops but cannot currently be used in crafting — they are disabled as selectable sub-resources in the Bonecrafting craft menu. (Xeno is the exception — it is enabled as the 18th standard tier in the menu.)
+
 Sci-fi bones drop from sci-fi humanoid creatures: Jedi, Syth, Psionicist, BombWorshipper, SavageAlien, Mutant. Any creature with `SkeletalType.SciFi` yields one of 9 types at random.
 
 All sci-fi bones share: Arm +14, Dmg +4, all resistances +4, Durability +80, Lower Requirements 30–45 (varies). Note that Xeno can also be obtained from SciFi carving.

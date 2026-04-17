@@ -13,7 +13,7 @@ All commands below are available to every player. Type `[commandname` in-game to
 | `barbaric` | `[barbaric` | Toggles the barbaric play style. | Cycles through: off → barbaric → amazon fighter (female only). Disables oriental/evil styles. Gives a barbaric satchel. |
 | `combatbar` | `[combatbar` | Opens the Combat Bar gump showing combat stats. | Draggable, auto-refreshes. |
 | `corpse` | `[corpse` | Directs you toward your nearest corpse within 1000 tiles. | Shows distance and direction. |
-| `corpseclear` | `[corpseclear` | Clears corpse tracking. | |
+| `corpseclear` | `[corpseclear` | Deletes all empty corpses in the world. | |
 | `e` | `[e <emote>` | Short alias for emote commands. | Same emotes as `[emote`. |
 | `emote` | `[emote <action>` | Performs an emote with sound, words, and animation. | Actions: ah, ahha, applaud, blownose, bow, burp, clap, cough, cry, fart, groan, hail, kiss, laugh, no, oh, oooh, puke, punch, salute, shush, sigh, slap, sneeze, sorry, spit, whistle, yawn, yell, yes, and many more. |
 | `evil` | `[evil` | Toggles the evil play style. | Disables oriental/barbaric styles. |
@@ -44,7 +44,7 @@ These commands target a container and sort its contents:
 
 | Command | Syntax | Description |
 |---------|--------|-------------|
-| `Organize` | `[Organize` | Opens item organization targeting. Sorts items into labeled bags by category (Crafting, Equipment, Scrolls, Potions, etc.). |
+| `Organize` | `[Organize` | Opens item organization targeting. Sorts items into labeled bags by category (Crafting, Casting, Currency, Consumables, Armor, Weapons, Clothing, Jewelry, Decorative, Unidentified Items, Trinkets & Offhands). |
 | `OrderBy-Graphic` | `[OrderBy-Graphic` | Sorts items by their graphic ID (ascending). |
 | `OrderBy-Hue` | `[OrderBy-Hue` | Sorts items by their color hue (ascending). |
 | `OrderBy-Name` | `[OrderBy-Name` | Sorts items by name (ascending). |

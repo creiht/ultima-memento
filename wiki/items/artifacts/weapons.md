@@ -1,6 +1,6 @@
 # Artifact Weapons
 
-Weapon artifacts are unique named weapons with fixed enchantments. Most are obtainable via the [Sage Artifact Quest](../../../quests/); a handful come from specific sources.
+Weapon artifacts are unique named weapons with fixed enchantments. Most are obtainable via the [Sage Artifact Quest](../../quests/README.md); a handful come from specific sources.
 
 See [README](README.md) for acquisition details and artifact level explanations.
 

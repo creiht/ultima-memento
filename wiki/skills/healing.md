@@ -31,7 +31,7 @@ If skill > 100: Amount += 3 * (Skill - 100) / 5
 |---|---|
 | 50 | 12 |
 | 100 | 22 |
-| 125 | 37 |
+| 125 | 42 |
 
 On a **failed** skill check (checked against -50 to 99.9), the heal amount is reduced to **75%** of normal.
 

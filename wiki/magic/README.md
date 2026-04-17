@@ -13,7 +13,7 @@ Ultima Memento features 19 distinct magic and spell systems, each with its own s
 | [Ninjitsu](ninjitsu.md) | [Ninjitsu](../skills/ninjitsu.md) | Ninja stealth, shapeshifting, and assassination abilities | [Details](ninjitsu.md) |
 | [Elementalism](elementalism.md) | [Elementalism](../skills/elementalism.md) | Elemental magic (Air, Earth, Fire, Water) with 8 spheres | [Details](elementalism.md) |
 | [Bard](bard.md) | [Musicianship](../skills/musicianship.md) | Musical songs that buff allies and debuff foes | [Details](bard.md) |
-| [Research](research.md) | [Inscription](../skills/inscription.md) | Ancient researched spells spanning 8 schools of 64 spells | [Details](research.md) |
+| [Research](research.md) | [Inscription](../skills/inscribe.md) | Ancient researched spells spanning 8 schools of 64 spells | [Details](research.md) |
 | [Death Knight](death-knight.md) | [Knightship](../skills/knightship.md) | Dark demonic knight powers fueled by trapped souls and negative Karma | [Details](death-knight.md) |
 | [Holy Man](holy-man.md) | [Spiritualism](../skills/spiritualism.md) | Priestly blessings and prayers requiring positive Karma and piety | [Details](holy-man.md) |
 | [Jedi](jedi.md) | [Psychology](../skills/psychology.md) | Light-side psychic powers requiring positive Karma and Jedi equipment | [Details](jedi.md) |

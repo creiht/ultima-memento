@@ -8,7 +8,7 @@ When your hit points reach zero, your character dies:
 
 1. **You become a ghost** — you enter spirit form and can move but cannot interact with the living world.
 2. **A corpse is left behind** — your body remains where you died, containing your equipment and items.
-3. **A directional arrow appears** — after 5 seconds, the game shows you an arrow pointing toward the nearest healer or shrine that can resurrect you.
+3. **Instant resurrection gump** — after 5 seconds, a `ResurrectNowGump` dialog opens offering to resurrect you immediately by pleading to the gods. The directional arrow pointing toward the nearest healer or shrine fires separately, when your ghost walks.
 4. **Corpse timer begins** — your corpse lasts **10 minutes** before turning into bones. Bones remain for an additional **1,430 minutes** (~24 hours). Combined, you have roughly 24 hours to recover your belongings.
 
 ## How to Resurrect

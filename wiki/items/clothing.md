@@ -160,7 +160,7 @@ Use a [Clothing Bless Deed](deeds.md) to bless a single clothing item. Blessed c
 
 ## Cross-links
 
-- [Tailoring](../../crafting/) — how to craft clothing
+- [Tailoring](../crafting/README.md) — how to craft clothing
 - [Armor Guide](armor-guide.md) — material bonus resistance values
 - [Deeds](deeds.md) — Clothing Bless Deed and other property deeds
 - [Artifacts — Clothing](artifacts/clothing.md) — named artifacts worn in clothing slots

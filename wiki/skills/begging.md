@@ -23,8 +23,8 @@ Target a human NPC while within 2 tiles. Your character bows, and after a short 
 
 Target a hostile creature or player who is attacking you. Your character cries out pleas like "Have mercy!" or "Leave me alone!" On success, the target is **pacified** and stops fighting.
 
-- Against creatures: They are pacified for a duration based on difficulty (10-120 seconds).
-- Against players: If the target's Intelligence check fails, they may be paralyzed briefly.
+- Against creatures: They are pacified for a duration based on difficulty (10-120 seconds). On a very strong result the creature may additionally be paralyzed briefly (this branch only applies to `BaseCreature`).
+- Against players: a successful beg simply ends the target player's combat mode. **Players are never paralyzed by begging** — the paralysis branch only fires against creatures. (Source: `Begging.cs:262-288`.)
 - Uncalmable creatures cannot be begged.
 
 **Karma/Fame Warning:** Using begging in combat costs **-40 Karma** and **-40 Fame**.

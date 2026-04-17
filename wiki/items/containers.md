@@ -45,8 +45,8 @@ See [Chest Containers](../systems/loot-tables/chest-containers.md) for how chest
 | Paragon Chest | Paragon creatures | [Paragon level](../systems/loot-tables/paragon-drops.md) | Dropped by paragons (10% chance) |
 | Inn Chest | Inns | [Level 1–3](../systems/loot-tables/chest-containers.md) | Found in inn rooms |
 | Food Chest | Kitchens, dining areas | — | Contains food items |
-| Corpse Chest | Dragon/large creature drops | [Level 1–10](../systems/loot-tables/special-drops.md#corpse-chests-dragon--sea-creature) | Fame-based drop from DropRelic |
-| Corpse Sailor | Sea creature drops | [Level 1–10](../systems/loot-tables/special-drops.md#corpse-chests-dragon--sea-creature) | Fame-based sea creature drop |
+| Corpse Chest | Dragon/large creature drops | [Level 1–10](../systems/loot-tables/special-drops.md#corpse-chests-dragon-sea-creature) | Fame-based drop from DropRelic |
+| Corpse Sailor | Sea creature drops | [Level 1–10](../systems/loot-tables/special-drops.md#corpse-chests-dragon-sea-creature) | Fame-based sea creature drop |
 | Bone Container | Dungeons, graveyards | [Level 1–4](../systems/loot-tables/chest-containers.md) | Skeletal-themed |
 | Buried Body / Buried Chest | Underground | [Level 1–5](../systems/loot-tables/chest-containers.md) | Discovered via digging |
 | Dust Pile | Various | [Level 1–2](../systems/loot-tables/chest-containers.md) | Small loot pile |

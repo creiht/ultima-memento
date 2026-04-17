@@ -26,6 +26,7 @@ These commands are restricted to staff members based on their access level. Acce
 | `PointLog` | Counselor | `[PointLog` | Logs point/location data. |
 | `FaceLog` | Counselor | `[FaceLog` | Logs facing direction data. |
 | `Builders` | Counselor | `[Builders` | Runs large-scale building commands. |
+| `BuildWorld` | Counselor | `[BuildWorld` | Regenerates all world content (spawners, decorations, merchants). Required after certain configuration changes. |
 | `DropHolding` | Counselor | `[DropHolding` | Drops any item the target is holding. |
 | `AutoPageNotify` / `APN` | Counselor | `[APN` | Toggles auto page notification. |
 | `SpeedBoost` | Counselor | `[SpeedBoost [true\|false]` | Toggles speed boost for the invoker. |

@@ -48,7 +48,7 @@ Each champion type is vulnerable to specific slayer properties:
 
 | Type | Effective Slayers |
 |------|-------------------|
-| Abyss | Exorcism, Gargoyle's Foe, Daemon Dismissal, Avian Hunter, Flame Dousing, Blood Drinking |
+| Abyss | Animal Hunter, Avian Hunter, Blood Drinking, Daemon Dismissal, Exorcism, Flame Dousing, Gargoyle's Foe |
 | Arachnid | Arachnid Doom, Spider's Death, Terathan, Scorpion's Bane, Elemental Ban/Health |
 | Cold Blood | Dragon Slaying, Reptilian Death, Ophidian, Lizardman Slaughter, Snake's Bane |
 | Forest Lord | Fey, Animal Hunter, Dragon Slaying, Reptilian Death |

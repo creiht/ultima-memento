@@ -5,7 +5,7 @@ The Death Knight is a dark warrior who draws power from trapped souls and negati
 ## Requirements
 
 - **Skill:** [Knightship](../skills/knightship.md)
-- **Karma:** Must be **negative** (< 0)
+- **Karma:** Must be **non-positive** (≤ 0) — Karma of exactly 0 is allowed (source: `DeathKnightSpell.cs:59`)
 - **Resource:** Trapped Souls (stored in a Soul Lantern)
 - **Stamina & Mana:** Both required to cast
 - **Spellbook:** Death Knight Spell Book

@@ -52,9 +52,9 @@ See [Chest Containers](chest-containers.md) for more on chest types.
 | Chance | Entry | Count | Props | Intensity |
 |--------|-------|-------|-------|-----------|
 | 10% | [Magic item (Poor pool)](magic-item-pools.md#poor) | 1 | 1 | 10–25% |
-| 0.04% | [Instrument](../../../items/instruments.md) | 1 | 1 | 10–25% |
+| 0.04% | [Instrument](../../items/instruments.md) | 1 | 1 | 10–25% |
 | 0.04% | Spellbook | 1 | 1 | 10–25% |
-| 0.02% | [Quiver](../../../items/quivers.md) | 1 | 1 | 10–25% |
+| 0.02% | [Quiver](../../items/quivers.md) | 1 | 1 | 10–25% |
 | 20.4% | [Magic item (Meager1 pool)](magic-item-pools.md#meager) | 1 | 1 | 10–25% |
 | 5% | [Low Scroll](utility-packs.md#scrolls) | 1 | — | — |
 | 20% | [Gem](utility-packs.md#gems) | 1 | — | — |
@@ -71,9 +71,9 @@ See [Chest Containers](chest-containers.md) for more on chest types.
 | Chance | Entry | Count | Props | Intensity |
 |--------|-------|-------|-------|-----------|
 | 20.4% | [Magic item (Meager1 pool)](magic-item-pools.md#meager) | 1–2 | 2 | 10–30% |
-| 0.2% | [Instrument](../../../items/instruments.md) | 1–2 | 2 | 10–30% |
+| 0.2% | [Instrument](../../items/instruments.md) | 1–2 | 2 | 10–30% |
 | 0.2% | Spellbook | 1–2 | 2 | 10–30% |
-| 0.1% | [Quiver](../../../items/quivers.md) | 1–2 | 2 | 10–30% |
+| 0.1% | [Quiver](../../items/quivers.md) | 1–2 | 2 | 10–30% |
 | 10% | [Low Scroll](utility-packs.md#scrolls) | 1 | — | — |
 | 40% | [Gem](utility-packs.md#gems) | 1 | — | — |
 | 10% | Reagent | 1 | — | — |
@@ -89,9 +89,9 @@ See [Chest Containers](chest-containers.md) for more on chest types.
 | Chance | Entry | Count | Props | Intensity |
 |--------|-------|-------|-------|-----------|
 | 32.8% | [Magic item (Average1 pool)](magic-item-pools.md#average) | 1–3 | 3 | 10–40% |
-| 0.8% | [Instrument](../../../items/instruments.md) | 1–3 | 3 | 10–40% |
+| 0.8% | [Instrument](../../items/instruments.md) | 1–3 | 3 | 10–40% |
 | 0.8% | Spellbook | 1–3 | 3 | 10–40% |
-| 0.4% | [Quiver](../../../items/quivers.md) | 1–3 | 3 | 10–40% |
+| 0.4% | [Quiver](../../items/quivers.md) | 1–3 | 3 | 10–40% |
 | 20% | [Med Scroll](utility-packs.md#scrolls) | 1 | — | — |
 | 60% | [Gem](utility-packs.md#gems) | 1 | — | — |
 | 20% | Reagent | 1 | — | — |
@@ -107,9 +107,9 @@ See [Chest Containers](chest-containers.md) for more on chest types.
 | Chance | Entry | Count | Props | Intensity |
 |--------|-------|-------|-------|-----------|
 | 76.3% | [Magic item (Rich1 pool)](magic-item-pools.md#rich) | 2–3 | 3 | 20–40% |
-| 4% | [Instrument](../../../items/instruments.md) | 2–3 | 3 | 20–40% |
+| 4% | [Instrument](../../items/instruments.md) | 2–3 | 3 | 20–40% |
 | 4% | Spellbook | 2–3 | 3 | 20–40% |
-| 2% | [Quiver](../../../items/quivers.md) | 2–3 | 3 | 20–40% |
+| 2% | [Quiver](../../items/quivers.md) | 2–3 | 3 | 20–40% |
 | 0.5% | [Semi-Artifact](artifact-pools.md#semi-artifacts) | 2–3 | 3 | 20–40% |
 | 30% | [High Scroll](utility-packs.md#scrolls) | 1 | — | — |
 | 70% | [Gem](utility-packs.md#gems) | 1 | — | — |
@@ -126,9 +126,9 @@ See [Chest Containers](chest-containers.md) for more on chest types.
 | Chance | Entry | Count | Props | Intensity |
 |--------|-------|-------|-------|-----------|
 | 79.5% | [Magic item (FilthyRich1 pool)](magic-item-pools.md#filthyrich) | 2–4 | 4 | 35–50% |
-| 4% | [Instrument](../../../items/instruments.md) | 2–4 | 4 | 35–50% |
+| 4% | [Instrument](../../items/instruments.md) | 2–4 | 4 | 35–50% |
 | 4% | Spellbook | 2–4 | 4 | 35–50% |
-| 2% | [Quiver](../../../items/quivers.md) | 2–4 | 4 | 35–50% |
+| 2% | [Quiver](../../items/quivers.md) | 2–4 | 4 | 35–50% |
 | 0.5% | [Semi-Artifact](artifact-pools.md#semi-artifacts) | 1 | — | — |
 | 0.25% | [Artifact](artifact-pools.md#artifacts) | 1 | — | — |
 | 40% | [High Scroll](utility-packs.md#scrolls) | 1 | — | — |
@@ -146,9 +146,9 @@ See [Chest Containers](chest-containers.md) for more on chest types.
 | Chance | Entry | Count | Props | Intensity |
 |--------|-------|-------|-------|-----------|
 | 100% | [Magic item (UltraRich pool)](magic-item-pools.md#ultrarich) | 2–5 | 5 | 50–70% |
-| 8% | [Instrument](../../../items/instruments.md) | 2–5 | 5 | 50–70% |
+| 8% | [Instrument](../../items/instruments.md) | 2–5 | 5 | 50–70% |
 | 8% | Spellbook | 2–5 | 5 | 50–70% |
-| 4% | [Quiver](../../../items/quivers.md) | 2–5 | 5 | 50–70% |
+| 4% | [Quiver](../../items/quivers.md) | 2–5 | 5 | 50–70% |
 | 1% | [Semi-Artifact](artifact-pools.md#semi-artifacts) | 1 | — | — |
 | 0.5% | [Artifact](artifact-pools.md#artifacts) | 1 | — | — |
 | 50% | [High Scroll](utility-packs.md#scrolls) | 1 | — | — |
@@ -166,9 +166,9 @@ See [Chest Containers](chest-containers.md) for more on chest types.
 | Chance | Entry | Count | Props | Intensity |
 |--------|-------|-------|-------|-----------|
 | 100% ×2 | [Magic item (UltraRich pool)](magic-item-pools.md#ultrarich) | 3–5 | 5 | 50–70% |
-| 8% | [Instrument](../../../items/instruments.md) | 3–5 | 5 | 50–70% |
+| 8% | [Instrument](../../items/instruments.md) | 3–5 | 5 | 50–70% |
 | 8% | Spellbook | 3–5 | 5 | 50–70% |
-| 6% | [Quiver](../../../items/quivers.md) | 3–5 | 5 | 50–70% |
+| 6% | [Quiver](../../items/quivers.md) | 3–5 | 5 | 50–70% |
 | 2% | [Semi-Artifact](artifact-pools.md#semi-artifacts) | 1 | — | — |
 | 0.75% | [Artifact](artifact-pools.md#artifacts) | 1 | — | — |
 | 60% | [High Scroll](utility-packs.md#scrolls) | 1 | — | — |

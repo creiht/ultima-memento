@@ -4,7 +4,7 @@ Fishing produces various special items beyond ordinary fish — treasure maps, m
 
 **Source:** `World/Source/Scripts/Engines and Systems/Trades/Harvest/Fishing/`
 
-[Back to Loot Tables](README.md) | [Fishing skill](../../../skills/fishing.md)
+[Back to Loot Tables](README.md) | [Fishing skill](../../crafting/fishing.md)
 
 ---
 

@@ -37,7 +37,7 @@ Each magic-item pool entry is a weighted list of `BaseWeapon`, `BaseRanged`, `Ba
 - Trinkets: `m_TrinketTypes` — rings, bracelets, earrings, necklaces
 - Clothing: `m_ClothingTypes` (25% chance for hats instead)
 
-See [Weapons](../../../items/weapons.md), [Armor](../../../items/armor.md), [Trinkets](../../../items/trinkets.md).
+See [Weapons](../../items/weapons.md), [Armor](../../items/armor.md), [Trinkets](../../items/trinkets.md).
 
 ---
 

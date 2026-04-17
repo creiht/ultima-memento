@@ -35,6 +35,6 @@ Acquire Holy Symbols containing spell knowledge and inscribe them into a Holy Ma
 
 ## Notes
 
-- Power scales with **positive Karma** and **Spiritualism skill**.
+- Power nominally scales with Karma and **Spiritualism skill**. **Note:** Due to how the power formula is implemented (`from.Karma * -1`, apparently copy-pasted from the Syth / Death Knight formulas), higher positive Karma actually *reduces* elemental power. This appears to be unintended behavior in the source code. In practice, the power floor ensures usable abilities at high Karma. (Source: `HolyManSpell.cs:174`.)
 - Piety is consumed on cast (reducible by Lower Reagent Cost).
 - The Holy Man school is the polar opposite of the [Death Knight](death-knight.md).

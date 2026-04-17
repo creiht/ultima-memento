@@ -8,13 +8,15 @@ Small tent-style houses. Despite the "tent" appearance they function as full hou
 
 | Property | Value |
 |---|---|
-| Lockdowns | 500 |
-| Secures | 4 |
+| Lockdowns | 81 |
+| Storage Budget (AOS) | 351 |
 | Vendors (placement entry) | 1 |
 | Cost (placement entry) | 15,000 gp |
 | Interior area | Rectangle2D 8×8 |
 | Deed | `BlueTentDeed` / `GreenTentDeed` |
 | Multi ID | 0x70 (Blue) / 0x72 (Green) |
+
+Note: In AOS mode, storage is governed by a single total budget (351) rather than separate lockdown and secure caps.
 
 - Blue Tent deed label: "deed to a blue tent"
 - Green Tent deed label: "deed to a green tent"
@@ -44,13 +46,15 @@ A very large tent-style house at the keep/castle tier.
 
 | Property | Value |
 |---|---|
-| Lockdowns | 1,576 |
-| Secures | 788 |
+| Lockdowns | 1,302 |
+| Storage Budget (AOS) | 1,572 |
 | Vendors (placement entry) | 28 |
 | Cost (placement entry) | 610,000 gp |
 | Interior area | Rectangle2D 25×26 |
 | Deed | `LargeTentDeed` |
 | Multi ID | 0x49 |
+
+Note: In AOS mode, storage is governed by a single total budget (1,572) rather than separate lockdown and secure caps.
 
 Source: `Houses.cs:66`, `HousePlacementTool.cs:714`
 

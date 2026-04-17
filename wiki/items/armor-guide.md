@@ -123,13 +123,13 @@ Shields provide additional resistance when equipped in the off-hand. They requir
 
 | Shield | Phys | Fire | Cold | Pois | Enrg | STR Req |
 |--------|------|------|------|------|------|---------|
-| Buckler | 1 | 0 | 0 | 1 | 0 | 20 |
+| Buckler | 0 | 0 | 0 | 1 | 0 | 20 |
 | Metal Shield | 0 | 0 | 0 | 1 | 2 | 45 |
 | Bronze Shield | 0 | 0 | 1 | 0 | 1 | 55 |
 | Metal Kite Shield | 0 | 1 | 0 | 0 | 1 | 45 |
 | Wooden Shield | 0 | 0 | 0 | 0 | 1 | 20 |
 | Wooden Kite Shield | 0 | 0 | 0 | 0 | 1 | 20 |
-| Heater Shield | 0 | 1 | 0 | 0 | 1 | 90 |
+| Heater Shield | 0 | 1 | 0 | 0 | 0 | 90 |
 
 ## Material Bonuses
 

@@ -214,7 +214,7 @@ Artifacts are unique named items with powerful fixed properties. See [artifacts/
 - [Artifacts Overview](artifacts/README.md)
 - [Potions](potions.md) — alchemy products using reagents
 - [Relics](relics.md) — collectible dungeon treasure
-- [Magic Systems](../../magic/) — individual spell school documentation
+- [Magic Systems](../magic/README.md) — individual spell school documentation
 
 ## Sources — Loot Tables
 

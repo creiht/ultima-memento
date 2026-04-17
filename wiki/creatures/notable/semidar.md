@@ -51,7 +51,7 @@ Semidar is a Champion Boss who leads the Abyss champion spawn. A powerful demone
 
 ## Loot
 
-Body loot (`GenerateLoot`): [UltraRich](../../systems/loot-tables/monster-packs.md#ultrarich) ×3, [FilthyRich](../../systems/loot-tables/monster-packs.md#filthyrich)
+Body loot (`GenerateLoot`): [UltraRich](../../systems/loot-tables/monster-packs.md#ultrarich) ×4, [FilthyRich](../../systems/loot-tables/monster-packs.md#filthyrich)
 
 **Champion Rewards** (see [Champion Rewards](../../systems/loot-tables/champion-rewards.md)):
 - Guaranteed: Boss item (max-enchant, level 500), `HoardMinionFamiliarItem`, power scrolls

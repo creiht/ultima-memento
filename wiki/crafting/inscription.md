@@ -19,7 +19,7 @@ Scrolls require the spell in a spellbook, blank scrolls, appropriate reagents, a
 - **Circle 5-6** (skill 32.1 to 96.4): Blade Spirits, Incognito, Mind Blast, Paralyze, Dispel, Energy Bolt, Explosion, Mark, Reveal (recipes required)
 - **Circle 7-8** (skill 60.7 to 125.0): Chain Lightning, Flamestrike, Gate Travel, Mana Vampire, Earthquake, Energy Vortex, Resurrection, Summon Daemon (recipes required)
 
-### Necromancy Scrolls (16 spells)
+### Necromancy Scrolls (17 spells)
 
 Animate Dead, Blood Oath, Corpse Skin, Curse Weapon, Evil Omen, Horrific Beast, Lich Form, Mind Rot, Pain Spike, Poison Strike, Strangle, Summon Familiar, Vampiric Embrace, Vengeful Spirit, Wither, Wraith Form, Exorcism
 

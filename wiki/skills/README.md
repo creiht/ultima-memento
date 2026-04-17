@@ -25,12 +25,18 @@ A complete reference for all active skills in Ultima Memento. Click any skill na
 
 | Skill | Description |
 |---|---|
+| [Bushido](bushido.md) | Samurai combat techniques — stances, strikes, and evasive parries |
+| [Elementalism](elementalism.md) | Casting skill for the reagent-free Elementalism magic system |
+| [Focus](focus.md) | Passively boost stamina and mana regen; co-requisite for Monk magic |
 | [Inscribe](inscribe.md) | Copy the contents of one book to another |
+| [Knightship](knightship.md) | Casting/damage skill for both Paladin (Chivalry) and Death Knight magic |
+| [Magery](magery.md) | Casting skill for the traditional 8-circle arcane magic system |
+| [Magic Resistance](magic-resistance.md) | Passively resist the debuff component of hostile spells |
 | [Meditation](meditation.md) | Enter a trance to regenerate mana more quickly |
+| [Necromancy](necromancy.md) | Casting skill for dark Necromancer spells; damage scales from Spiritualism |
+| [Ninjitsu](ninjitsu.md) | Shadow-art skill for Ninjitsu and Shinobi abilities |
 | [Psychology](psychology.md) | Evaluate a target's intelligence and mana reserves |
 | [Spiritualism](spiritualism.md) | Channel spiritual energy to heal yourself, or commune with the dead |
-| [Magic Resistance](magic-resistance.md) | Passively resist the debuff component of hostile spells |
-| [Focus](focus.md) | Passively boost stamina and mana regen; co-requisite for Monk magic |
 
 ## Bardic Skills
 

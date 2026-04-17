@@ -51,7 +51,7 @@ The Slasher of Void is a terrifying extradimensional being that exists between w
 
 ## Loot
 
-- [FilthyRich](../../systems/loot-tables/monster-packs.md#filthyrich)
-- [Gems](../../systems/loot-tables/utility-packs.md#gems)
+- [FilthyRich](../../systems/loot-tables/monster-packs.md#filthyrich) ×3
+- [Gems](../../systems/loot-tables/utility-packs.md#gems) ×3
 
 *Special drops:* Dragon blood ~5%, Drakkhen Egg (red) 3%, Dragon Tooth 50%, `CorpseChest` (fame-scaled). `ChampionSkull` ~11% (Fame ≥ 20,000). See [Special Drops](../../systems/loot-tables/special-drops.md).

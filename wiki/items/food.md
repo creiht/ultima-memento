@@ -147,6 +147,6 @@ Heat sources recognized by the cooking system:
 
 ## Cross-links
 
-- [Cooking](../../crafting/) — cooking skill and recipes
-- [Tasting](../../skills/) — skill that provides healing/stamina/cure bonus when eating
-- [Camping](../../skills/) — rest-based healing that requires hunger > 4
+- [Cooking](../crafting/README.md) — cooking skill and recipes
+- [Tasting](../skills/tasting.md) — skill that provides healing/stamina/cure bonus when eating
+- [Camping](../skills/camping.md) — rest-based healing that requires hunger > 4

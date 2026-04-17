@@ -153,9 +153,9 @@ Potions are crafted using the **Alchemy** skill at a heat source with the approp
 
 ## Cross-links
 
-- [Alchemy](../../crafting/) — crafting skill for potions
-- [Poisoning](../../skills/) — applying poisons to weapons
-- [Healing](../../skills/) — uses bandages rather than potions
+- [Alchemy](../crafting/README.md) — crafting skill for potions
+- [Poisoning](../skills/poisoning.md) — applying poisons to weapons
+- [Healing](../skills/healing.md) — uses bandages rather than potions
 
 ## Sources — Loot Tables
 

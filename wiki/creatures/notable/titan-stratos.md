@@ -48,5 +48,5 @@ Stratos, the Mystic Voice, is the Titan of Air from Ultima VIII: Pagan. A primor
 
 ## Loot
 
-- [FilthyRich](../../systems/loot-tables/monster-packs.md#filthyrich)
-- [Gems](../../systems/loot-tables/utility-packs.md#gems)
+- [FilthyRich](../../systems/loot-tables/monster-packs.md#filthyrich) ×3
+- [Gems](../../systems/loot-tables/utility-packs.md#gems) ×3

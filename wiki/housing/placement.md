@@ -27,7 +27,7 @@ The following checks are applied in order:
 |---|---|
 | 1 | All tiles around the **outside** of the foundation must be passable. |
 | 2 | No impassable object or land tile may touch any part of the house directly. |
-| 3 | The area five tiles in front of and behind the house must be clear of all house tiles (yard = 1-tile buffer). |
+| 3 | A 1-tile buffer zone around the house perimeter must be clear of any other house tiles (`YardSize = 1`). |
 | 4 | The foundation must rest flat. Height variation around the foundation is not allowed. |
 | 5 | No foundation tile may overlap tiles considered roads. |
 

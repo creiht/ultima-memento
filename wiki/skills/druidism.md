@@ -52,7 +52,7 @@ Special mounts (Riding Dragons, Daemonic, Drakkhen, etc.) can be lored only if t
 
 ### Passive Gains During Taming
 
-Druidism is passively checked during the [Taming](taming.md) process, providing skill gains even when not actively loring.
+Druidism is passively checked during the [Taming](taming.md) process, providing skill gains even when not actively loring. **Note:** the passive gain only triggers when the creature is being tamed for the first time (`!alreadyOwned`). Re-taming a creature you already own does not grant Druidism gain. (Source: `Taming.cs:308`.)
 
 ## How to Train
 

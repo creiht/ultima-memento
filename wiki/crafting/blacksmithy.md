@@ -17,6 +17,8 @@ Blacksmithy uses **Metal Ingots** across 16 standard tiers (Iron → Dwarven) pl
 
 Iron, Dull Copper, Shadow Iron, Copper, Bronze, Gold, Agapite, Verite, Valorite, Nepturite, Obsidian, Steel, Brass, Mithril, Xormite, Dwarven
 
+> **Note:** Sci-fi metal tiers (e.g. Gundinium, Quadium, Unobtanium, Vorlinium, etc.) exist as item drops from sci-fi creatures, but these materials can be obtained as loot drops only and cannot currently be used in crafting — they are not selectable as a sub-resource in the Blacksmithy craft menu.
+
 ## Chain/Ringmail Armor
 
 | Item | Min Skill | Ingots |

@@ -21,7 +21,7 @@ Using Meditation attempts to enter a meditative trance, which boosts your mana r
 Chance = (50 + (Skill - (Current Mana / Max Mana)) * 2) / 100
 ```
 
-The lower your current mana relative to your max, the easier it is to meditate.
+In practice, because the formula uses integer division of `(Mana / ManaMax)`, that term evaluates to `0` whenever mana is below maximum and `1` only at exactly full mana. Meditation **cannot be attempted when your mana is already full**; whenever it is below maximum, the success chance is driven purely by your Meditation skill — intermediate mana levels do not change the chance.
 
 ### Requirements
 
@@ -44,7 +44,7 @@ On success, you enter a meditative trance (shown as a buff icon). A sound plays 
 
 ## How to Train
 
-Use the skill whenever your mana is not full. The skill check is against 0-100. Having low mana makes success more likely, providing better training opportunities after casting spells.
+Use the skill whenever your mana is not full. The skill check is against 0-100. Because success chance depends on skill (not on how low your mana is), simply repeat Meditation after casting spells whenever mana is below max.
 
 ## Related Skills
 

@@ -62,12 +62,12 @@ Certain locked-down item types are interactable by specific roles without requir
 
 | Item Type | Who Can Use |
 |---|---|
-| Runebook | Co-Owners and Friends (read) |
+| Runebook | Anyone (read) |
 | Container | Co-Owners (open) |
-| Light source | Anyone (visual only) |
-| Bulletin board | Friends (read) |
-| Dye tub | Friends |
-| Rental contract | Friends (collect rent) |
+| Light source | Friends |
+| Bulletin board | Anyone (read) |
+| Dye tub | Anyone |
+| Rental contract | Anyone (collect rent) |
 | Ballot Box | Anyone (vote) |
 | Training dummy | Anyone (practice) |
 | Archery butte | Anyone (practice) |

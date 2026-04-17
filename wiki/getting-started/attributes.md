@@ -43,7 +43,7 @@ Intelligence is the primary attribute for spellcasters.
 | Maximum per stat at creation | 60 |
 | Starting stat points at creation | 90 |
 
-The **stat cap** is the maximum sum of your Str + Dex + Int. New characters start with a stat cap of 250. Through the Avatar system, you can increase your stat cap by 1 per level (up to 150 levels of stat cap upgrades).
+The **stat cap** is the maximum sum of your Str + Dex + Int. New characters start with a stat cap of 250. When you activate the Avatar system, your stat cap is **reset to 100**; you can then purchase up to **150 levels** of the stat cap upgrade (1 point per level), returning it to 250 (100 + 150×1 = 250).
 
 ### Raising Stats
 
@@ -79,7 +79,7 @@ Stamina is consumed by movement, combat actions, and carrying heavy loads. Low s
 
 ### Mana
 
-Mana fuels all spellcasting. Mana regeneration is boosted by the **Meditation** skill and **Intelligence**. Wearing non-mage armor slows or blocks mana regeneration from Meditation. Equipment mana regeneration bonuses are capped at +9 for players (after level scaling).
+Mana fuels all spellcasting. Mana regeneration is boosted by the **Meditation** skill and **Intelligence**. Wearing non-mage armor slows or blocks mana regeneration from Meditation. Equipment mana regeneration bonuses are capped at **+18** for players (after the 2.0× level scaling applied in `AvatarEngine.cs`).
 
 ## Resistances
 

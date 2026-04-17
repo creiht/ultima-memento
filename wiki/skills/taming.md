@@ -72,9 +72,9 @@ On success:
 
 ## How to Train
 
-Tame progressively harder creatures. Re-taming already-owned creatures gives no skill gain ("That wasn't even challenging"). [Druidism](druidism.md) gains passively during the taming process.
+Tame progressively harder creatures. Re-taming already-owned creatures gives no skill gain ("That wasn't even challenging"). [Druidism](druidism.md) gains passively during the taming process — **but only on the first tame of a creature** (`!alreadyOwned`). Re-taming a pet you already own does **not** grant Druidism gain. (Source: `Taming.cs:308`.)
 
 ## Related Skills
 
-- [Druidism](druidism.md) - Examine and improve tamed pets; gains passively during taming.
+- [Druidism](druidism.md) - Examine and improve tamed pets; gains passively during taming (first-time tames only).
 - [Healing](healing.md) - Keep your pets alive.

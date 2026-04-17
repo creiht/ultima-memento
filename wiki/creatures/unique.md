@@ -43,7 +43,7 @@ Each unique creature has a detailed page in [notable/](notable/):
 - [Khumash-Gor](notable/khumash-gor.md)
 - [Lithos](notable/titan-lithos.md)
 - [Mangar](notable/mangar.md)
-- [Naxatilor](notable/codexgargoylea.md)
+- [Naxatilor](notable/codex-gargoyles.md)
 - [Pyros](notable/titan-pyros.md)
 - [Serpent of Chaos](notable/serpent-of-chaos.md)
 - [Serpent of Order](notable/serpent-of-order.md)

@@ -51,6 +51,8 @@ Source: `BaseCreature.cs:4557–4574`, HideType enum `BaseCreature.cs:162–176`
 
 ## Sci-Fi Leathers
 
+> **Note:** These materials can be obtained as loot drops but cannot currently be used in Leatherworking crafting — the sci-fi leather sub-resources are disabled in the Leatherworking craft menu. (They *can* be used as book cover material in [Inscription](inscription.md).)
+
 Sci-fi leathers drop from alien humanoid creatures in [Kuldar](../world/sosaria.md#kuldar-bottle-world), sci-fi dungeons, and related zones. Any creature with `HideType.SciFi` (alien/robot skinnable) yields one random sci-fi leather piece.
 
 All 11 sci-fi leathers share: Arm +12, all resistances +4, Durability +80. Each has a unique weapon/armor specialty and Lower Requirements bonus as shown.

@@ -31,7 +31,7 @@ Grave Robbing uses the Forensics skill to excavate graves for bones, reagents, a
 |---|---|---|
 | Grave Dust | 20.0 | 13% |
 | Fertile Dirt | 20.0 | 12% |
-| Cure Potion | 50.0 | 10% |
+| Lesser Cure Potion | 50.0 | 10% |
 | Brimstone | 50.0 | 10% |
 | Heal Scroll | 50.0 | 10% |
 
@@ -45,6 +45,14 @@ At higher levels, you have a chance to find relics (~2% each):
 - **Grave Dust** is a Necromancy reagent
 - **Fertile Dirt** is useful for gardening
 - **Relics** are valuable collectibles
+
+## Hazards and Penalties
+
+Grave robbing is not without risks:
+
+- **Awakened Undead**: A successful dig has roughly a 10% chance (modified by Spiritualism skill — higher Spiritualism reduces the chance) to wake an undead creature that immediately attacks you. The strength of the creature that rises scales with your Forensics skill — higher Forensics pulls up tougher enemies (Zombie, Skeleton, Ghoul, and Shade at low skill; Bone Knights, Liches, Vampires, Mummies, Phantoms, Lich Lord, and Rotting Corpse at higher skill). Awakened creatures are tagged "[Awakened]" in their title.
+- **Karma Loss**: Each successful dig costs you **−50 Karma** (down to a floor of −2459).
+- **Criminal Risk**: There is a 2% chance per dig of being "spotted" by a passerby, flagging you criminal. High Hiding (≥30) lets you roll a Stealth check to avoid detection.
 
 ## See Also
 

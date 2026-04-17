@@ -81,7 +81,7 @@ Characters with negative karma may find that some healers and shrine services ar
 Ultima Memento has strict PvP rules:
 
 - **Two different players** (not in the same guild or allied guilds) **cannot harm each other** — harmful actions between unrelated players are denied
-- **Guild warfare** — members of warring guilds can freely attack each other
+- **Guild warfare** — members of warring (enemy) guilds appear orange to each other, but per `Mobile_AllowHarmful` they still cannot actually deal damage. Only members of the **same guild** or **allied guilds** can freely harm each other
 - **Same player** — a player can harm themselves; whether pets can harm their owner is controlled by server settings (currently disabled)
 - **Pets** — pets from the same owner can harm each other
 
@@ -92,9 +92,9 @@ This means open-world PvP between strangers is not possible — only structured 
 Town guards respond to criminal and murderer activity:
 
 - Guards **chase** criminals and murderers in town (they do not instantly kill)
-- Criminals/murderers caught by guards are **sent to prison** and lose some stackable items (gold, potions, bandages, arrows, etc.)
+- Criminals/murderers caught by guards are **sent to prison**
 - Guards can **sprint** to catch fleeing criminals
-- When jailed, only raw currency is deleted from your inventory
+- When jailed, **only gold** is deleted from your inventory (server setting `S_JailOnlyDeletesMoney = true`). Other items — potions, bandages, arrows, equipment — are preserved
 
 ## Effects on Gameplay
 

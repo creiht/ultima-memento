@@ -55,7 +55,7 @@ Raw gems (Amber, Amethyst, Citrine, Diamond, Emerald, Ruby, Sapphire, Star Sapph
 Lapidary produces the same armor, weapons, shields, and helmets as Blacksmithy, but using Gemstone Blocks instead of Metal Ingots. This includes:
 
 - **Chain/Ringmail** (9 pieces, 10–20 blocks)
-- **Platemail** (13 pieces, 10–28 blocks)
+- **Platemail** (12 pieces, 10–28 blocks)
 - **Royal Armor** (7 pieces, 10–25 blocks)
 - **Helmets** (14 types, 15–25 blocks)
 - **Shields** (17 types, 8–25 blocks)

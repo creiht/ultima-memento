@@ -27,9 +27,9 @@ Monster packs are the loot tables assigned to creature body drops. Every creatur
 |--------|-------|-------|-------|-----------|
 | 100% | Gold (2d10+20 ≈ avg 31) | 1 stack | — | — |
 | 1% | [Magic item (Poor pool)](magic-item-pools.md#poor) | 1 | 1 | 0–25% |
-| 0.04% | [Instrument](../../../items/instruments.md) | 1 | 1 | 0–25% |
+| 0.04% | [Instrument](../../items/instruments.md) | 1 | 1 | 0–25% |
 | 0.04% | Spellbook | 1 | 1 | 0–25% |
-| 0.02% | [Quiver](../../../items/quivers.md) | 1 | 1 | 0–25% |
+| 0.02% | [Quiver](../../items/quivers.md) | 1 | 1 | 0–25% |
 | 20.4% | [Magic item (Meager1 pool)](magic-item-pools.md#meager) | 1–2 | 2 | 0–25% |
 | 20% | [Low Potion](utility-packs.md#lowpotions) | 1 | — | — |
 
@@ -45,9 +45,9 @@ Monster packs are the loot tables assigned to creature body drops. Every creatur
 | 100% | Gold (4d10+40 ≈ avg 62) | 1 stack | — | — |
 | 20.4% | [Magic item (Meager1 pool)](magic-item-pools.md#meager) | 1–2 | 2 | 0–30% |
 | 10.2% | [Magic item (Meager2 pool)](magic-item-pools.md#meager) | 1–2 | 2 | 0–30% |
-| 0.2% | [Instrument](../../../items/instruments.md) | 1–2 | 2 | 0–30% |
+| 0.2% | [Instrument](../../items/instruments.md) | 1–2 | 2 | 0–30% |
 | 0.2% | Spellbook | 1–2 | 2 | 0–30% |
-| 0.1% | [Quiver](../../../items/quivers.md) | 1–2 | 2 | 0–30% |
+| 0.1% | [Quiver](../../items/quivers.md) | 1–2 | 2 | 0–30% |
 | 50% | [Low Potion](utility-packs.md#lowpotions) | 1 | — | — |
 
 ---
@@ -63,9 +63,9 @@ Monster packs are the loot tables assigned to creature body drops. Every creatur
 | 32.8% | [Magic item (Average1 pool)](magic-item-pools.md#average) | 1–3 | 3 | 0–40% |
 | 32.8% | [Magic item (Average1 pool)](magic-item-pools.md#average) | 1–3 | 3 | 0–40% |
 | 19.5% | [Magic item (Average2 pool)](magic-item-pools.md#average) | 1–3 | 3 | 0–40% |
-| 0.8% | [Instrument](../../../items/instruments.md) | 1–3 | 3 | 0–40% |
+| 0.8% | [Instrument](../../items/instruments.md) | 1–3 | 3 | 0–40% |
 | 0.8% | Spellbook | 1–3 | 3 | 0–40% |
-| 0.4% | [Quiver](../../../items/quivers.md) | 1–3 | 3 | 0–40% |
+| 0.4% | [Quiver](../../items/quivers.md) | 1–3 | 3 | 0–40% |
 | 20% | [Med Potion](utility-packs.md#medpotions) | 1 | — | — |
 
 ---
@@ -81,9 +81,9 @@ Monster packs are the loot tables assigned to creature body drops. Every creatur
 | 76.3% | [Magic item (Rich1 pool)](magic-item-pools.md#rich) | 2–3 | 3 | 20–40% |
 | 76.3% | [Magic item (Rich1 pool)](magic-item-pools.md#rich) | 2–3 | 3 | 20–40% |
 | 61.7% | [Magic item (Rich2 pool)](magic-item-pools.md#rich) | 2–4 | 4 | 20–40% |
-| 4% | [Instrument](../../../items/instruments.md) | 2–3 | 3 | 20–40% |
+| 4% | [Instrument](../../items/instruments.md) | 2–3 | 3 | 20–40% |
 | 4% | Spellbook | 2–3 | 3 | 20–40% |
-| 2% | [Quiver](../../../items/quivers.md) | 2–3 | 3 | 20–40% |
+| 2% | [Quiver](../../items/quivers.md) | 2–3 | 3 | 20–40% |
 | 1% | [Semi-Artifact](artifact-pools.md#semi-artifacts) | 2–3 | 3 | 20–40% |
 | 50% | [Med Potion](utility-packs.md#medpotions) | 1 | — | — |
 
@@ -100,9 +100,9 @@ Monster packs are the loot tables assigned to creature body drops. Every creatur
 | 79.5% | [Magic item (FilthyRich1 pool)](magic-item-pools.md#filthyrich) | 2–4 | 4 | 25–50% |
 | 79.5% | [Magic item (FilthyRich1 pool)](magic-item-pools.md#filthyrich) | 2–4 | 4 | 25–50% |
 | 77.6% | [Magic item (FilthyRich2 pool)](magic-item-pools.md#filthyrich) | 3–4 | 4 | 25–50% |
-| 4% | [Instrument](../../../items/instruments.md) | 2–4 | 4 | 25–50% |
+| 4% | [Instrument](../../items/instruments.md) | 2–4 | 4 | 25–50% |
 | 4% | Spellbook | 2–4 | 4 | 25–50% |
-| 2% | [Quiver](../../../items/quivers.md) | 2–4 | 4 | 25–50% |
+| 2% | [Quiver](../../items/quivers.md) | 2–4 | 4 | 25–50% |
 | 1% | [Semi-Artifact](artifact-pools.md#semi-artifacts) | 1 | — | — |
 | 0.5% | [Artifact](artifact-pools.md#artifacts) | 1 | — | — |
 | 25% | [High Potion](utility-packs.md#highpotions) | 1 | — | — |
@@ -118,9 +118,9 @@ Monster packs are the loot tables assigned to creature body drops. Every creatur
 |--------|-------|-------|-------|-----------|
 | 100% | Gold (6d100+600 ≈ avg 900) | 1 stack | — | — |
 | 100% ×6 | [Magic item (UltraRich pool)](magic-item-pools.md#ultrarich) | 2–5 | 5 | 40–70% |
-| 8% | [Instrument](../../../items/instruments.md) | 2–5 | 5 | 40–70% |
+| 8% | [Instrument](../../items/instruments.md) | 2–5 | 5 | 40–70% |
 | 8% | Spellbook | 2–5 | 5 | 40–70% |
-| 4% | [Quiver](../../../items/quivers.md) | 2–5 | 5 | 40–70% |
+| 4% | [Quiver](../../items/quivers.md) | 2–5 | 5 | 40–70% |
 | 2% | [Semi-Artifact](artifact-pools.md#semi-artifacts) | 1 | — | — |
 | 1% | [Artifact](artifact-pools.md#artifacts) | 1 | — | — |
 | 50% | [High Potion](utility-packs.md#highpotions) | 1 | — | — |
@@ -136,9 +136,9 @@ Monster packs are the loot tables assigned to creature body drops. Every creatur
 |--------|-------|-------|-------|-----------|
 | 100% | Gold (10d100+800 ≈ avg 1300) | 1 stack | — | — |
 | 100% ×10 | [Magic item (UltraRich pool)](magic-item-pools.md#ultrarich) | 3–5 | 5 | 40–70% |
-| 8% | [Instrument](../../../items/instruments.md) | 3–5 | 5 | 40–70% |
+| 8% | [Instrument](../../items/instruments.md) | 3–5 | 5 | 40–70% |
 | 8% | Spellbook | 3–5 | 5 | 40–70% |
-| 6% | [Quiver](../../../items/quivers.md) | 3–5 | 5 | 40–70% |
+| 6% | [Quiver](../../items/quivers.md) | 3–5 | 5 | 40–70% |
 | 4% | [Semi-Artifact](artifact-pools.md#semi-artifacts) | 1 | — | — |
 | 2% | [Artifact](artifact-pools.md#artifacts) | 1 | — | — |
 | 75% | [High Potion](utility-packs.md#highpotions) | 1 | — | — |

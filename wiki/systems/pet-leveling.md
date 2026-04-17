@@ -11,13 +11,13 @@ Tamed creatures earn **trait points** through combat. You can then spend these p
 | Attribute | Points per Upgrade | Increase per Upgrade | Cap | Scale |
 |-----------|-------------------|---------------------|-----|-------|
 | Hit Points | 1 | +10 | 550 | 1.5x base |
-| Stamina | 1 | +10 | 250 | 1.5x base |
-| Mana | 1 | +10 | 250 | 1.5x base |
-| Physical Resist | 2 | +1 | 70 | 1.25x base |
-| Fire Resist | 2 | +1 | 70 | 1.25x base |
-| Cold Resist | 2 | +1 | 70 | 1.25x base |
-| Poison Resist | 2 | +1 | 70 | 1.25x base |
-| Energy Resist | 2 | +1 | 70 | 1.25x base |
+| Stamina | 1 | +15 | 750 | 1.5x base |
+| Mana | 1 | +10 | 550 | 1.5x base |
+| Physical Resist | 2 | +1 | 65 | 1.25x base |
+| Fire Resist | 2 | +1 | 65 | 1.25x base |
+| Cold Resist | 2 | +1 | 65 | 1.25x base |
+| Poison Resist | 2 | +1 | 65 | 1.25x base |
+| Energy Resist | 2 | +1 | 65 | 1.25x base |
 
 ## Caps and Scaling
 

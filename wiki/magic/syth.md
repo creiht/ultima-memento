@@ -1,11 +1,11 @@
 # Syth
 
-Syth powers are dark-side psionic abilities fueled by negative Karma, hatred, and rage. Like Jedi, they use [Psychology](../skills/psychology.md) and [Swords](../skills/swords.md) skills, but require Syth-themed equipment and negative Karma. Hell Shard crystals are consumed as a resource.
+Syth powers are dark-side psionic abilities fueled by negative Karma, hatred, and rage. Like Jedi, they use [Psychology](../skills/psychology.md) and [Swords](../skills/swordsmanship.md) skills, but require Syth-themed equipment and negative Karma. Hell Shard crystals are consumed as a resource.
 
 ## Requirements
 
-- **Skills:** [Psychology](../skills/psychology.md) and [Swords](../skills/swords.md) (both 10+ base)
-- **Karma:** Must be **negative** (< 0)
+- **Skills:** [Psychology](../skills/psychology.md) 10+, [Swords](../skills/swordsmanship.md) 10+, and [Tactics](../skills/tactics.md) 10+ (source: `SythSpell.cs:137`)
+- **Karma:** Must be **non-positive** (≤ 0) — Karma of exactly 0 is allowed (source: `SythSpell.cs:154`)
 - **Equipment:** Syth-themed robe/cloak/helm/talisman + sword equipped
 - **Resource:** Hell Shard Crystals (stored in datacron)
 - **Spellbook:** Syth Spellbook (datacron)
