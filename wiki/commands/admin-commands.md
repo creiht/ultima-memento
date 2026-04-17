@@ -81,6 +81,12 @@ These commands are restricted to staff members based on their access level. Acce
 | `logchests` | Administrator | `[logchests` | Logs all treasure chest locations. |
 | `ItemPrices-ExportCraft` | Administrator | `[ItemPrices-ExportCraft` | Exports crafted item pricing data. |
 | `ItemPrices-RecreateCraft` | Administrator | `[ItemPrices-RecreateCraft` | Recreates crafted item pricing. |
+| `Shoppe-Status` | GameMaster | `[Shoppe-Status` | Reports whether the Global Shoppe system is currently enabled or disabled. |
+| `Shoppe-Enable` | GameMaster | `[Shoppe-Enable` | Enables the Global Shoppe system. |
+| `Shoppe-Disable` | GameMaster | `[Shoppe-Disable` | Disables the Global Shoppe system until the next server restart. |
+| `Shoppe-GetContext` | GameMaster | `[Shoppe-GetContext` | Target a player to open a properties gump showing their shoppe context data (Points, Reputation, orders, etc.) |
+| `Shoppe-Order-Export` | GameMaster | `[Shoppe-Order-Export` | Targets a shoppe item and writes a unique list of its current orders to the server console. |
+| `Shoppe-Order-Export-All` | GameMaster | `[Shoppe-Order-Export-All` | Writes order lists for all shoppe types to the server console. |
 
 ## World Building
 

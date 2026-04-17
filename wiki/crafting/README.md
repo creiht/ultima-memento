@@ -43,7 +43,8 @@ Ultima Memento features an extensive crafting system with over 20 professions, m
 | System | Description | Page |
 |---|---|---|
 | Bulk Orders | Automated mass-crafting system | [bulk-orders.md](bulk-orders.md) |
-| Global Shoppes | Player-run and NPC trade shops | [global-shoppes.md](global-shoppes.md) |
+| Global Shoppes | Run your own craft business — take walk-in customer contracts and bulk craft orders for Gold, Reputation, and Points redeemable for unique rewards | [global-shoppes.md](global-shoppes.md) |
+| Merchant Crates | Lock down a crate in your house and fill it with crafted goods; the Merchants Guild pays you daily for the contents | [merchant-crates.md](merchant-crates.md) |
 
 ## Material Tiers
 
