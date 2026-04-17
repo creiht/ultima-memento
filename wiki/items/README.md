@@ -17,7 +17,7 @@ This section documents all item categories available in Ultima Memento. Items ar
 | Food | Edible items, beverages, cooking ingredients, and farming | [food.md](food.md) |
 | Games | Board games, card games, dice, and casino items | [games.md](games.md) |
 | Gems | Precious stones and crystals | [gems.md](gems.md) |
-| Houses | Player housing components and addons | [houses.md](houses.md) |
+| Houses | Player housing components and addons — see the full [Housing section](../housing/README.md) | [houses.md](houses.md) |
 | Instruments | Musical instruments for bards | [instruments.md](instruments.md) |
 | Artifacts | Unique named items with fixed stats — weapons, armor, jewelry, and more | [artifacts/](artifacts/README.md) |
 | Magical | Magical items, scrolls, reagents, wands, and enchanted gear | [magical.md](magical.md) |

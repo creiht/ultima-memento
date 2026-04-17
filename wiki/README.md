@@ -13,6 +13,7 @@ Welcome to the Ultima Memento player wiki! Ultima Memento is a custom Ultima Onl
 | [Quests](quests/README.md) | Quest types and guides — Assassin, Epic, Jester, Pagan, Underworld, and more |
 | [Creatures](creatures/README.md) | Creature families, stats, loot tables, and taming information. See [Loot Tables](systems/loot-tables/README.md) for how packs work. |
 | [Items](items/README.md) | Item categories, properties, special uses, and how to obtain them |
+| [Housing](housing/README.md) | Player housing — placement, ownership, storage, addons, lawn/shanty remodeling, and more |
 | [Commands](commands/README.md) | Player and admin commands reference |
 | [World](world/README.md) | Facets, regions, landmarks, and points of interest |
 | [Systems](systems/README.md) | Other game systems — Achievements, Avatar leveling, Champion Spawns, Pets, and more |
