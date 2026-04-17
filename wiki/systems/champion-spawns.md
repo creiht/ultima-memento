@@ -40,7 +40,7 @@ Rewards scale with the spawn's **size** and **difficulty** settings. See [Champi
 - **Power Scrolls**: `1 + difficulty + size÷3` scrolls distributed to participants (levels 5/10/15/20/25 at 35/30/20/10/5%).
 - **Treasure Chest**: `20×difficulty + 10×size` % chance; a level-10 chest ([TMegaRich tier](loot-tables/chest-containers.md)).
 - **Boss body loot**: [UltraRich](loot-tables/monster-packs.md#ultrarich) ×3 (varies by boss — check individual boss pages).
-- **Hoard Minion Familiar**: 100% guaranteed drop.
+- **Hoard Minion Familiar**: 100% guaranteed drop — a single-use consumable that summons a blessed pack-mule Hoard Minion for 10 minutes. See [Familiars — Hoard Minion](familiars.md#system-3--hoard-minion-familiar-item-consumable).
 
 ## Useful Slayer Weapons
 

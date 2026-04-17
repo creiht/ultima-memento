@@ -52,3 +52,7 @@ Recruited prisoners become **henchmen** -- see the prisoner gump for full detail
 - Begging skill can reduce the recruitment cost (up to 3,000 gold discount at GM).
 - Freeing prisoners earns fame and karma (or negative karma if karma is locked).
 - Human henchman prisoners are the most expensive but function as full henchmen.
+
+## See Also
+
+- [Henchmen](../systems/henchmen.md) — complete documentation of henchman mechanics: stat derivation, payment system, self-healing, resurrection, mounting, morale, and all payment currencies.

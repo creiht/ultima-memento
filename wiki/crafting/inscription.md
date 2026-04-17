@@ -23,6 +23,8 @@ Scrolls require the spell in a spellbook, blank scrolls, appropriate reagents, a
 
 Animate Dead, Blood Oath, Corpse Skin, Curse Weapon, Evil Omen, Horrific Beast, Lich Form, Mind Rot, Pain Spike, Poison Strike, Strangle, Summon Familiar, Vampiric Embrace, Vengeful Spirit, Wither, Wraith Form, Exorcism
 
+The **Summon Familiar** scroll lets the recipient cast the spell without requiring a Necromancer Spellbook for that cast. See [Familiars — Necromancy Summon Familiar](../systems/familiars.md#system-1--necromancy-summon-familiar) for the full familiar list, skill requirements, and mechanics.
+
 ### Elementalism Scrolls (32 spells, Circles 1-8)
 
 Elemental Armor, Bolt, Mend, Sanctuary through Elemental Apocalypse, Lord, Soul, Spirit

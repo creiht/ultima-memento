@@ -61,31 +61,29 @@ Civilized creatures are NPCs that inhabit towns and settlements — shopkeepers,
 
 | Name | Hits | Str | Dex | Int | Phys Resist | Fire Resist | Cold Resist | Poison Resist | Energy Resist | Tameable | Notable Loot |
 |------|------|-----|-----|-----|-------------|-------------|-------------|---------------|---------------|----------|--------------|
-| HenchHorse | 28-45 | 22-98 | 56-75 | 6-10 | 15-20 | - | - | - | - | No | - |
-| archer henchman | - | - | - | - | - | - | - | - | - | No | - |
-| archer henchman | - | - | - | - | - | - | - | - | - | No | - |
-| creature henchman | - | - | - | - | - | - | - | - | - | No | - |
-| fighter henchman | - | - | - | - | - | - | - | - | - | No | - |
-| henchman (HenchmanFighter) | - | - | - | - | - | - | - | - | - | No | - |
-| henchman (HenchmanArcher) | - | - | - | - | - | - | - | - | - | No | - |
-| henchman (HenchmanWizard) | - | - | - | - | - | - | - | - | - | No | - |
-| henchman (HenchmanMonster) | - | - | - | - | - | - | - | - | - | No | - |
-| henchman (HenchmanItem) | - | - | - | - | - | - | - | - | - | No | - |
-| wizard henchman | - | - | - | - | - | - | - | - | - | No | - |
+| HenchHorse | 28-45 | 22-98 | 56-75 | 6-10 | 15-20 | - | - | - | - | No | Auto-spawned when henchman master mounts |
+| archer henchman (deed) | - | - | - | - | - | - | - | - | - | No | Deed item; see [Henchmen](../systems/henchmen.md) |
+| creature henchman (deed) | - | - | - | - | - | - | - | - | - | No | Deed item; see [Henchmen](../systems/henchmen.md) |
+| fighter henchman (deed) | - | - | - | - | - | - | - | - | - | No | Deed item; see [Henchmen](../systems/henchmen.md) |
+| wizard henchman (deed) | - | - | - | - | - | - | - | - | - | No | Deed item; see [Henchmen](../systems/henchmen.md) |
+| henchman / Fighter (HenchmanFighter) | derived from summoner | derived | derived | derived | up to 70 | up to 70 | up to 70 | up to 70 | up to 70 | No | Stats scale with player — see [Henchmen](../systems/henchmen.md#stat-derivation) |
+| henchman / Archer (HenchmanArcher) | derived from summoner | derived | derived | derived | up to 70 | up to 70 | up to 70 | up to 70 | up to 70 | No | Stats scale with player — see [Henchmen](../systems/henchmen.md#stat-derivation) |
+| henchman / Wizard (HenchmanWizard) | derived from summoner | derived | derived | derived | up to 70 | up to 70 | up to 70 | up to 70 | up to 70 | No | Stats scale with player — see [Henchmen](../systems/henchmen.md#stat-derivation) |
+| henchman / Monster (HenchmanMonster) | derived from summoner | derived | derived | derived | up to 70 | up to 70 | up to 70 | up to 70 | up to 70 | No | Stats scale with player; prisoner-only — see [Henchmen](../systems/henchmen.md#stat-derivation) |
 
 ## Familiars
 
 | Name | Hits | Str | Dex | Int | Phys Resist | Fire Resist | Cold Resist | Poison Resist | Energy Resist | Tameable | Notable Loot |
 |------|------|-----|-----|-----|-------------|-------------|-------------|---------------|---------------|----------|--------------|
-| A hoard minion (HoardMinionFamiliarItem) | - | - | - | - | - | - | - | - | - | No | - |
-| a dark wolf | 60 | 100 | 90 | 90 | 40-50 | 25-40 | 25-40 | 25-40 | 25-40 | No | - |
-| a death adder | 50 | 70 | 150 | 100 | 10 | - | - | 100 | - | No | - |
-| a familiar | - | 65000 | - | - | - | - | - | - | - | No | - |
-| a hoard minion (HoardMinionFamiliar) | - | 65000 | - | - | - | - | - | - | - | No | - |
-| a horde minion | 70 | 100 | 110 | 100 | 50-60 | 50-55 | - | 25-30 | 25-30 | No | - |
-| a shadow wisp | 50 | 50 | 60 | 100 | 10-15 | 10-15 | 10-15 | 10-15 | 99 | No | - |
-| a vampire bat | 90 | 120 | 120 | 100 | 10-15 | 10-15 | 10-15 | 10-15 | 10-15 | No | - |
-| crystal ball of summoning | - | - | - | - | - | - | - | - | - | No | - |
+| Hoard Minion consumable (HoardMinionFamiliarItem) | — | — | — | — | — | — | — | — | — | No | Single-use; summons blessed pack mule for 10 min — see [Familiars](../systems/familiars.md#system-3--hoard-minion-familiar-item-consumable) |
+| a dark wolf (Necromancy familiar) | 60+ | 100 | 90 | 90 | 40-50 | 25-40 | 25-40 | 25-40 | 25-40 | No | +1 stamina to master every 2 s — see [Familiars](../systems/familiars.md#dark-wolf) |
+| a death adder (Necromancy familiar) | 50+ | 70 | 150 | 100 | 10 | — | — | 100 | — | No | Poisons on hit (Greater/Deadly) — see [Familiars](../systems/familiars.md#death-adder) |
+| a familiar (HenchmanFamiliar / Crystal Ball) | — | 65,000 | — | — | — | — | — | — | — | No | Blessed pack animal; see [Familiars — Crystal Ball](../systems/familiars.md#system-2--crystal-ball-of-summoning-henchmanfamiliar) |
+| a hoard minion (HoardMinionFamiliar) | — | 65,000 | — | — | — | — | — | — | — | No | Blessed pack mule; see [Familiars](../systems/familiars.md#system-3--hoard-minion-familiar-item-consumable) |
+| a horde minion (Necromancy familiar) | 70+ | 100 | 110 | 100 | 50-60 | 50-55 | — | 25-30 | 25-30 | No | Auto-loots stackables within 3 tiles — see [Familiars](../systems/familiars.md#horde-minion) |
+| a shadow wisp (Necromancy familiar) | 50+ | 50 | 60 | 100 | 10-15 | 10-15 | 10-15 | 10-15 | 99 | No | Mana flare for negative-karma players — see [Familiars](../systems/familiars.md#shadow-wisp) |
+| a vampire bat (Necromancy familiar) | 90+ | 120 | 120 | 100 | 10-15 | 10-15 | 10-15 | 10-15 | 10-15 | No | Strongest Necromancy familiar — see [Familiars](../systems/familiars.md#vampire-bat) |
+| crystal ball of summoning | — | — | — | — | — | — | — | — | — | No | Item that summons Crystal Ball familiar — see [Familiars](../systems/familiars.md#system-2--crystal-ball-of-summoning-henchmanfamiliar) |
 
 ## Guilds
 

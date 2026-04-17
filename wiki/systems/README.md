@@ -16,3 +16,5 @@ An index of the major game systems in Ultima Memento.
 | [Global Shoppes](../crafting/global-shoppes.md) | Run your own craft business — serve walk-in customers and fulfil bulk orders for Gold, Reputation, and Points redeemable for unique rewards |
 | [Loot Tables](loot-tables/README.md) | All loot systems: monster packs, treasure chests, special drops, champion rewards, paragon drops, and fishing loot |
 | [Legendary Artefacts](../items/artifacts/legendary.md) | Player-forged, blessed, leveling items from the Hall of Legends — gain attribute points as you kill creatures while equipped |
+| [Henchmen](henchmen.md) | Hire deed-based adventuring companions (Fighter / Archer / Wizard / Monster) at inns or via Prisoner quests; pay them treasure to keep their morale up |
+| [Familiars](familiars.md) | Three distinct familiar systems: Necromancy spell summons, Crystal Ball of Summoning pack-animal familiar, and consumable Hoard Minion Familiar item |

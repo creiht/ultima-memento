@@ -40,7 +40,7 @@ Each tamed creature requires follower slots. You cannot tame a creature if it wo
 
 ### Dark Wolf Familiar
 
-Having a Dark Wolf Familiar active grants automatic mastery over wolf-type creatures (Worg, Dire Wolf, Grey Wolf, Timber Wolf, White Wolf, Mystical Fox).
+Having a Dark Wolf Familiar active grants automatic mastery over wolf-type creatures (Worg, Dire Wolf, Grey Wolf, Timber Wolf, White Wolf, Mystical Fox). The Dark Wolf Familiar is obtained via the [Necromancy Summon Familiar spell](../magic/necromancy.md) — see [Familiars — Dark Wolf](../systems/familiars.md#dark-wolf) for its full stats and passive stamina-regen ability.
 
 ### Conditions That Interrupt Taming
 

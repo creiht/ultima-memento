@@ -32,7 +32,7 @@ On boss death, gold coins rain down in a 12-tile radius over ~10 seconds. Each t
 
 ## Hoard Minion Familiar
 
-Every champion boss drops a `HoardMinionFamiliarItem` — a 100% guaranteed drop placed into the corpse.
+Every champion boss drops a `HoardMinionFamiliarItem` — a 100% guaranteed drop placed into the corpse. This is a single-use consumable that summons a **blessed Hoard Minion** pack-mule for 10 minutes. See [Familiars — Hoard Minion Familiar](../familiars.md#system-3--hoard-minion-familiar-item-consumable) for full details.
 
 ---
 

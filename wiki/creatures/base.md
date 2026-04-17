@@ -13,7 +13,7 @@ Base creatures are foundational mobile types used throughout the server. These i
 | Name | Hits | Str | Dex | Int | Phys Resist | Fire Resist | Cold Resist | Poison Resist | Energy Resist | Tameable | Notable Loot |
 |------|------|-----|-----|-----|-------------|-------------|-------------|---------------|---------------|----------|--------------|
 | AnimalBuyInfo | - | - | - | - | - | - | - | - | - | No | - |
-| BaseFamiliar | - | - | - | - | - | - | - | - | - | No | - |
+| BaseFamiliar | - | - | - | - | - | - | - | - | - | No | Abstract base for Necromancy summon familiars (BardImmune, PoisonImmune Deadly, DispelDifficulty 80) — see [Familiars](../systems/familiars.md#system-1--necromancy-summon-familiar) |
 | BaseGuildmaster | - | - | - | - | - | - | - | - | - | No | - |
 | BaseMount | - | - | - | - | - | - | - | - | - | No | - |
 | BaseNPC | - | - | - | - | - | - | - | - | - | No | - |
@@ -30,7 +30,7 @@ Base creatures are foundational mobile types used throughout the server. These i
 | PresetMapBuyInfo | - | - | - | - | - | - | - | - | - | No | - |
 | RentedVendor | - | - | - | - | - | - | - | - | - | No | - |
 | Shop Not Yet Named | - | - | - | - | - | - | - | - | - | No | - |
-| fighter henchman | - | 304-400 | 102-150 | 204-300 | 40-50 | 40-50 | 40-50 | 40-50 | 40-50 | No | Bandage, HealPotion, CurePotion |
+| fighter henchman | - | 304-400 | 102-150 | 204-300 | 40-50 | 40-50 | 40-50 | 40-50 | 40-50 | No | Stats shown are example range; all stats derived from summoner — see [Henchmen](../systems/henchmen.md) |
 
 | mask of  | - | - | - | - | - | - | - | - | - | No | - |
 | mutant plant | 560-595 | 216-305 | 96-115 | 966-1045 | 55-65 | 25-30 | 50-60 | 50-60 | 25-30 | No | [Meager](../systems/loot-tables/monster-packs.md#meager), [Average](../systems/loot-tables/monster-packs.md#average), [Rich](../systems/loot-tables/monster-packs.md#rich), [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [UltraRich](../systems/loot-tables/monster-packs.md#ultrarich), [Gems](../systems/loot-tables/utility-packs.md#gems), [Meager](../systems/loot-tables/monster-packs.md#meager), [Average](../systems/loot-tables/monster-packs.md#average), [Rich](../systems/loot-tables/monster-packs.md#rich), [FilthyRich](../systems/loot-tables/monster-packs.md#filthyrich), [UltraRich](../systems/loot-tables/monster-packs.md#ultrarich), Sand, BrassIngot, BrassIngot, Pickaxe, Spade, IronOre, BreadLoaf, CheeseWheel, Ribs, Apple, CookedBird, LambLeg, BeverageBottle, BeverageBottle, BeverageBottle, Jug, Pitcher, Torch, Candle, Lantern, Gold, BatWing, NoxCrystal, GraveDust, PigIron, DaemonBlood, BatWing, NoxCrystal, GraveDust, PigIron, DaemonBlood, EmbalmingFluid, BloodyDrink, FreshBrain, ParagonChest, TreasureMap |
