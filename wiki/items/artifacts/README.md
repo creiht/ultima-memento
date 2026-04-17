@@ -10,10 +10,16 @@ Unlike [relics](../relics.md) (primarily decorative/housing items), equippable a
 |---|---|---|
 | `Artifact` | Minor Artifact | Utility/flavor items; mostly not in the Sage quest chain |
 | `StandardArtefact` | Artefact | Most equippable artifacts |
-| `LegendaryArtefact` | Legendary Artefact | Reserved for a handful of exceptional items |
+| `LegendaryArtefact` | Legendary Artefact | The [player-forged Hall of Legends system](legendary.md) — a separate leveling system, not part of the Sage quest line |
 | `DecorativeArtefact` | Decorative Artefact | Display/housing use (e.g. Ghost Ship Anchor) |
 
 ## Obtaining Artifacts
+
+### Legendary Artefacts (player-forged)
+
+**Legendary Artefacts are an entirely separate system from the Sage quest line.** They are created on-demand by **Arez, the God of Legends** at the Hall of Legends, named after the owner, permanently blessed, and level up as you kill creatures while equipped. There are 290 items available.
+
+See the full documentation: **[Legendary Artefacts](legendary.md)**
 
 ### Sage Artifact Quest
 
@@ -70,6 +76,7 @@ The Sage uses **70% legend accuracy** — occasionally the hint may be slightly 
 | [Trinkets](trinkets.md) | 3 | Talismans |
 | [Minor](minor.md) | 12 | Utility and flavor artifacts |
 | **Total** | **354** | |
+| [Legendary Artefacts](legendary.md) | 290 | Player-forged leveling items from the Hall of Legends — separate system, not part of the Sage quest line |
 
 ## Loot Drop Chances
 

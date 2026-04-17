@@ -204,7 +204,7 @@ Civilized creatures are NPCs that inhabit towns and settlements — shopkeepers,
 
 | Name | Hits | Str | Dex | Int | Phys Resist | Fire Resist | Cold Resist | Poison Resist | Energy Resist | Tameable | Notable Loot |
 |------|------|-----|-----|-----|-------------|-------------|-------------|---------------|---------------|----------|--------------|
-| Arez | - | 200 | 200 | 200 | 35-45 | 25-30 | 25-30 | 10-20 | 10-20 | No | - |
+| Arez | - | 200 | 200 | 200 | 35-45 | 25-30 | 25-30 | 10-20 | 10-20 | No | Issues [Legendary Branding Irons](../items/artifacts/legendary.md); drag a Legendary Artefact onto him to receive one |
 | Courier | - | 100 | 100 | 100 | 35-45 | 25-30 | 25-30 | 10-20 | 10-20 | No | - |
 | Devon | - | - | - | - | - | - | - | - | - | No | - |
 | Garth | - | - | - | - | - | - | - | - | - | No | - |
