@@ -80,7 +80,21 @@ Tracker and target must be in the same land area (both in the major world, or bo
 
 Use the skill and select creature types. The initial skill check is against 0-21.1, and passive gains occur from 21.1-100 when selecting from the tracking results.
 
-## Related Skills
+## What It Affects
 
-- [Searching](searching.md) - Assists tracking checks against hidden targets.
-- [Hiding](hiding.md) / [Stealth](stealth.md) - The skills tracked targets use to avoid detection.
+### Items
+
+- `MapRanger.cs:79` — Trail Maps require **80 Tracking** (or 80 Cartography) to use. These maps teleport the player to discovered locations and consume one charge per use.
+- `GoldenFeathers.cs:54` — Killing Harpies and Phoenixes awards Golden Feathers only if the killer has **90 Tracking** (or 90 Camping) and carries a Golden Ranger item.
+- `MagicForges.cs:744` — The Altar of Golden Rangers and Ranger Outpost forges enchant armor, weapons, and clothing with Gilded Spec resource only if the player has **90 Tracking** (or 90 Camping) and carries a Golden Feather.
+
+### Regions & Housing
+
+- `OutDoorRegion.cs:23` — **90 Tracking** (or 90 Camping) is required to build housing in the Ranger Outpost region.
+
+### Related Skills
+
+- [Searching](searching.md) - Assists tracking checks against hidden targets. Used in formula: `Chance = 50 * (Tracking * 2 + Searching) / (target Hiding + target Stealth)`.
+- [Hiding](hiding.md) / [Stealth](stealth.md) - The skills tracked targets use to avoid detection. Higher values make players/creatures harder to find.
+- [Camping](camping.md) - Alternative to Tracking for Ranger Outpost housing access (90), Golden Feather drops, and Golden Rangers enchanting.
+- Cartography - Alternative to Tracking for using MapRanger trail maps (80).

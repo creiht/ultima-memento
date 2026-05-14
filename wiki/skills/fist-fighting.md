@@ -37,20 +37,28 @@ Fist Fighting is both the **CastSkill** and **DamageSkill** for every Mystic spe
 
 See [Mystic magic](../magic/mystic.md) for the full spell list.
 
+### Best Weapon Skill (UBWS)
+
+Weapons with the Use Best Weapon Skill (UBWS) attribute will consider Fist Fighting when the player is unarmed or wearing pugilist gloves. If Fist Fighting value exceeds the weapon's native skill, it becomes the active combat skill.
+
 ### Spiritualism Synergy
 
-Fist Fighting contributes `FistFighting * 0.15` to the quality of Spiritualism summons.
+Fist Fighting contributes `(FistFighting × 0.15)` to the minimum HP of Spiritualism summons and channeled heals (`Spiritualism.cs:166, 173`).
 
 ### NPC AI Gates
 
 Several NPC abilities require reaching certain Fist Fighting thresholds alongside other skills:
 
-- **80+ Fist Fighting + 80+ Anatomy** → NPC AI unlocks **Stun**.
-- **80+ Fist Fighting + 80+ Arms Lore** → NPC AI unlocks **Disarm**.
+- **80+ Fist Fighting + 80+ Anatomy** → NPC AI unlocks **Stun** (`Behavior.cs:9769`).
+- **80+ Fist Fighting + 80+ Arms Lore** → NPC AI unlocks **Disarm** (`Behavior.cs:10489`).
 
 ## How to Train
 
-Attack while unarmed. Fist Fighting also gains on every Mystic spell cast. Monks in training should alternate between sparring unarmed and casting spells.
+Attack while unarmed. Fist Fighting also gains on every Mystic spell cast. The skill is marked as non-check-trainable (`SkillCheck.cs:59`), meaning it only trains through direct attack use rather than skill-check-based methods. Monks in training should alternate between sparring unarmed and casting spells.
+
+## Character Creation
+
+Choosing Fist Fighting as a starter skill grants Pugilist Gloves (`CharacterCreation.cs:421`). The Mage starter profession also receives 30 base Fist Fighting (`CharacterCreation.cs:897`).
 
 ## Related Skills
 
@@ -59,4 +67,105 @@ Attack while unarmed. Fist Fighting also gains on every Mystic spell cast. Monks
 - [Anatomy](anatomy.md) — NPC stun synergy; evaluates physical condition.
 - [Arms Lore](arms-lore.md) — NPC disarm synergy.
 - [Spiritualism](spiritualism.md) — gains summon quality boost from Fist Fighting.
+- [Tactics](tactics.md) — paired with Fist Fighting on runic tools and UBWS checks.
+- Pugilist Gloves — required equipment for Mystic spell casting; boosts unarmed combat.
 - Mystic magic: [wiki/magic/mystic.md](../magic/mystic.md).
+
+## What It Affects
+
+### Combat & Weapons
+
+| Reference | Description |
+|---|---|
+| `BaseWeapon.cs:881-903` | UBWS (Use Best Weapon Skill) — Fist Fighting is checked as the highest skill when no weapon is equipped; non-human NPCs default to Fist Fighting if it exceeds their native weapon skill |
+| `BaseWeapon.cs:3460` | Item property display text: "skill required: fist fighting" |
+| `ItemProperties.cs:627` | "skill required: fist fighting" tooltip text for weapon attributes |
+| `WeaponAbility.cs:72` | Fist Fighting counts toward total skill pool for mana cost reduction (300+ total skills = -10 mana, 200+ = -5 mana) |
+| `WeaponAbility.cs:118-146` | UBWS check: Fist Fighting is a valid skill for using weapon abilities with any weapon |
+| `Disarm.cs:43` | When using fists, Disarm does not require Tactics skill (only when using non-fist weapons) |
+| `ParalyzingBlow.cs:48` | When using fists, Paralyzing Blow does not require Tactics skill |
+
+### Mystic Magic System
+
+| Reference | Description |
+|---|---|
+| `MysticSpellBook.cs:129` | Requires 100 base Fist Fighting to pack Mystic spells from the shrine |
+| `QuiveringPalm.cs:46` | Paralyze duration = Fist Fighting value in seconds (e.g., 100 skill = 100 seconds) |
+| `PurityOfBody.cs:38` | Poison cure chance = 10000 + (FistFighting × 75) − (poison level penalty); higher Fist Fighting dramatically improves cure rate |
+| `PsionicBlast.cs:65` | Damage = (FistFighting + Intelligence) / 4, capped at 60 damage |
+| `GentleTouch.cs:58` | Heal = (FistFighting / 10) + random(1-10), modified by player level system |
+
+### Weapon Abilities
+
+| Reference | Description |
+|---|---|
+| `FistsOfFury.cs:35` | Number of strikes = (FistFighting / 75) + 1 → 1 strike at 0-74, 2 strikes at 75-99, 3 strikes at 100+ |
+
+### NPC Defaults
+
+| Reference | Description |
+|---|---|
+| `Behavior.cs:3193, 3400` | Base NPC generation sets Fist Fighting to 50.0 + difficulty bonus |
+| `Behavior.cs:6283` | Fist Fighting included in the standard skill list for NPC generation |
+| `TownGuards.cs:33` | Town Guards have 200.0 Fist Fighting |
+| `ConfirmBreakCrystalGump.cs:39` | Summoned imprisoned creatures receive 100 base Fist Fighting |
+
+### Crafting & Enchanting
+
+| Reference | Description |
+|---|---|
+| `BaseRunicTool.cs:237, 252` | Fist Fighting is a valid enchantment skill for runic tools |
+| `BaseRunicTool.cs:287-291` | Fist Fighting + Tactics is the bonus skill pair for enchanting Fist Fighting weapons |
+| `BaseRunicTool.cs:386` | Runic tool skill assignment: Fist Fighting weapons can enchant Tactics as the bonus skill |
+
+### Druidism Integration
+
+| Reference | Description |
+|---|---|
+| `Druidism.cs:151, 182` | Fist Fighting is included in the average fight skill calculation for talent evaluation (alongside Swords, Fencing, Bludgeoning) |
+| `Druidism.cs:498-504` | Fist Fighting is displayed as the "Combat Skill" in the Druidism talent screen when viewing creature stats |
+
+### Character & Progression
+
+| Reference | Description |
+|---|---|
+| `Players.cs:153` | Fist Fighting is the initial candidate for finding a player's highest skill (fallback before iterating all skills) |
+| `SkillArchive.cs:75` | Fist Fighting is tracked in the Avatar/level system's skill archive |
+| `ResourceMods.cs:1906` | Fist Fighting registered as skill ID 54 in resource/modification system |
+| `SkillCheck.cs:59` | Fist Fighting marked as non-check-trainable (only trains via direct attack use) |
+
+### Champion Spawns
+
+| Reference | Description |
+|---|---|
+| `Silvani.cs:34` | Champion Silvani — 97.6 to 100.0 |
+| `Neira.cs:42` | Champion Neira — 97.6 to 100.0, uses Fist Fighting as weapon skill |
+| `Mephitis.cs:40` | Champion Mephitis — 97.6 to 100.0 |
+| `Barracoon.cs:42` | Champion Barracoon — 97.6 to 100.0 |
+| `LordOaks.cs:57` | Champion Lord Oaks — 100.0 |
+| `Semidar.cs:43` | Champion Semidar — 90.1 to 105.0 |
+| `Rikktor.cs:52` | Champion Rikktor — 80.0 |
+| `SerpentineDragon.cs:35` | Champion Serpentine Dragon — 30.1 to 100.0 |
+| `GreaterMongbat.cs:29` | Champion Greater Mongbat — 20.1 to 35.0 |
+
+### Unique & Notable NPCs
+
+| Reference | Description |
+|---|---|
+| `TitanStratos.cs:58` | Titan Stratos — 97.6 to 100.0 |
+| `TitanLithos.cs:55` | Titan Lithos — 97.6 to 100.0 |
+| `SlasherOfVoid.cs:47` | Slasher of Void — 97.6 to 100.0 |
+| `KhumashGor.cs:39` | Khumash Gor — 97.6 to 100.0 |
+| `BaneOfInsanity.cs:51` | Bane of Insanity — 110.0 |
+| `BaneOfWantoness.cs:51` | Bane of Wantoness — 110.0 |
+| `BaneOfAnarchy.cs:51` | Bane of Anarchy — 110.0 |
+| `Exodus.cs:62` | Exodus — 110.0 |
+| `RuneGuardian.cs:277` | Rune Guardian — 90.1 to 120.0 |
+| `Leviathan.cs:68` | Leviathan — 97.6 to 107.5 |
+| `Shadowlord.cs:56` | Shadowlord — 90.1 to 100.0 |
+| `TitanPyros.cs:59` | Titan Pyros — 90.1 to 100.0 |
+| `TitanHydros.cs:59` | Titan Hydros — 90.1 to 100.0 |
+| `EpicCharacter.cs:80` | Epic Characters — 100.0 |
+| `MageGuildmaster.cs:25` | Mage Guildmaster — 60.0 to 83.0 |
+| `ElementalGuildmaster.cs:26` | Elemental Guildmaster — 60.0 to 83.0 |
+| `Sherry.cs:65` | Sherry — 100.0 |

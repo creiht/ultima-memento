@@ -40,7 +40,51 @@ If your base Lockpicking is 0, the first attempts trigger **10 rapid checks** in
 
 Attempt to pick locks repeatedly. Gain fires passively on each attempt, whether or not you succeed.
 
+## What It Affects
+
+### Containers & Items
+
+- `LockPick.cs:198,227` — `CheckTargetSkill(Lockpicking, item, LockLevel, MaxLockLevel)` is the core lock-picking check
+- `LockPick.cs:86` — doors require **30+ Lockpicking** before any attempt is allowed
+- `LockPick.cs:215` — if `(SkillValue + 2) < RequiredSkill`, the pick attempt is blocked entirely
+- `LockableContainer.cs:332` — on success, `LockPick()` opens the container and triggers `TrapOnLockpick` traps
+- `LockableContainer.cs:363,373` — **Tinkering** quality determines lock level when crafting lockable items: `level = (int)(tinkering * 0.8)`, then `LockLevel = level - 14`
+- `PickableDoor.cs:57-59` — dungeon doors spawn with `LockLevel=80, MaxLockLevel=110, RequiredSkill=100`
+- `PickBox.cs` — 5 training pickboxes (Easy 1→25, Normal 20→35, Difficult 30→45, Challenging 40→55, Hard 50→65); relock themselves after picking
+
+### Technology & Sci-Fi
+
+- `PowerGenerator.cs:329,368-375` — at **65+ Lockpicking**, a button appears to decipher circuit paths: check is `40 + random(0–80) < SkillValue`
+- `LockPick.cs:132-135` — sci-fi containers with access card (`0x3A75`) use the same lockpicking timer
+- `SkeltonsKey.cs:166` / `MasterSkeltonsKey.cs:168` / `MagicSkeltonsKey.cs:168` — skeleton/magic key cards can open tech locks (bypass skill check entirely, consumable)
+
+### Special Systems
+
+- `PuzzleGump.cs:76-368` — **Puzzle Chests** give lockpicking hints based on skill:
+  - **60+**: hints section appears
+  - **70+**: second cylinder hint added
+  - **80+**: first slot cylinder revealed + "used in unknown slot" hint
+  - **90+**: second hint cylinder shown
+  - **100+**: third hint cylinder shown
+- `TreasureMapChest.cs:148` — on Level 0 treasure map chests, `LockPick()` is called automatically via `CheckLocked()`; failure destroys a random item (or 1,000 gold) as dust
+- `LockPick.cs:191-199` — **bootstrap**: if `SkillBase < 1`, 10 rapid `CheckTargetSkill` checks fire in quick succession
+
+### Consumables & Alternatives
+
+- `BottleOfAcid.cs:133` — acid bypasses locks where `RequiredSkill <= 100`; also converts magic locks (`LockLevel == -255`) to regular ones
+- `BottleOfAcid.cs:128` — acid has **no effect** on Treasure Map Chests
+- `Elixirs.cs:2611-2689` — **Elixir of Lockpicking** adds a temporary skill mod via `DefaultSkillMod`; crafted by Alchemy (`DefAlchemy.cs:309`): requires 60–120 Alchemy + Butterfly Wings
+- `ResearchConjure.cs:64` — **Research** magic can conjure a lockpick (case 19 of the conjure list)
+
+### Player Commands
+
+- `Skills.cs:67` — `[help lockpicking]` description text
+- `SkillName.cs:53` — command shortcut: `[skipl 1]` or `lockpicking` in skill listing
+
 ## Related Skills
 
 - [Remove Trap](remove-trap.md) — chests are often both locked and trapped; disarm before you pick.
-- Tinkering (`../crafting/tinkering.md`) — crafts lockpicks.
+- Tinkering (`../crafting/tinkering.md`) — crafts lockpicks and determines lock levels on crafted containers.
+- [Stealing](stealing.md) — both are rogue/thief skills; key cards often appear as thief loot.
+- [Alchemy](../crafting/alchemy.md) — creates the Elixir of Lockpicking.
+- [Research](../magic/research.md) — conjuration can produce lockpicks.

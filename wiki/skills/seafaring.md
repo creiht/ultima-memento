@@ -51,7 +51,100 @@ This stacks with the standard Marksmanship hit chance.
 
 Seafaring gains passively on each fishing action and each sailing movement. Fish regularly and sail frequently to raise it.
 
-## Related Skills
+## Related Systems
+
+### Fishing & Harvest
+
+- `Fishing.cs:58` — Fishing harvest system uses Seafaring as its sole skill check (`fish.Skill = SkillName.Seafaring`)
+- `Fishing.cs:109-119` — `FinishHarvesting()` blocks Seafaring gains on land once skill reaches 50, forcing players to fish from boats for further training
+- `Fishing.cs:129-136` — `FishingSkill()` calls `CheckSkill(SkillName.Seafaring, 0, 125)` for skill gain on each fish
+- `Fishing.cs:139-146` — `SailorSkill()` calls `CheckSkill(SkillName.Seafaring, 0, 125)` when piloting a boat
+- `Fishing.cs:165-173` — Mutate table: high-sea fishing (on boat, far from town) unlocks rare items like `SpecialFishingNet`, `PearlSkull`, `FabledFishingNet`, `TreasureMap`, `MessageInABottle` at 80–90 skill
+- `Fishing.cs:301-318` — `IsNearUnderwaterRuins()` checks specific map coordinates for fishing up relics
+- `Fishing.cs:212-287` — `IsNearHugeShipWreck()` checks 30+ coordinates across all maps for shipwreck loot
+- `Fishing.cs:290-298` — `IsNearSpaceCrash()` checks 2 coordinates on Sosaria for sci-fi loot drops
+- `HarvestSystem.cs:396-404` — At special locations (shipwrecks, space crash, underwater ruins), fishing poles check Seafaring 1–250 for special loot
+
+### Containers & Salvage
+
+- `WaterChest.cs:68-69` — Chopping a water chest (driftboat) checks Seafaring / 10 (capped at 13) for salvage success
+- `WaterChest.cs:74-88` — Success grants random board types (Oak, Pine, Driftwood, Petrified, etc.) scaled by Carpentry
+- `SunkenShip.cs:59-60` — Chopping a sunken ship also checks Seafaring / 10 for salvage
+- `SunkenShip.cs:55-87` — Sunken ship salvage adds wood quantity based on ship weight + Carpentry / 2
+- `BaseBoat.cs:516` — Killing a boat's crew adds `Seafaring / 25` bonus loot levels
+- `Cargo.cs:865` — `CargoFishingGold()` calculates cargo gold as `cargoValue * (Seafaring * 0.01) / 3`
+
+### Weapon Combat
+
+- `BaseWeapon.cs:2393` — Harpoon damage bonus formula: `GetBonus(Seafaring, 0.20, 100.0, 10.0)` adds to weapon damage
+
+### Boat Mechanics
+
+- `BaseBoat.cs:946-953` — Boat speed tiers based on Seafaring:
+  - 0–49: no speed boost
+  - 50–74: +1 speed boost (−25 ms/tick)
+  - 75–99: +2 speed boosts (−50 ms/tick)
+  - 100–124: +3 speed boosts (−75 ms/tick)
+  - 125+: +4 speed boosts (−100 ms/tick) — absolute max
+- `BaseBoat.cs:213` — At 90+ Seafaring, the boat door becomes visible from outside
+- `BaseBoatDeed.cs:178` — Same 90+ threshold when placing a boat deed
+- `DockingLantern.cs:117` — 100+ Seafaring (Grandmaster) allows docking and launching anywhere, not just at official docks
+
+### Fishing Nets (Skill-Gated Items)
+
+- `FishingNet.cs:47,83` — Basic fishing net requires 30 Seafaring; used on high seas from a boat
+- `SpecialFishingNet.cs:48,83` — Special fishing net requires 60 Seafaring
+- `FabledFishingNet.cs:45,81` — Fabled fishing net requires 90 Seafaring
+- `NeptunesFishingNet.cs:39,75` — Neptune's fishing net requires 100 Seafaring
+- All nets spawn sea creatures (AquaticGhoul, SeaSnake, WaterElemental, Kraken, etc.) when cast
+
+### Seaweed Potions
+
+- `SpecialSeaweed.cs:67` — Squeezing seaweed checks `CheckSkill(SkillName.Seafaring, SkillNeeded, 125)` where SkillNeeded ranges from 50 to 95
+- `SpecialSeaweed.cs:27-58` — 31 seaweed varieties each require different skill thresholds and produce potions (healing, poison, mana, invisibility, etc.)
+- Skill 50: Seaweed of Nightsight, Lesser Cure, Lesser Poison, Lesser Heal, Lesser Explosion, Lesser Invisibility, Lesser Rejuvenate, Lesser Mana
+- Skill 60: Seaweed of Cure, Agility, Strength, Poison, Refresh, Heal, Explosion, Invisibility, Rejuvenate, Mana
+- Skill 70+: Seaweed of Greater Poison (70), Deadly Poison (80), Lethal Poison (80), Greater varieties (80)
+- Skill 95+: Seaweed of Invulnerability (95)
+
+### Elixirs
+
+- `Elixirs.cs:1675-1753` — `ElixirFishing` (Elixir of Seafaring) adds a temporary skill mod to Seafaring
+- `Elixirs.cs:1728` — Drink target: `SkillName.Seafaring`, duration scaled by Cooking + Tasting + Alchemy, strength +10 to +60
+- `PotionKeg.cs:526` — Keg version named "keg of seafaring elixir"
+- Elixir stacking rule: max 2 active elixirs at once, cannot drink another of the same type
+
+### Artifacts & Trinkets
+
+- `Artifact_SinbadsSword.cs:19` — Sword of Sinbad: `SkillBonuses.SetValues(1, SkillName.Seafaring, 30)`
+- `Artifact_DreadPirateHat.cs:19` — Dread Pirate Hat: `SkillBonuses.SetValues(0, SkillName.Seafaring, 20)`
+- `TrinketTalisman.cs:210` — Fishing Hook talisman: `SkillBonuses.SetValues(4, SkillName.Seafaring, 5–20)`
+- `GuildRing.cs:66` — Fishermens Guild ring: `SkillBonuses.SetValues(0, SkillName.Seafaring, 30)`
+
+### NPCs with Seafaring
+
+- `Fisherman.cs:18` — Fisherman vendor: 75.0–98.0 Seafaring (FishermensGuild)
+- `DrunkenPirate.cs:24` — Drunken Pirate vendor: 75.0–98.0 Seafaring (FishermensGuild)
+- `Shipwright.cs:32` — Shipwright vendor: 75.0–98.0 Seafaring
+- `Devon.cs:33` — Devon: 75.0–98.0 Seafaring
+- `FisherGuildmaster.cs:22` — Fisher Guildmaster: 80.0–100.0 Seafaring
+
+### Character Titles
+
+- `Players.cs:43` — Character titles include Seafaring as the 4th skill parameter passed to `Skill.CharacterTitle()`
+
+### Avatar System
+
+- `SkillArchive.cs:183-184` — Seafaring archived as property `Seafaring` (index 19) in the Avatar system
+
+### Harvest Tools
+
+- `ResourceMods.cs:189` — Fishing poles can be crafted with Seafaring skill bonuses (slot 4) via `BaseHarvestTool.SkillBonuses.SetValues(4, SkillName.Seafaring, skill)`
+
+### Related Skills
 
 - [Marksmanship](marksmanship.md) — the Harpoon uses both Seafaring (damage) and Marksmanship (hit chance).
 - [Tracking](tracking.md) — can detect hidden sea creatures that Seafaring alone cannot reveal.
+- [Mercantile](mercantile.md) — increases gold received when selling caught fish and cargo to merchants.
+- [Carpentry](../crafting/carpentry.md) — affects quality of boards salvaged from driftboats and sunken ships.
+- [Begging](begging.md) — begging demeanor provides bonus gold when selling cargo.
