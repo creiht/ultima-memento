@@ -1,14 +1,19 @@
 # Camping
 
-Camping is a survival skill for lighting fires, sleeping in bedrolls, and pitching tents in the wilderness.
+Camping is a survival skill for lighting fires, sleeping in bedrolls, and pitching tents in the wilderness. It also enables bypassing hunger and thirst decay while resting.
 
 ## Overview
 
 | Property | Value |
 |---|---|
-| Primary Stat | Dexterity |
-| Usage | Passive (triggered by item use) |
-| Cooldown | None |
+| **Primary Stat** | Dexterity |
+| **Usage** | Active (triggered by item use) |
+| **Skill Type** | Trade / Survival |
+| **Skill Check** | 0 - 125 |
+
+## Description
+
+Camping allows players to set up temporary shelters in the wilderness. By lighting campfires, sleeping in bedrolls, and using camping tents, players can restore HP and stamina while bypassing hunger and thirst decay. Camping also gates access to Ranger Outpost housing and certain wilderness activities.
 
 ## How It Works
 
@@ -65,38 +70,48 @@ Use Kindling, a Bedroll, or a Camping Tent repeatedly. Each item use fires a bur
 - `MagicForges.cs:744` — Altar of Golden Rangers / Ranger Outpost access requires `Camping >= 90` or `Tracking >= 90`.
 - `GoldenFeathers.cs:53` — Phoenix/Harpy kills grant Golden Feathers drop only if killer has `Camping >= 90` (or `Tracking >= 90`) and carries a `GoldenRangers` item.
 
-### Elixir
+### Elixirs
 
-- `Elixirs.cs:843-943` — `Elixir of Camping` (`ElixirCamping`) grants a temporary `DefaultSkillMod` bonus to Camping when consumed. Usable as a keg from `PotionKeg.cs:380`.
+- `Elixirs.cs:843-943` — **Elixir of Camping** (`ElixirCamping`) grants a temporary `DefaultSkillMod` bonus to Camping when consumed. Usable as a keg from `PotionKeg.cs:380`.
 
-## Items That Grant Camping Bonuses
+### Items That Grant Camping Bonuses
 
 | Item | Bonus | Source |
 |---|---|---|
 | Barbaric Talisman (SavageTalisman) | Camping +80, Cooking +50 (default) | `SavageTalisman.cs:26` |
 | Rangers Guild Ring | Camping +25 | `GuildRing.cs:53` |
 
-## NPCs with Camping Skill
+### NPCs with Camping Skill
 
-| NPC | Camping Range | Location / Notes |
+| NPC | Camping Range | File:Line |
 |---|---|---|
 | Ranger Guildmaster | 75–98 | `RangerGuildmaster.cs:22` |
 | Druid Guildmaster | 80–100 | `DruidGuildmaster.cs:26` |
 | Wandering Healer | 80–100 | `WanderingHealer.cs:39` |
 | Merchant (base) | 65–88 | `Merchant.cs:27` |
 | Provisioner | 65–88 | `Provisioner.cs:30` |
-| Ranger | 65–88 | `Ranger.cs:23` — talks about camping in gump title "Camping Safely" |
+| Ranger | 65–88 | `Ranger.cs:23` |
 | Druid | 80–100 | `Druid.cs:28` |
 | Druid Tree | 80–100 | `DruidTree.cs:35` |
 | Furtrader | 55–78 | `Furtrader.cs:28` |
 
 All of these NPCs sell camping-related gear through their vendor stock (`Market.Ranger` / `Market.Supplies` categories).
 
-## Related Skills
+## Related Systems & Skills
 
-- [Tracking](tracking.md) — shares the 90+ requirement for Ranger Outpost housing and Golden Feathers drops.
-- [Cooking](cooking.md) — campfires enable food cooking; Barbaric Talisman bonds them together (Camping + Cooking).
-- [Taming](taming.md) / [Veterinary](veterinary.md) — Rangers and Druids (who have high Camping) also have Taming/Veterinary; the Hitching Post (100+ Camping) lets you stable pets at home without a stable master.
-- [Hiding](hiding.md) / [Stealth](stealth.md) — all three skills are bonded for Assassin's Guild ring members. Safe camping requires no enemies nearby (`EnemiesNearby` check in `Kindling.cs:44-56`).
-- [Search](searching.md) — Ranger NPCs stock Searching skill; campfires require line-of-sight placement checks.
-- [Rangers Guild](../systems/guilds.md#rangers-guild) — Rangers Guild Ring gives +25 Camping.
+### Synergies
+
+- [Cooking](../crafting/cooking.md): Campfires enable food cooking; Barbaric Talisman bonds Camping + Cooking together (+80/+50).
+- [Tracking](tracking.md): Shares the 90+ requirement for Ranger Outpost housing and Golden Feathers drops.
+- [Hiding](hiding.md) / [Stealth](stealth.md): All three skills are bonded for Assassin's Guild ring members. Safe camping requires no enemies nearby (`EnemiesNearby` check in `Kindling.cs:44-56`).
+- [Taming](taming.md) / [Veterinary](veterinary.md): Rangers and Druids (who have high Camping) also have Taming/Veterinary; the Hitching Post (100+ Camping) lets you stable pets at home.
+
+### Prerequisites / Co-requisites
+
+- **Ranger Outpost Housing**: Requires `Camping >= 90` or `Tracking >= 90` (`OutDoorRegion.cs:23`).
+
+## Notes
+- Each Kindling, Bedroll, or Tent use fires 10 `CheckSkill` calls at once, making Camping one of the fastest skills to train.
+- Safe camping requires no enemies nearby (`EnemiesNearby` check in `Kindling.cs:44-56`).
+- The Hitching Post at Grandmaster Camping (100+) lets you stable pets at home without a stable master.
+

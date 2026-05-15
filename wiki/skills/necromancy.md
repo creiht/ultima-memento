@@ -6,11 +6,16 @@ Necromancy is the casting skill for the dark arts of death magic. It governs suc
 
 | Property | Value |
 |---|---|
-| Primary Stat | Intelligence |
-| Usage | Active (cast Necromancy spells) |
-| Type | Magic |
+| **Primary Stat** | Intelligence |
+| **Usage** | Active (cast Necromancy spells) |
+| **Skill Type** | Magic |
+| **Skill Check** | 0 - 100 (varies by spell) |
 
-## What It Affects
+## Description
+
+Necromancy governs success when casting spells from a Necromancer Spellbook, including duration and strength of several debuffs and transformations. Spell damage is driven by [Spiritualism](spiritualism.md), making Necromancy primarily a cast-reliability and access skill. Casting these spells awards negative karma, affecting your alignment.
+
+## How It Works
 
 ### Spell Casting
 
@@ -18,6 +23,24 @@ Necromancy is the casting skill for the dark arts of death magic. It governs suc
 - Minimum-skill gating for each spell (see [Necromancy magic system](../magic/necromancy.md) for per-spell thresholds).
 - Duration and strength of several debuffs and transformations (Strangle, Corpse Skin, Blood Oath, Lich/Wraith/Vampiric/Horrific form effects).
 - Does **not** directly scale spell damage — that is driven by [Spiritualism](spiritualism.md).
+
+### Transformation & Buff Formulas
+
+- Corpse Skin spell: duration = `((Spiritualism - Resist Magic) / 2.5) + 40` seconds. Applies -15 Fire/Poison resistance and +10 (level-modified) Cold/Physical resistance (`CorpseSkin.cs:68`).
+- Wither spell: drain amount = `Necromancy.Value / 5` (`Wither.cs:76`).
+- Vengeful Spirit spell: damage = `Necromancy.Value / 2` (`VengefulSpirit.cs:61`).
+- Pain Spike spell: damage = `Necromancy.Value / 5` (`PainSpike.cs:61`).
+- Poison Strike spell: damage = `Necromancy.Value / 10` (`PoisonStrike.cs:53`).
+- Strangle spell: damage = `Necromancy.Value / 25` (`Strangle.cs:149`).
+- Curse Weapon spell: bonus = `Necromancy.Value` (`CurseWeapon.cs:55`).
+
+## How to Train
+
+- Cast Necromancy spells from a Necromancer Spellbook; each cast rolls a skill gain check.
+- Cast at or near the minimum skill of each spell for best gain rates.
+- Casting Necromancy spells awards **negative Karma**, so training affects your alignment.
+
+## What It Affects
 
 ### Combat & Weapons
 
@@ -48,16 +71,6 @@ Necromancy is the casting skill for the dark arts of death magic. It governs suc
 - Necromancer Region: killing undead/demons in this region grants bonus necromancy reagents (Bat Wings, Nox Crystals, Grave Dust, Daemon Blood) to evil players with Necromancy >= 25 (`BaseCreature.cs:8317`).
 - House teleporter: Necromancy >= 80 (alongside Magery/Elementalism) prevents accidental teleport to the Moon when using certain teleporters (`PlayersHouseTeleporter.cs:276`).
 
-### Transformation & Buffs
-
-- Corpse Skin spell: duration = `((Spiritualism - Resist Magic) / 2.5) + 40` seconds. Applies -15 Fire/Poison resistance and +10 (level-modified) Cold/Physical resistance (`CorpseSkin.cs:68`).
-- Wither spell: drain amount = `Necromancy.Value / 5` (`Wither.cs:76`).
-- Vengeful Spirit spell: damage = `Necromancy.Value / 2` (`VengefulSpirit.cs:61`).
-- Pain Spike spell: damage = `Necromancy.Value / 5` (`PainSpike.cs:61`).
-- Poison Strike spell: damage = `Necromancy.Value / 10` (`PoisonStrike.cs:53`).
-- Strangle spell: damage = `Necromancy.Value / 25` (`Strangle.cs:149`).
-- Curse Weapon spell: bonus = `Necromancy.Value` (`CurseWeapon.cs:55`).
-
 ### Character & Alignment
 
 - Skill title: Necromancy.Base contributes to character title calculation alongside Magery, Healing, and Spiritualism (`Players.cs:43`).
@@ -81,23 +94,27 @@ Necromancy is the casting skill for the dark arts of death magic. It governs suc
 - Special potion: NecroSkinPotion has different effects at 100+ Necromancy (`NecroSkinPotion.cs:46`).
 - AttackSpells (Eighth Circle): uses the higher of Magery or Necromancy to determine spell circle and damage (`AttackSpells.cs:55-56`).
 
-## How to Train
+## Related Systems & Skills
 
-- Cast Necromancy spells from a Necromancer Spellbook; each cast rolls a skill gain check.
-- Cast at or near the minimum skill of each spell for best gain rates.
-- Casting Necromancy spells awards **negative Karma**, so training affects your alignment.
+### Synergies
+- [Spiritualism](spiritualism.md): damage skill for all Necromancy spells; averaged with Necromancy for Animate Dead power multiplier.
+- [Meditation](meditation.md): mana regeneration for sustained casting.
+- [Inscription](../crafting/inscription.md): relevant to scroll handling.
+- [Forensics](forensics.md): averaged with Necromancy for Mortician Shoppe crafting.
+- [Witchery](../crafting/witchery.md): crafting system used by Mortician Shoppe.
+- [Research](../magic/research.md): includes Necromancy in casting and damaging skill calculations.
+- [Transformation Spells](../magic/necromancy.md#transformations): Horrific Beast, Lich Form, Wraith Form, Vampiric Embrace.
+- [Summoning](../systems/summoning.md): Animate Dead and Summon Familiar mechanics.
 
-## Related Systems
+### Prerequisites / Co-requisites
+- [Necromancer Spellbook](../magic/necromancy.md): required to cast all Necromancy spells.
+- [Necromancers Guild](../world/guilds.md): the guild associated with this skill; provides vendor discounts.
+- [Magery](magery.md): alternative magic skill; gates access to the same weapons and regions.
+- [Elementalism](elementalism.md): alternative magic skill; gates access to the same weapons and regions.
+- [Moon travel](../world/facets.md): requires Necromancy >= 80 (alongside Magery and Elementalism) for access.
 
-- [Necromancy magic system](../magic/necromancy.md) — full spell list and requirements.
-- [Spiritualism](spiritualism.md) — damage skill for all Necromancy spells.
-- [Meditation](meditation.md) — mana regeneration for sustained casting.
-- [Inscription](../crafting/inscription.md) — relevant to scroll handling.
-- [Magery](magery.md) — alternative magic skill; gates access to the same weapons and regions.
-- [Elementalism](elementalism.md) — alternative magic skill; gates access to the same weapons and regions.
-- [Forensics](forensics.md) — averaged with Necromancy for Mortician Shoppe crafting.
-- [Witchery](../crafting/witchery.md) — crafting system used by Mortician Shoppe.
-- [Necromancers Guild](../world/guilds.md) — the guild associated with this skill.
-- [Research](../magic/research.md) — includes Necromancy in casting and damaging skill calculations.
-- [Transformation Spells](../magic/necromancy.md#transformations) — Horrific Beast, Lich Form, Wraith Form, Vampiric Embrace.
-- [Summoning](../systems/summoning.md) — Animate Dead and Summon Familiar mechanics.
+## Notes
+- Casting Necromancy spells awards **negative Karma**, affecting your alignment and NPC reactions.
+- Necromancy >= 50 with negative karma flags you as "evil" for NPC reactions.
+- Players with Necromancy < 100 and necromancer hue (0x47E) will have their hue and hair reset on skill change.
+- Necromancy >= 80 is required to prevent accidental Moon teleport via house teleporters.

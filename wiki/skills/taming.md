@@ -6,10 +6,16 @@ Taming lets you domesticate wild creatures so they serve you as loyal pets and c
 
 | Property | Value |
 |---|---|
-| Primary Stat | Strength |
-| Usage | Active (targeted) |
-| Range | 3 tiles (targeting), 6 tiles (during taming) |
-| Taming Duration | 3-4 ticks, 3 seconds each (9-12 seconds total) |
+| **Primary Stat** | Strength |
+| **Usage** | Active (targeted) |
+| **Skill Type** | Pet / Utility |
+| **Skill Check** | Varies (creature-specific; see formula below) |
+| **Range** | 3 tiles (targeting), 6 tiles (during taming) |
+| **Taming Duration** | 3-4 ticks, 3 seconds each (9-12 seconds total) |
+
+## Description
+
+Taming is used to domesticate wild creatures into loyal pets. Each creature has a minimum taming skill requirement, and the attempt becomes progressively harder with each previous owner. Druidism provides a passive bonus during taming attempts, and tamed pets benefit from synergies with Herding, Veterinary, and Druidism skills.
 
 ## How It Works
 
@@ -163,9 +169,9 @@ Base FollowersMax is 5. These four skills are the **only** skills that affect Fo
 
 Reaching **51 in Taming** triggers a Codex of Wisdom entry (`CodexWisdom.cs:115,389`).
 
-### Related Systems
+### Server Settings
 
-| System | Source | Taming Interaction |
+| Setting | Source | Value |
 |---|---|---|
 | Pet Stat Gain Delay | `Settings.cs:684` | `S_PetStatGainDelay = 5.0` minutes between pet stat gains |
 | Damage to Pets | `Settings.cs:688` | `S_DamageToPets = 1.4` (1.4x normal damage) |
@@ -173,11 +179,20 @@ Reaching **51 in Taming** triggers a Codex of Wisdom entry (`CodexWisdom.cs:115,
 | Pet Notoriety | `Settings.cs:695` | `S_PetsMatchMasterNotoriety = true` by default |
 | No Mounts in Regions | `Settings.cs:709` | `S_NoMountsInCertainRegions = true` — mounts dismount in dungeons/caves |
 
-## Related Skills
+## Related Systems & Skills
 
-- [Druidism](druidism.md) - Examine and improve tamed pets; gains passively during taming (first-time tames only). Also contributes to control chance and stable slots.
-- [Herding](herding.md) - Leads tamed creatures to new locations; gains passively on pet control checks; contributes to stable slots and follower tiers.
-- [Veterinary](veterinary.md) - Heals and treats tamed pets; contributes to stable slots and follower tiers.
-- [Healing](healing.md) - Keep your pets alive with bandages and spells.
-- [Necromancy](../magic/necromancy.md) - Summon Familiar spell provides Dark Wolf Familiar for taming mastery over wolf-type creatures.
-- [Spiritualism](spiritualism.md) - Required alongside Necromancy for Summon Familiar selection.
+### Synergies
+- [Druidism](druidism.md): Examine and improve tamed pets; gains passively during taming (first-time tames only). Also contributes to control chance and stable slots.
+- [Herding](herding.md): Leads tamed creatures to new locations; gains passively on pet control checks; contributes to stable slots and follower tiers.
+- [Veterinary](veterinary.md): Heals and treats tamed pets; contributes to stable slots and follower tiers.
+- [Healing](healing.md): Keep your pets alive with bandages and spells.
+
+### Prerequisites / Co-requisites
+- [Necromancy](../magic/necromancy.md): Summon Familiar spell provides Dark Wolf Familiar for taming mastery over wolf-type creatures.
+- [Spiritualism](spiritualism.md): Required alongside Necromancy for Summon Familiar selection.
+
+## Notes
+
+- Re-taming a pet you already own does **not** grant Druidism gain — only the first tame of a creature triggers passive Druidism gains (`Taming.cs:308`).
+- The Dark Wolf Familiar grants automatic taming mastery over wolf-type creatures, effectively bypassing the MinTameSkill requirement.
+- Creatures with `CanAngerOnTame` have a 95% chance to become hostile on taming attempts.

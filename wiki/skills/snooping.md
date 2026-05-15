@@ -6,14 +6,18 @@ Snooping lets you peek into the backpacks of other creatures and players to see 
 
 | Property | Value |
 |---|---|
-| Primary Stat | Dexterity |
-| Usage | Passive (triggered by opening a container on a mobile) |
-| Range | 1 tile |
-| Skill Check | 0 - 125 |
+| **Primary Stat** | Dexterity |
+| **Usage** | Passive (triggered by opening a container on a mobile) |
+| **Skill Type** | Detection |
+| **Skill Check** | 0 - 125 |
+
+## Description
+
+Snooping is a passive skill triggered automatically when attempting to open a container belonging to another mobile. Success reveals the container's contents, while failure may expose your hiding status or alert nearby players.
 
 ## How It Works
 
-Snooping is triggered automatically when you attempt to open a container that belongs to another mobile (their backpack or a container within it). It is **not** an active skill you use from the skill list.
+Snooping is **not** an active skill you use from the skill list. It triggers when you attempt to open a container that belongs to another mobile (their backpack or a container within it).
 
 ### Success
 
@@ -23,7 +27,7 @@ On a successful skill check (0-125), you see the contents of the container. If t
 
 On failure, "You failed to peek into the container." Additionally, if your [Hiding](hiding.md) skill / 2 is less than a random 0-100 roll, you are **revealed** from hiding.
 
-### Getting Noticed
+### Detection
 
 Even on success, if your Snooping skill is below a random 0-100 roll, **everyone within 8 tiles** sees a message: "You notice [Name] attempting to peek into [Target]'s belongings."
 
@@ -50,8 +54,12 @@ Snooping gains come from attempting to open containers on creatures and NPCs. Th
 - `Snooping.cs:95` — Skill check range is **0 - 125** via `CheckTargetSkill`.
 - `Snooping.cs:107` — On failure, if your [Hiding](hiding.md) skill / 2 is less than a random 0-100, `RevealingAction()` is called, exposing you from hiding.
 - `Snooping.cs:97` — Trapped containers (`TrapableContainer`) trigger their trap when snooped/opened.
+- `LockableContainer.cs:324-330` — Locked containers block snooping just like opening. If `CheckLocked(from)` returns true, snooping is prevented entirely.
+- `BaseRunicTool.cs:226` — Runic tools can enchant items with Snooping as a possible skill bonus.
+- `SpecialScroll.cs:86` — Snooping is skill index 29 on special scrolls.
+- `BaseRace.cs:1328` — Race skill slot 28 maps to Snooping for racial skill assignments.
 
-### Stealing & Combat
+### Combat & Stealing
 - `Stealing.cs:241` — When a thief NPC fails to snoop a coffer, they check `CheckSkill(Snooping, 0, 150)` to determine whether nearby vendors notice ("Stop! Thief!"). Higher snooping = less likely to be reported.
 - `Behavior.cs:3704` — **Hidden NPC stealing**: When you hide within 2 tiles of a creature, if their Stealing >= random 1-125 AND their Snooping >= random 1-100, there's a 1-in-5 chance they steal an item from your backpack (blessed items and multi-item containers are excluded).
 - `BaseCreature.cs:6532-6539` — **Coin steal on attack**: When attacking a creature that carries coins, if you are within 1 tile and your Stealing >= 20 and your creature level < your Stealing AND your Snooping > random 20-126, you steal a portion of their coins. The amount stolen = `coins = coins * (1 - creatureLevel / yourStealing)`. Loot types include Gold, DDXormite, Crystals, and DDJewels.
@@ -66,7 +74,7 @@ Snooping gains come from attempting to open containers on creatures and NPCs. Th
 ### Required Skills & Prerequisites
 - `DisguiseKit.cs:59` — Disguise Kit requires at least **50 base** in Snooping (along with 50 base in Ninjitsu, Stealth, Hiding, or Psychology) to use.
 
-### Items & Equipment (Skill Bonuses)
+### Items That Grant Bonuses
 | Item | Location | Bonus | Source |
 |---|---|---|---|
 | Burglar's Bandana | `Artifact_BurglarsBandana.cs:21` | +10 Snooping (Skill Bonus slot 2) | Artifact |
@@ -81,22 +89,21 @@ Snooping gains come from attempting to open containers on creatures and NPCs. Th
 - `ForceGrip.cs:62` (Jedi/ForceGrip) — When using Force Grip to interact with a container on another mobile, calls `item.OnSnoop(caster)` instead of opening normally.
 - `Psychokinesis.cs:62` (Syth/Psychokinesis) — Same behavior: calls `item.OnSnoop(caster)` to snoop containers via telekinesis.
 
-### Containers & Lockable Items
-- `LockableContainer.cs:324-330` — Locked containers block snooping just like opening. If `CheckLocked(from)` returns true, snooping is prevented entirely.
-- `BaseRunicTool.cs:226` — Runic tools can enchant items with Snooping as a possible skill bonus.
+## Related Systems & Skills
 
-### Scroll System
-- `SpecialScroll.cs:86` — Snooping is skill index 29 on special scrolls.
+### Synergies
+- [Stealing](stealing.md): Directly paired; Snooping enables stealing from containers and creatures. Thieves Guild auto-restricts both.
+- [Hiding](hiding.md): Failed Snooping may reveal you based on Hiding / 2 vs random 0-100. Hiding also protects against NPC theft (Behavior.cs:3700).
+- [Lockpicking](lockpicking.md): Both used on containers; LockableContainer blocks both. Thieves Guild auto-restricts both.
+- [Stealth](stealth.md): Thieves Guild auto-restricts both; both synergize with covert operations.
+- [Searching](searching.md): Complementary skill for finding hidden items and containers.
+- [Remove Trap](remove-trap.md): Trapped containers trigger on Snooping; both appear on Thieves Guild Ring and artifact equipment.
 
-### Race System
-- `BaseRace.cs:1328` — Race skill slot 28 maps to Snooping for racial skill assignments.
+### Prerequisites / Co-requisites
+- [Disguise Kit](stealing.md): Requires 50 base Snooping to use the Disguise Kit item.
 
-## Related Skills
-
-- [Stealing](stealing.md) — Directly paired; Snooping enables stealing from containers and creatures. Thieves Guild auto-restricts both.
-- [Hiding](hiding.md) — Failed Snooping may reveal you based on Hiding / 2 vs random 0-100. Hiding also protects against NPC theft (Behavior.cs:3700).
-- [Lockpicking](lockpicking.md) — Both used on containers; LockableContainer blocks both. Thieves Guild auto-restricts both.
-- [Stealth](stealth.md) — Thieves Guild auto-restricts both; both synergize with covert operations.
-- [Searching](searching.md) — Complementary skill for finding hidden items and containers.
-- [Remove Trap](remove-trap.md) — Trapped containers trigger on Snooping; both appear on Thieves Guild Ring and artifact equipment.
-- [Disguise Kit](stealing.md) — Requires 50 base Snooping to use the Disguise Kit item.
+## Notes
+- Snooping is completely passive — it triggers automatically and cannot be used on demand.
+- Even on a successful snoop, detection is possible based on a random roll vs your skill.
+- Snooping has a large range of artifact bonuses (up to +25 flat from Cloak of the Rogue).
+- Citizens can always be snooped freely, regardless of restrictions.

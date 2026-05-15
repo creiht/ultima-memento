@@ -6,34 +6,18 @@ Magery is the traditional arcane casting skill. It governs your ability to succe
 
 | Property | Value |
 |---|---|
-| Primary Stat | Intelligence |
-| Usage | Active (cast spells or use scrolls) |
-| Type | Magic |
+| **Primary Stat** | Intelligence |
+| **Usage** | Active (cast spells or use scrolls) |
+| **Skill Type** | Magic |
+| **Skill Check** | Circle-dependent (see below) |
 
-## What It Affects
+## Description
 
-- Success chance when casting any spell from a standard Spellbook.
-- Scroll casting (scrolls use a reduced skill requirement of circle − 2).
-- Damage and potency of most Magery spells that scale with the caster's skill.
-- Resistance checks for many Magery debuffs (Clumsy, Curse, Paralyze, Mind Blast, etc.).
-- Success of summoning and dispelling creatures.
+Magery governs casting spells from a standard Spellbook and determines the power and reliability of most Magery effects. It also governs spell casting from scrolls, which use a reduced skill requirement of circle − 2. Higher Magery improves success rates, spell damage, and unlocks NPC spellcasting and region access.
 
-## How to Train
+## How It Works
 
-- Cast spells from a Spellbook — every cast rolls a skill gain check.
-- Cast from scrolls at low skill to learn higher-circle spells before you can cast them from memory.
-- Fizzle-rate drops rapidly as skill approaches the spell's circle requirement, so moving up in circles keeps gain rates high.
-- Meditation and high Intelligence help sustain casting long enough to gain.
-
-## Related Systems
-
-- [Magery magic system](../magic/magery.md) — full spell list, circles, and reagent costs.
-- [Meditation](meditation.md) — regenerates the mana Magery consumes.
-- [Inscription](../crafting/inscription.md) — craft Magery scrolls and spellbooks.
-- [Magic Resistance](magic-resistance.md) — defensive counter to hostile Magery.
-
-### Spellcasting
-
+### Spellcasting Mechanics
 - `Spell.cs:50` — `MagerySpell.CastSkill` defaults to `SkillName.Magery`; all Magery spells use this skill for cast chance and damage scaling.
 - `MagerySpell.cs:28-38` — `GetCastSkills()` defines the success range per spell circle: range is `circle*100/7 ± 20` for spellbook casts (reduced by 2 circles when casting from scrolls).
 - `MagerySpell.cs:41` — Mana cost per circle: `[4, 6, 9, 11, 14, 20, 40, 50]` for circles 1–8.
@@ -44,7 +28,6 @@ Magery is the traditional arcane casting skill. It governs your ability to succe
 - `SpellHelper.cs:359` — Stat gain from `GainStat()` uses `ItemSkillValue(Magery) * 0.1 + 1` as baseline when no stat is specified.
 
 ### Spell-Specific Mechanics
-
 | Spell | Effect of Magery |
 |---|---|
 | Heal (`Heal.cs`) | Heals `skill/5 + 5` hits |
@@ -60,21 +43,34 @@ Magery is the traditional arcane casting skill. It governs your ability to succe
 | Dispel (`Dispel.cs`) | Dispel effectiveness scales with caster Magery |
 
 ### Weapon Damage
-
 - `BaseWeapon.cs:795-801` — Weapons with the `MageWeapon` attribute (0–30) apply a skill modifier to Magery: `mod = MageWeapon - 30`. A +30 MageWeapon weapon gives +0 bonus; +20 gives -10.
 - `BaseWeapon.cs:2397` — `GetDamageScale()` gives a damage bonus for staff/wand users: `GetBonus(Magery, 0.625, 100.0, 6.25)` — each point of Magery adds 0.625 damage at low skill, capping at 6.25 bonus at 100 Magery.
 - `BaseWeapon.cs:893-894` — When using a staff/wand, if Magery > the equipped weapon skill, the weapon skill is replaced by Magery for attack rolls.
 - `BaseWeapon.cs:2299-2307` — `WizardCheck()` classifies the player as "mage" if Magery is highest among Magery/Necromancy/Elementalism; determines job title and access to arcane items.
 
-### Armor & Item Requirements
+## How to Train
 
+- Cast spells from a Spellbook — every cast rolls a skill gain check.
+- Cast from scrolls at low skill to learn higher-circle spells before you can cast them from memory.
+- Fizzle-rate drops rapidly as skill approaches the spell's circle requirement, so moving up in circles keeps gain rates high.
+- Meditation and high Intelligence help sustain casting long enough to gain.
+
+## What It Affects
+
+### Success & Reliability
+- Success chance when casting any spell from a standard Spellbook.
+- Scroll casting (scrolls use a reduced skill requirement of circle − 2).
+- Damage and potency of most Magery spells that scale with the caster's skill.
+- Resistance checks for many Magery debuffs (Clumsy, Curse, Paralyze, Mind Blast, etc.).
+- Success of summoning and dispelling creatures.
+
+### Armor & Item Requirements
 - `AOS.cs:953` — Polymorph spell is forcibly ended if Magery drops below 66.1.
 - `AOS.cs:962` — Incognito spell is forcibly ended if Magery drops below 38.1.
 - `Spellbook.cs:805,811` — Ancient Spellbook and regular Spellbooks require at least 30.0 base Magery (or base Necromancy ≥30 for Ancient) to equip.
 - `FamiliarItem.cs:84` — Familiars require at least 50 base Magery, Elementalism, or Necromancy to summon.
 
 ### NPC & AI Behavior
-
 - `OmniAI Core.cs:55` — NPCs with Magery base > 10.0 can use Magery spells (`m_CanUseMagery`).
 - `OmniAI Magery.cs:101-103` — AI with Magery > 80 casts `ManaVampire`; between 40–80 casts `ManaDrain`.
 - `OmniAI Magery.cs:139,165` — AI with Magery ≥ 40 can use summoning and self-buff spells.
@@ -90,13 +86,11 @@ Magery is the traditional arcane casting skill. It governs your ability to succe
 - `BaseCreature.cs:2681` — Mage-type creatures are set with Magery 90.1–100.0.
 
 ### Regions & Gate Access
-
 - `MoonCore.cs:55,76` — Moon facet requires Magery ≥ 80 (or Elementalism/Necromancy ≥ 80) to remain; otherwise teleports out.
 - `DawnRegion.cs:36,57` — Dawn facet requires Magery ≥ 80 to enter/stay.
 - `LunaRegion.cs:37,56` — Luna facet requires Magery ≥ 80 to enter/stay.
 
 ### Character Creation & Titles
-
 - `CharacterCreation.cs:293-294` — Mage starter class receives a Spellbook and random Magery scrolls (1st + one 2nd circle).
 - `CharacterCreation.cs:894` — Mage starter begins with Magery at 30.0.
 - `Players.cs:43,255` — Magery can be the displayed skill title (option 31 in character screen).
@@ -104,26 +98,7 @@ Magery is the traditional arcane casting skill. It governs your ability to succe
 - `Skills.cs:157,192` — Barbaric characters with Magery title become "Shaman"; Oriental characters become "Wu Jen".
 - `SkillCheck.cs:242` — Magery is a MagesGuild NPC guild skill (alongside Psychology and Meditation).
 
-### Crafting & Tools
-
-- `BaseRunicTool.cs:214,295,362` — Magery is one of the skills checked during runic tool crafting (alongside Inscription).
-- `BaseRunicTool.cs:419-420` — Magery and Elementalism are treated as equivalent/synergistic for runic tool checks.
-
-### Research System
-
-- `ResearchFunctions.cs:365` — Consuming scrolls for research checks Magery (alongside Necromancy, Spiritualism, Psychology) in the range `[spellSkill-20, spellSkill+20]`.
-- `ResearchBag.cs:163-187` — Research runes with Elementalism skill bonuses can be rerolled to Magery or Necromancy if those aren't already present on the rune.
-
-### Begging
-
-- `Begging.cs:51-54` — `IsMageryCreature()` identifies AI_Mage creatures with Magery base > 5.0 as valid begging targets.
-
-### Druidism
-
-- `Druidism.cs:511` — Druidism gump displays Magery as a "Lore & Knowledge" talent alongside Meditation and Psychology.
-
-### Character Titles Reference
-
+#### Character Titles Reference
 | Magery Level | Title (standard) | Title (Barbaric) | Title (Oriental) |
 |---|---|---|---|
 | 0 | Village Idiot | Village Idiot | Village Idiot |
@@ -137,3 +112,37 @@ Magery is the traditional arcane casting skill. It governs your ability to succe
 | 100+ | Grandmaster → Archmage* | Shaman | Wu Jen |
 
 *Archmage requires Magery ≥ 100 AND Necromancy ≥ 100 simultaneously.
+
+### Crafting & Tools
+- `BaseRunicTool.cs:214,295,362` — Magery is one of the skills checked during runic tool crafting (alongside Inscription).
+- `BaseRunicTool.cs:419-420` — Magery and Elementalism are treated as equivalent/synergistic for runic tool checks.
+
+### Research System
+- `ResearchFunctions.cs:365` — Consuming scrolls for research checks Magery (alongside Necromancy, Spiritualism, Psychology) in the range `[spellSkill-20, spellSkill+20]`.
+- `ResearchBag.cs:163-187` — Research runes with Elementalism skill bonuses can be rerolled to Magery or Necromancy if those aren't already present on the rune.
+
+### Begging
+- `Begging.cs:51-54` — `IsMageryCreature()` identifies AI_Mage creatures with Magery base > 5.0 as valid begging targets.
+
+### Druidism
+- `Druidism.cs:511` — Druidism gump displays Magery as a "Lore & Knowledge" talent alongside Meditation and Psychology.
+
+## Related Systems & Skills
+
+### Synergies
+- [Meditation](meditation.md): Regenerates the mana Magery consumes.
+- [Inscription](../crafting/inscription.md): Craft Magery scrolls and spellbooks.
+- [Elementalism](../magic/elementalism.md): Treated as equivalent to Magery for runic tool crafting checks.
+- [Necromancy](../magic/necromancy.md): Must also be GM (≥100) to earn the "Archmage" title alongside Magery.
+- [Psychology](psychology.md): Contributes to MagicReflect damage absorption alongside Magery.
+- [Magic Resistance](magic-resistance.md): Defensive counter to hostile Magery.
+- [Druidism](../magic/druidism.md): Druidism gump displays Magery as a "Lore & Knowledge" talent.
+
+### Prerequisites / Co-requisites
+- [Magery magic system](../magic/magery.md): Full spell list, circles, and reagent costs.
+
+## Notes
+- Scroll casting uses a reduced skill requirement of circle − 2, allowing you to learn higher-circle spells before reaching GM Magery.
+- The "Archmage" title requires both Magery ≥ 100 AND Necromancy ≥ 100 simultaneously.
+- Barbaric and Oriental character origins receive unique titles ("Shaman" and "Wu Jen" respectively) instead of "Archmage" at GM.
+- Mage starter class begins with Magery at 30.0 and receives a Spellbook plus random Magery scrolls (1st + one 2nd circle).

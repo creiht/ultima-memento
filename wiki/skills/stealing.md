@@ -6,10 +6,14 @@ Stealing lets you pilfer items from containers, coffers, dungeon chests, and the
 
 | Property | Value |
 |---|---|
-| Primary Stat | Dexterity |
-| Usage | Active (targeted) |
-| Range | 1 tile |
-| Max Item Weight | 10 stones |
+| **Primary Stat** | Dexterity |
+| **Usage** | Active (targeted) |
+| **Skill Type** | Physical |
+| **Skill Check** | 0–125 |
+
+## Description
+
+Stealing allows you to take items from creatures, players, coffers, and dungeon chests. Difficulty scales with item weight, and you must be empty-handed to perform a steal. Being caught results in karma loss and potential criminal flagging.
 
 ## How It Works
 
@@ -67,6 +71,7 @@ Steal from dungeon chests and coffers. The difficulty scales with item weight, s
 ## What It Affects
 
 ### Core Mechanics
+
 - `Stealing.cs:113` — **Dungeon chest theft**: `CheckSkill(Stealing, 0, 125)` to steal the container. On success, you receive a copy of the chest with contents valued at `(containerLevel + 1) * 50 * goldCutRate`. Original chest is replaced by a new spawner.
 - `Stealing.cs:221` — **Coffer pilfering**: `CheckSkill(Stealing, 0, 100)` to steal all gold from a merchant coffer. On success, gold is taken, karma is awarded negatively, and the coffer is marked as robbed with the thief's name and skill title recorded.
 - `Stealing.cs:343, 351, 365` — **Item theft**: `CheckTargetSkill(Stealing, target, weight*10 - 22.5, weight*10 + 27.5)` for single items and stacks. Stackable items use max amount = `(skill / 10) / itemWeight`.
@@ -77,12 +82,14 @@ Steal from dungeon chests and coffers. The difficulty scales with item weight, s
 - `Stealing.cs:54-57` — **Stealable artifacts**: 24 unique artifacts tracked (Rock, SkullCandle, Bottle, DamagedBooks, StretchedHide, Brazier, LampPost, BooksNorth, BooksWest, BooksFaceDown, StuddedLeggings, EggCase, SkinnedGoat, GruesomeStandard, BloodyWater, TarotCards, Backpack, StuddedTunic, Cocoon, SkinnedDeer, Saddle, LeatherTunic, RuinedPainting).
 
 ### Combat & Creatures
+
 - `BaseCreature.cs:6532-6579` — **Coin steal on attack**: When melee attacking a creature, if you are within 1 tile and `Stealing >= 20` and your creature level < your Stealing AND `Snooping > Random(20, 126)`, you steal a portion of their coins. Amount = `coins * (1 - creatureLevel / yourStealing)`. Uses `CheckSkill(Stealing, 0, 125)` on success. Loot types include Gold, DDXormite, Crystals, and DDJewels.
 - `Behavior.cs:3704` — **NPC stealing from players**: When you hide within 2 tiles of a creature, if their Stealing >= random 1-125 AND their Snooping >= random 1-100, there's a 1-in-5 chance they steal an item from your backpack (blessed and multi-item containers excluded).
 - `Behavior.cs:10495-10588` — **Thief NPC AI**: Rogue-type creatures in combat can `UseSkill(Stealing)` to pilfer items from combatants. They steal from 10+ item types including weapons, bandages, reagents, spellbooks, runes, potions, scrolls, wands, and gold.
 - `Utility.cs:2621` — Stealing appears in the `SkillGroup.Rogue` classification.
 
 ### Thieves Guild & NPCs
+
 - `ThiefGuildmaster.cs:25` — Thief Guildmaster has **90 - 100** Stealing. Gives steal quests via `ThiefNote`.
 - `Thief.cs:33` — Thief vendor NPC has **65 - 88** Stealing.
 - `GypsyLady.cs:99` — Gypsy Lady has **65 - 88** Stealing.
@@ -92,6 +99,7 @@ Steal from dungeon chests and coffers. The difficulty scales with item weight, s
 - `GuildRing.cs:50` — **Thieves Guild Ring** grants **+10 Stealing** (Skill Bonus slot 3).
 
 ### Items & Equipment (Skill Bonuses)
+
 | Item | Location | Bonus | Source |
 |---|---|---|---|
 | Burglar's Bandana | `Artifact_BurglarsBandana.cs:19` | +10 Stealing (Slot 0) | Artifact |
@@ -104,12 +112,15 @@ Steal from dungeon chests and coffers. The difficulty scales with item weight, s
 | Shadow Dancer Gloves | `Artifact_ShadowDancerGloves.cs:22` | +10 Stealing (Slot 1) | Shadow Dancer set |
 
 ### Consumables
+
 - `Elixirs.cs:4121` — **Elixir of Stealing** adds a temporary `DefaultSkillMod` to Stealing. Brewable at Alchemy (`DefAlchemy.cs:381`): recipe requires skill 60-120, uses MoonCrystal. Keg conversion at `PotionKeg.cs:411` (`PotionEffect.ElixirStealing`).
 
 ### Magic Systems
+
 - `AnimalForm.cs:189-201` (Ninjitsu) — Certain animal forms grant **+10 Stealing** via `DefaultSkillMod` when `entry.StealingBonus` is true. Mod is applied on transform and removed when exiting animal form (`AnimalForm.cs:239`). Stealing is listed as a restricted skill for animal forms (`PlayerMobile.cs:1432`).
 
 ### Quests
+
 - `StealBase.cs:283` (Thief quest) — `CheckSkill(Stealing, 0, 125)` to steal artifacts from trapped pedestals after successful Snooping check.
 - `ThiefNote.cs:214, 249` — Thief quest notes direct players to use Stealing on coffers and dungeon pedestals. Randomly assigns "steal from town" or "steal from dungeon" objectives.
 - `ThiefGuildmaster.cs:103-128` — Guildmaster gives Thief quests via `ThiefNote.GetMyCurrentJob()`, creating randomized item/target/reward objectives.
@@ -118,22 +129,27 @@ Steal from dungeon chests and coffers. The difficulty scales with item weight, s
 - `CodexWisdom.cs:110, 430` — Skill index 45 = Stealing in Codex of Wisdom display and learn logic.
 
 ### Crafting
+
 - `DefAlchemy.cs:381` — **Elixir of Stealing** (`ElixirStealing`): Alchemy recipe requiring 60.0 - 120.0 skill, uses MoonCrystal as reagent.
 - `BaseRunicTool.cs:228, 329` — Runic tools can enchant items with Stealing as a possible skill bonus.
 
 ### Containers & Training
+
 - `PickpocketDips.cs:83, 99` — **Pickpocket training dummies**: `CheckSkill(Stealing, m_MinSkill, m_MaxSkill)` for practice. Requires both Stealing and Snooping. Max skill gain from dips controlled by `S_PickDips` setting (default 30.0).
 - `PickpocketDips.cs:97, 125` — Dips disabled when `Stealing.Base >= m_MaxSkill` or both Stealing and Snooping at max.
 - `StolenChest` — Custom stolen chest item created on successful dungeon chest theft, copies original chest ID/gump/resource/hue.
 - `DungeonChest` — Special chest type with item ID restrictions (graves, golems, etc. cannot be stolen).
 
 ### Scroll System
+
 - `SpecialScroll.cs:91` — Stealing is skill index **34** on special scrolls.
 
 ### Race System
+
 - `BaseRace.cs:1333` — Stealing is skill index **33** for racial skill assignments.
 
 ### Settings
+
 - `Settings.cs:307-309` — `S_QuestRewardModifier` (default 150) modifies thief quest rewards and deco artifact values.
 - `Settings.cs:314` — `S_DecoArtySteal = true` — Allow unlimited artifact pedestal steals (false = one-time only per character).
 - `Settings.cs:319` — `S_PedStealThrottle = false` — Throttle lucrative pedestal loot to once every few days.
@@ -141,6 +157,7 @@ Steal from dungeon chests and coffers. The difficulty scales with item weight, s
 - `Settings.cs:305` — `S_CannotStealWhileBlessed = true` — Blessed players cannot steal (enforced at `Stealing.cs:49`).
 
 ### Other Systems
+
 - `PowerScroll.cs:42, 215, 310, 410` — Stealing is in the power scroll skill list with max value and base value lookups.
 - `DynamicBook.cs:343` — Stealing maps to the "Spy" title in dynamic book system.
 - `LearnStealing.cs:11-94` — "The Art of Thievery" book item providing a gump-based tutorial for stealing.
@@ -148,13 +165,28 @@ Steal from dungeon chests and coffers. The difficulty scales with item weight, s
 - `CharacterCreation.cs:349` — Stealing is available as a skill during character creation.
 - `SkillCheck.cs:264` — Stealing has a classic mode check in `SkillInfo.Check`.
 
-## Related Skills
+## Related Systems & Skills
 
-- [Snooping](snooping.md) — Directly paired; Snooping enables stealing from containers and creatures. Thieves Guild auto-restricts both. Failed coffer snoop uses Snooping check (0-150) to avoid being spotted by vendors.
-- [Hiding](hiding.md) — Stay hidden while stealing. Failed stealing calls `RevealingAction()` exposing you from hiding.
-- [Stealth](stealth.md) — Move silently to approach targets. Thieves Guild auto-restricts both.
-- [Lockpicking](lockpicking.md) — Both used on containers; Thieves Guild auto-restricts both.
-- [Searching](searching.md) — Complementary skill for finding hidden items and containers.
-- [Remove Trap](remove-trap.md) — Trapped pedestal artifacts require Remove Trap after Stealing in thief quests.
-- [Ninjitsu](../magic/ninjitsu.md) — Animal forms can grant +10 Stealing; Stealing is a restricted skill for animal transformation.
-- [Disguise](disguise.md) — Disguise is removed when caught stealing; Thieves Guild members can steal from innocent players while disguised.
+### Synergies
+- [Snooping](snooping.md): Directly paired; Snooping enables stealing from containers and creatures. Failed coffer snoop uses Snooping check (0-150) to avoid being spotted by vendors.
+- [Hiding](hiding.md): Stay hidden while stealing. Failed stealing calls `RevealingAction()` exposing you from hiding.
+- [Stealth](stealth.md): Move silently to approach targets.
+- [Lockpicking](lockpicking.md): Both used on containers.
+- [Searching](searching.md): Complementary skill for finding hidden items and containers.
+- [Remove Trap](remove-trap.md): Trapped pedestal artifacts require Remove Trap after Stealing in thief quests.
+- [Ninjitsu](../magic/ninjitsu.md): Animal forms can grant +10 Stealing; Stealing is a restricted skill for animal transformation.
+- [Disguise](disguise.md): Disguise is removed when caught stealing; Thieves Guild members can steal from innocent players while disguised.
+
+### Prerequisites / Co-requisites
+- [Thieves Guild](../guilds/thieves-guild.md): Required to steal from innocent players and access coffer quests.
+- [Lockpick](../items/lockpick.md): Consumable tool required for pickpocketing.
+
+## Notes
+
+- You can only steal while empty-handed (pugilist gloves are allowed).
+- Stolen items last only 2 minutes — if you die while carrying them, they return to the victim.
+- Getting caught steals from innocent non-guild players will criminalize you.
+- At 100 Stealing, you still have ~33% chance of being noticed.
+- Artifact pedestal steals are one-time only per character unless `S_DecoArtySteal` setting is enabled.
+- Blessed players cannot steal (`S_CannotStealWhileBlessed = true`).
+- Shadow Dancer Leggings provide the largest set bonus at +20 Stealing.

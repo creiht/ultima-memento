@@ -3,6 +3,15 @@
 > **Disabled — Legacy Skill**
 > Imbuing appears in the skills gump and the `SkillName` enum but is **not active** in Ultima Memento. It cannot be trained, modified by powerscrolls, or targeted by avatar rewards.
 
+## Overview
+
+| Property | Value |
+|---|---|
+| **Primary Stat** | N/A |
+| **Usage** | N/A |
+| **Skill Type** | Disabled |
+| **Skill Check** | N/A |
+
 ## Status
 
 Imbuing was introduced in the official Ultima Online: Stygian Abyss expansion as a skill for enhancing magical properties on weapons and armor using special ingredients. **None of this functionality is implemented in Ultima Memento.**
@@ -15,14 +24,25 @@ The skill value in your character sheet is permanently read-only — the setter 
 
 No source file under `World/Source/Scripts/System/Skills/` implements Imbuing. No items reference it for gain. No NPC trains it. The title "Artificer" that would be awarded at Grandmaster is present in the skill definition but effectively orphaned.
 
-## What to Do Instead
+## How It Works
 
-Ignore this skill entirely. For active magical-item crafting in Ultima Memento, see:
+This skill is **not implemented**. No mechanics, checks, or effects exist.
 
-- [Inscription](../crafting/inscription.md) — scribing scrolls and magical books.
-- Tinkering ([crafting](../crafting/tinkering.md)) — mechanical and magical devices.
+## How to Train
 
-## Related Skills
+Cannot be trained. The skill cannot be increased under any circumstances.
 
-- [Inscription](../crafting/inscription.md)
-- Tinkering ([crafting](../crafting/tinkering.md))
+## What It Affects
+
+None. This skill has no impact on gameplay.
+
+## Related Systems & Skills
+
+### Alternatives
+- `[Inscription](../crafting/inscription.md)`: Scribing scrolls and magical books.
+- `[Tinkering](../crafting/tinkering.md)`: Mechanical and magical devices.
+
+## Notes
+
+- Ignore this skill entirely. For active magical-item crafting, see Inscription and Tinkering.
+- The skill exists only as a placeholder from the original UO codebase.

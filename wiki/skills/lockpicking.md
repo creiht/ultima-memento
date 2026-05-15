@@ -6,9 +6,14 @@ Lockpicking lets you open locked chests, coffers, and dungeon doors using lockpi
 
 | Property | Value |
 |---|---|
-| Primary Stat | Dexterity |
-| Usage | Active |
-| Cooldown | None |
+| **Primary Stat** | Dexterity |
+| **Usage** | Active |
+| **Skill Type** | Physical |
+| **Skill Check** | 0–125 |
+
+## Description
+
+Lockpicking allows you to open locked containers, dungeon doors, and sci-fi tech locks using lockpicks as a consumable tool. Difficulty scales with the lock level of the target, and failed attempts can break the lockpick.
 
 ## How It Works
 
@@ -81,10 +86,22 @@ Attempt to pick locks repeatedly. Gain fires passively on each attempt, whether 
 - `Skills.cs:67` — `[help lockpicking]` description text
 - `SkillName.cs:53` — command shortcut: `[skipl 1]` or `lockpicking` in skill listing
 
-## Related Skills
+## Related Systems & Skills
 
-- [Remove Trap](remove-trap.md) — chests are often both locked and trapped; disarm before you pick.
-- Tinkering (`../crafting/tinkering.md`) — crafts lockpicks and determines lock levels on crafted containers.
-- [Stealing](stealing.md) — both are rogue/thief skills; key cards often appear as thief loot.
-- [Alchemy](../crafting/alchemy.md) — creates the Elixir of Lockpicking.
-- [Research](../magic/research.md) — conjuration can produce lockpicks.
+### Synergies
+- [Tinkering](../crafting/tinkering.md): Crafts lockpicks and determines lock levels on crafted containers.
+- [Stealing](stealing.md): Both are rogue/thief skills; key cards often appear as thief loot.
+- [Alchemy](../crafting/alchemy.md): Creates the Elixir of Lockpicking.
+- [Research](../magic/research.md): Conjuration can produce lockpicks.
+
+### Prerequisites / Co-requisites
+- [Remove Trap](remove-trap.md): Chests are often both locked and trapped; disarm before you pick.
+- [Lockpick](../items/lockpick.md): Consumable tool required for all lockpicking attempts.
+
+## Notes
+
+- Doors require 30+ Lockpicking before any attempt is allowed.
+- Every failed attempt has a 25% chance to break the lockpick.
+- Failing on Treasure Map Chests destroys random items from the chest's contents — raise your skill first.
+- Bottstrap mechanic: if base Lockpicking is 0, 10 rapid checks fire to help get past the initial hurdle.
+- Acid bottles bypass most locks but have no effect on Treasure Map Chests.

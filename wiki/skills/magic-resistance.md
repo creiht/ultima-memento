@@ -6,9 +6,14 @@ Magic Resistance is a passive skill that gives you a chance to reduce or complet
 
 | Property | Value |
 |---|---|
-| Primary Stat | Intelligence |
-| Usage | Passive (automatic on spell receipt) |
-| Cooldown | None |
+| **Primary Stat** | Intelligence |
+| **Usage** | Passive |
+| **Skill Type** | Passive |
+| **Skill Check** | 0-125 |
+
+## Description
+
+Magic Resistance passively reduces or cancels the effects of hostile spells from multiple magical systems. A successful resist cancels the debuff or effect but does not reduce direct damage. It also protects against bardic debuffs and mitigates reflected damage.
 
 ## How It Works
 
@@ -48,9 +53,6 @@ Stand in low-risk situations where hostile spellcasters target you with mid-to-h
 ## What It Affects
 
 ### Magic Systems
-
-Magic Resistance is checked by every hostile spell system via `CheckResisted()`. A successful resist cancels the spell's debuff/effect or reduces damage.
-
 | Spell System | File:Line | Effect |
 |---|---|---|
 | **Magery** | `MagerySpell.cs:59` | `CheckResisted()` uses resist formula; gain check against `maxSkill = (1+circle)*10 + (1+circle/6)*25` |
@@ -76,7 +78,6 @@ Magic Resistance is checked by every hostile spell system via `CheckResisted()`.
 | **Misc — Thor Lightning** | `Misc/ThorLightningSpell.cs:53` | Resist reduces damage to 75% |
 
 ### Bardic Skills
-
 | Skill | File:Line | Effect |
 |---|---|---|
 | **Discordance** | `Discordance.cs:211` | `MagicResist > RandomMinMax(0, 125)` cancels the strength debuff |
@@ -84,7 +85,6 @@ Magic Resistance is checked by every hostile spell system via `CheckResisted()`.
 | **BaseCreature Suppress** | `BaseCreature.cs:7959-7961` | Same resist vs musicianship check; blocks skill reduction debuff |
 
 ### Items & Equipment
-
 | Item | File:Line | Effect |
 |---|---|---|
 | **Dispel weapon ability** | `BaseWeapon.cs:2007` | Weapon's OnHit triggers Dispel spell; resist determines if dispel succeeds |
@@ -94,29 +94,34 @@ Magic Resistance is checked by every hostile spell system via `CheckResisted()`.
 | **Alchemy crafting** | `DefAlchemy.cs:317` | Elixir of Magic Resist requires 60–120 Alchemy, uses Beetle Shell |
 
 ### AI & NPCs
-
 | NPC | File:Line | Effect |
 |---|---|---|
 | **Revenant** | `Revenant.cs:45` | Sets Magic Resist to `100.0 * scalar` — noted as "absolute value of spiritspeak" |
 
 ### Damage Mitigation
-
 | Location | File:Line | Effect |
 |---|---|---|
 | **Blood Oath (reflected damage)** | `PlayerMobile.cs:2812` | Reflected damage reduced by `((MagicResist * 0.5) + 10) / 100` — magic resist lowers the damage taken from Blood Oath reflection |
 
 ### Training
-
 | Mechanism | File:Line | Condition |
 |---|---|---|
 | **Magery/Elementalism gain check** | `MagerySpell.cs:74`, `ElementalSpell.cs:134` | `MagicResist < (1 + circle) * 10 + (1 + circle/6) * 25` |
 | **Jedi/Syth/Mystic/Druidism gain check** | Various | `MagicResist < (1 + circle) * 10 + (1 + circle/6) * 25`, capped at 120.0 |
 | **Attack Spells gain check** | `AttackSpells.cs:91` | `m.CheckSkill(MagicResist, 0, 125)` |
 
-## Related Skills
+## Related Systems & Skills
 
-- [Meditation](meditation.md) — mana regeneration; pairs well for magic-focused characters.
-- [Psychology](psychology.md) — evaluating caster skill levels to predict resist chance.
-- [Elementalism](../magic/elementalism.md) — Elemental Protection spell actively reduces target's Magic Resistance.
-- [Discordance](discordance.md) — directly contested against Magic Resist for skill check.
-- [Peacemaking](peacemaking.md) — contested against Magic Resist by NPC bard AI for pacify effects.
+### Synergies
+- [Meditation](meditation.md): Mana regeneration; pairs well for magic-focused characters
+- [Psychology](psychology.md): Evaluating caster skill levels to predict resist chance
+
+### Prerequisites / Co-requisites
+- [Elementalism](../magic/elementalism.md): Elemental Protection spell actively reduces target's Magic Resistance
+- [Discordance](discordance.md): Directly contested against Magic Resist for skill check
+- [Peacemaking](peacemaking.md): Contested against Magic Resist by NPC bard AI for pacify effects
+
+## Notes
+- A successful resist cancels the debuff or effect but does not reduce direct damage.
+- Shinobi and Jester spells always bypass Magic Resistance (always returns `false`).
+- Necromancy Poison Strike calls `CheckResisted()` but ignores the return value (per OSI design).

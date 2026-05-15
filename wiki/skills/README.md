@@ -53,12 +53,15 @@ A complete reference for all active skills in Ultima Memento. Click any skill na
 |---|---|
 | [Arms Lore](arms-lore.md) | Identify weapons and armor, and reduce equipment durability loss |
 | [Druidism](druidism.md) | Examine animals and creatures to learn detailed stats and abilities |
+| [Herding](herding.md) | Direct animals with a shepherd's crook; assists pet loyalty and XP |
+| [Lumberjacking](lumberjacking.md) | Harvest wood from trees for crafting and construction |
+| [Fishing](fishing.md) | Catch fish and aquatic treasures from bodies of water |
 | [Mercantile](mercantile.md) | Appraise and identify items |
+| [Mining](mining.md) | Extract ore and stone from the environment |
 | [Poisoning](poisoning.md) | Apply poison to weapons, food, and drink |
 | [Taming](taming.md) | Tame wild creatures to serve as loyal pets and companions |
 | [Tasting](tasting.md) | Detect poison in food and drink, and identify items |
 | [Veterinary](veterinary.md) | Heal and resurrect pets and monsters; secondary skill for Druidism magic |
-| [Herding](herding.md) | Direct animals with a shepherd's crook; assists pet loyalty and XP |
 
 ## Rogue Skills
 
@@ -81,12 +84,6 @@ A complete reference for all active skills in Ultima Memento. Click any skill na
 |---|---|
 | [Camping](camping.md) | Light fires, sleep in bedrolls, and pitch wilderness tents |
 | [Seafaring](seafaring.md) | Fish, sail, and fight at sea; improves boat speed and maritime loot |
-
-## Weapon Abilities
-
-| Page | Description |
-|---|---|
-| [Weapon Abilities](weapon-abilities.md) | Special combat moves available on weapons |
 
 ## Disabled Skills
 

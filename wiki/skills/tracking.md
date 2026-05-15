@@ -1,16 +1,23 @@
 # Tracking
 
-Tracking lets you locate creatures and players within a wide area by selecting from a detailed category list, then tracking a specific target with an on-screen arrow.
+Tracking lets you locate creatures and players within a wide area by selecting from a detailed category list, then following them with a quest arrow.
 
 ## Overview
 
 | Property | Value |
 |---|---|
-| Primary Stat | Intelligence |
-| Usage | Active |
-| Cooldown | 5 seconds |
+| **Primary Stat** | Intelligence |
+| **Usage** | Active |
+| **Skill Type** | Utility / Navigation |
+| **Skill Check** | 0-21.1 initial, passive 21.1-100 on use |
+
+## Description
+
+Tracking allows you to search for creatures and players across the game world. You select a category, view matching targets within range, and lock onto one with a quest arrow. Tracking also provides a stalking bonus to your next attack against a moving target.
 
 ## How It Works
+
+### Tracking Process
 
 1. Use the skill to open the **Track What** gump.
 2. Select a creature category (or subcategory).
@@ -59,7 +66,7 @@ Tracking can detect hidden players. The check uses:
 Chance = 50 * (Tracking * 2 + Searching) / (target Hiding + target Stealth)
 ```
 
-[Searching](searching.md) skill assists the tracking chance. Necromancy transformations also affect detection:
+[Necromancy](../magic/necromancy.md) transformations also affect detection:
 - **Horrific Beast:** Easier to track (-200 from hiding+stealth)
 - **Vampiric Embrace:** Harder to track (sets minimum hiding+stealth to 500)
 - **Wraith Form:** Harder to track (+200 to hiding+stealth)
@@ -83,18 +90,24 @@ Use the skill and select creature types. The initial skill check is against 0-21
 ## What It Affects
 
 ### Items
-
-- `MapRanger.cs:79` — Trail Maps require **80 Tracking** (or 80 Cartography) to use. These maps teleport the player to discovered locations and consume one charge per use.
-- `GoldenFeathers.cs:54` — Killing Harpies and Phoenixes awards Golden Feathers only if the killer has **90 Tracking** (or 90 Camping) and carries a Golden Ranger item.
-- `MagicForges.cs:744` — The Altar of Golden Rangers and Ranger Outpost forges enchant armor, weapons, and clothing with Gilded Spec resource only if the player has **90 Tracking** (or 90 Camping) and carries a Golden Feather.
+- `MapRanger.cs:79` — **Trail Maps**: require **80 Tracking** (or 80 Cartography) to use. Teleport the player to discovered locations, consume one charge per use.
+- `GoldenFeathers.cs:54` — **Golden Feathers**: killing Harpies and Phoenixes awards feathers only if killer has **90 Tracking** (or 90 Camping) and carries a Golden Ranger item.
+- `MagicForges.cs:744` — **Altar of Golden Rangers / Ranger Outpost forges**: enchant armor, weapons, and clothing with Gilded Spec resource only if player has **90 Tracking** (or 90 Camping) and carries a Golden Feather.
 
 ### Regions & Housing
+- `OutDoorRegion.cs:23` — **Ranger Outpost**: requires **90 Tracking** (or 90 Camping) to build housing.
 
-- `OutDoorRegion.cs:23` — **90 Tracking** (or 90 Camping) is required to build housing in the Ranger Outpost region.
+## Related Systems & Skills
 
-### Related Skills
+### Synergies
+- [Searching](searching.md): Assists tracking checks against hidden targets. Formula: `Chance = 50 * (Tracking * 2 + Searching) / (target Hiding + target Stealth)`.
 
-- [Searching](searching.md) - Assists tracking checks against hidden targets. Used in formula: `Chance = 50 * (Tracking * 2 + Searching) / (target Hiding + target Stealth)`.
-- [Hiding](hiding.md) / [Stealth](stealth.md) - The skills tracked targets use to avoid detection. Higher values make players/creatures harder to find.
-- [Camping](camping.md) - Alternative to Tracking for Ranger Outpost housing access (90), Golden Feather drops, and Golden Rangers enchanting.
-- Cartography - Alternative to Tracking for using MapRanger trail maps (80).
+### Prerequisites / Co-requisites
+- [Hiding](hiding.md) / [Stealth](stealth.md): The skills tracked targets use to avoid detection. Higher values make players/creatures harder to find.
+- [Camping](camping.md): Alternative to Tracking for Ranger Outpost housing access (90), Golden Feather drops, and Golden Rangers enchanting.
+- [Cartography](../crafting/cartography.md): Alternative to Tracking for using MapRanger trail maps (80).
+
+## Notes
+- Stalking bonus only applies to the **next attack** after tracking — plan accordingly.
+- Location restrictions mean you cannot track creatures/dungeons from the overworld (and vice versa).
+- Tracking hidden players is a race between your (Tracking + Searching) and their (Hiding + Stealth).

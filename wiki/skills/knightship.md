@@ -1,21 +1,41 @@
 # Knightship
 
-Knightship is the combat-faith skill shared by holy Paladins and dark Death Knights. It is the casting and damage skill for both the [Knight (Chivalry)](../magic/knight.md) and [Death Knight](../magic/death-knight.md) magic systems — which branch you follow is determined by your **Karma**, not by the skill itself.
+Knightship is the combat-faith skill shared by holy Paladins and dark Death Knights, serving as the casting and damage skill for both the [Knight (Chivalry)](../magic/knight.md) and [Death Knight](../magic/death-knight.md) magic systems.
 
 ## Overview
 
 | Property | Value |
 |---|---|
-| Primary Stat | Strength |
-| Usage | Active (cast Paladin or Death Knight abilities) |
-| Type | Magic / Combat |
-| Max Base | 100.0 (70.0 without power scrolls) |
-| Power Scroll | Yes (skill index 13) |
-| Character Title | Knight |
+| **Primary Stat** | Strength |
+| **Usage** | Active |
+| **Skill Type** | Magic / Combat |
+| **Skill Check** | 70.0 (100.0 with power scrolls) |
+
+## Description
+
+Knightship determines the success chance and potency of Paladin (Chivalry) and Death Knight spell abilities. Which spellbook you can access is determined by your **Karma** (positive = Paladin, negative = Death Knight), not by the skill itself. The skill also governs melee mounted attack damage, crafting item requirements, and NPC behavior patterns.
+
+## How It Works
+
+### Spell Casting
+
+Knightship provides the success chance calculation for all spells in both the Chivalry and Death Knight spellbooks. Death Knight abilities additionally require trapped souls from a Soul Lantern.
+
+Power values for Death Knight spells use the formula: `sqrt(|Karma| + 20000 + Knightship × 10) / divisor`.
+
+- If Knightship > 0, you need **70.0 Magery** to cast Magery spells (cross-school gating) — [`Spell.cs:776`]
+
+### Karma-Based Branching
+
+Your Karma value determines whether you access the Paladin or Death Knight spellbook. This branching is enforced at the system level, not at the skill level.
+
+## How to Train
+
+Activate Knightship spells from your applicable spellbook (Chivalry or Death Knight). Skill gains occur on successful spell casts.
 
 ## What It Affects
 
-### Magic Systems — Paladin (Chivalry) Spells
+### Paladin (Chivalry) Spells
 
 All Chivalry abilities use Knightship for success chance and scale with Karma:
 
@@ -30,7 +50,7 @@ All Chivalry abilities use Knightship for success chance and scale with Karma:
 | Holy Light | 55.0 | 10 | Energy AoE damage to nearby enemies |
 | Noble Sacrifice | 65.0 | 30 | Heals, cures, and resurrects allies at personal cost |
 
-### Magic Systems — Death Knight Spells
+### Death Knight Spells
 
 Death Knight abilities consume trapped souls from a Soul Lantern in addition to mana and stamina:
 
@@ -49,14 +69,12 @@ Death Knight abilities consume trapped souls from a Soul Lantern in addition to 
 | Orb of Orcus | 80.0 | 200 | 56 | Reflect magic damage = `karmaPower / 4` |
 | Devil Pact | 90.0 | 98 | 60 | Summon a Devil; duration = `90 + (Knightship / 2)` seconds |
 
-Power values for Death Knight spells: `sqrt(|Karma| + 20000 + Knightship × 10) / divisor`
-
 ### Crafting & Items
 
-- `World/Source/Scripts/Engines and Systems/Trades/Crafting/DefInscription.cs:470` — Inscription: **Knightship Book** requires 50.0–126.0 SK and 8×Leather
-- `World/Source/Scripts/Items/Sharpening/WeightingStones/ConsecratedWeightingStone.cs:29` — Requires **80.0 Knightship** + 100.0 Blacksmithy
-- `World/Source/Scripts/Items/Sharpening/SharpeningStones/ConsecratedSharpeningStone.cs:29` — Requires **80.0 Knightship** + 100.0 Blacksmithy
-- `World/Source/Scripts/Items/Sharpening/BowStrings/ConsecratedBowString.cs:29` — Requires **80.0 Knightship** + 100.0 Bowcraft
+- [`DefInscription.cs:470`] — Inscription: **Knightship Book** requires 50.0–126.0 SK and 8×Leather
+- [`ConsecratedWeightingStone.cs:29`] — Requires **80.0 Knightship** + 100.0 Blacksmithy
+- [`ConsecratedSharpeningStone.cs:29`] — Requires **80.0 Knightship** + 100.0 Blacksmithy
+- [`ConsecratedBowString.cs:29`] — Requires **80.0 Knightship** + 100.0 Bowcraft
 
 ### Artifacts & Equipment (Skill Bonuses)
 
@@ -79,35 +97,43 @@ Power values for Death Knight spells: `sqrt(|Karma| + 20000 + Knightship × 10) 
 | Paladin Warhorse | **100.0 Knightship** + Karma ≥ 0 |
 | Death Knight Warhorse | **100.0 Knightship** + Karma ≤ 0 |
 
-Death Knight Warhorse is purchasable from the DeathKnightDemon (`World/Source/Scripts/Mobiles/Civilized/DeathKnightDemon.cs:67`) for 10,000 gold.
-
-### Spell Gating & UI
-
-- `World/Source/Scripts/System/Gumps/RunebookGump.cs:357` — Having any Knightship unlocks the **Sacred Journey** option in the runebook
-- `World/Source/Scripts/System/Help/HelpGump.cs:378` — Having any Knightship unlocks Knightship help content
-- `World/Source/Scripts/Engines and Systems/Magic/Base/Spell.cs:776` — If Knightship > 0, you need **70.0 Magery** to cast Magery spells (cross-school gating)
+Death Knight Warhorse is purchasable from the DeathKnightDemon (`DeathKnightDemon.cs:67`) for 10,000 gold.
 
 ### NPC Behavior & Area Restrictions
 
-- `World/Source/Scripts/Mobiles/Omni AI/OmniAI Core.cs:50` — NPC AI uses Chivalry abilities when **Knightship > 10.0**
-- `World/Source/Scripts/Mobiles/Omni AI/OmniAI Magery.cs:203` — NPC mages avoid players with **Knightship > 35.0**
-- `World/Source/Scripts/Mobiles/Base/Behavior.cs:1124` — Death Knights (Knightship ≥ 50 + Karma ≤ -5000) are barred from settlements except Umbra and Ravendark
-- `World/Source/Scripts/System/Misc/Players.cs:570` — Players with **Knightship ≥ 50 + Karma ≤ -5000** are flagged as Death Knights (evil status)
+- [`OmniAI Core.cs:50`] — NPC AI uses Chivalry abilities when **Knightship > 10.0**
+- [`OmniAI Magery.cs:203`] — NPC mages avoid players with **Knightship > 35.0**
+- [`Behavior.cs:1124`] — Death Knights (Knightship ≥ 50 + Karma ≤ -5000) are barred from settlements except Umbra and Ravendark
+- [`Players.cs:570`] — Players with **Knightship ≥ 50 + Karma ≤ -5000** are flagged as Death Knights (evil status)
 
 ### Combat & Weapon Abilities
 
-- `World/Source/Scripts/System/Skills/Weapon Abilities/Extra/RidingAttack.cs:30-36` — Mounted attack damage = `10 + (10 × Knightship / 70) + 5`
+- [`RidingAttack.cs:30-36`] — Mounted attack damage = `10 + (10 × Knightship / 70) + 5`
+
+### Spell Gating & UI
+
+- [`RunebookGump.cs:357`] — Having any Knightship unlocks the **Sacred Journey** option in the runebook
+- [`HelpGump.cs:378`] — Having any Knightship unlocks Knightship help content
 
 ### Avatar / Leveling
 
-- `World/Source/Scripts/Engines and Systems/Avatar/SkillArchive.cs:107` — Knightship tracked in Avatar system
+- [`SkillArchive.cs:107`] — Knightship tracked in Avatar system
 
-## Related Systems
+## Related Systems & Skills
 
-- [Knight (Chivalry) magic system](../magic/knight.md) — Paladin abilities, Tithing Points
-- [Death Knight magic system](../magic/death-knight.md) — dark counterpart, Soul Lantern fuel
-- [Tactics](tactics.md) — damage amplifier for melee between casts
-- [Parrying](parrying.md) — defensive complement for shielded combat
-- [Karma](../getting-started/alignment.md) — alignment determines which spellbook you can use
-- [Power Scrolls](../systems/power-scrolls.md) — increases max Knightship beyond 70.0
-- [Runebook](../systems/runebook.md) — gates Sacred Journey behind Knightship
+### Synergies
+- [Knight (Chivalry) magic system](../magic/knight.md): Paladin abilities, Tithing Points
+- [Death Knight magic system](../magic/death-knight.md): dark counterpart, Soul Lantern fuel
+- [Tactics](tactics.md): damage amplifier for melee between casts
+- [Parrying](parrying.md): defensive complement for shielded combat
+- [Power Scrolls](../systems/power-scrolls.md): increases max Knightship beyond 70.0
+
+### Prerequisites / Co-requisites
+- [Karma](../getting-started/alignment.md): alignment determines which spellbook (Paladin or Death Knight) you can use
+- [Runebook](../systems/runebook.md): gates Sacred Journey behind Knightship
+
+## Notes
+
+- Knightship max base is 100.0 (70.0 without power scrolls, skill index 13).
+- Character title "Knight" is granted by this skill.
+- Negative Karma is required to access Death Knight spells; positive Karma for Paladin spells.

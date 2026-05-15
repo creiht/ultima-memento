@@ -1,45 +1,41 @@
 # Ninjitsu
 
-Ninjitsu is the shadow-art skill of the ninja — covering stealth strikes, shapeshifting, and misdirection. It governs the Ninjitsu ability set cast from a Book of Ninjitsu, and it is also referenced by the related [Shinobi](../magic/shinobi.md) magic system.
+Ninjitsu is the shadow-art skill covering stealth strikes, shapeshifting, and misdirection through the Ninjitsu ability set cast from a Book of Ninjitsu.
 
 ## Overview
 
 | Property | Value |
 |---|---|
-| Primary Stat | Dexterity |
-| Usage | Active (activate Ninjitsu abilities) |
-| Type | Combat / Magic |
-| Skill Index | 37 |
-| Spellbook | Book of Ninjitsu |
-| Expansion Required | Samurai Empire (SE) |
+| **Primary Stat** | Dexterity |
+| **Usage** | Active |
+| **Skill Type** | Combat / Magic |
+| **Skill Check** | 2x gain rate (weighted) |
 
-## What It Affects
+## Description
 
-### Ninjitsu Abilities
+Ninjitsu governs a set of shadow-based abilities including Focus Attack, Death Strike, Animal Form transformations, and various stealth strikes. The skill also provides a passive melee damage bonus and interacts with the related [Shinobi](../magic/shinobi.md) magic system, which requires Ninjitsu as its casting skill.
 
-- Success chance and potency of Ninjitsu abilities (Focus Attack, Death Strike, Animal Form, Ki Attack, Surprise Attack, Backstab, Shadow Jump, Mirror Image).
-- Damage bonus of Focus Attack and delayed damage of Death Strike.
-- Duration and quality of Animal Form transformations.
-- Ninjitsu abilities do **not** reveal the caster when cast (`RevealOnCast = false`).
-- Ninjitsu abilities are **not** interrupted by animal form (`BlockedByAnimalForm = false`).
-- Ninjitsu is **not** affected by Faster Casting items.
+## How It Works
 
-### Melee Damage
+### Ability Mechanics
 
-- `BaseWeapon.cs:2394` — Ninjitsu provides a damage bonus identical to Bushido, Tactics, and Necromancy: `GetBonus(Skills.Ninjitsu.Value, 0.625, 100.0, 6.25)`. This applies to all melee attacks.
-- `BaseWeapon.cs:1413` — When attacking a target with Mirror Image clones, the chance to be diverted to a clone is `defender.Skills.Ninjitsu.Value / 150.0` (75% at 112.5 Ninjitsu, 100% at 150).
+Ninjitsu abilities do **not** reveal the caster when cast (`RevealOnCast = false`), are **not** interrupted by animal form (`BlockedByAnimalForm = false`), and are **not** affected by Faster Casting items.
 
-### Weapon Abilities
+### Melee Damage Bonus
 
-- `Feint.cs:41` — Feint uses `Math.Max(Ninjitsu.Value, Bushido.Value)` to calculate its damage reduction bonus: `20 + 3.0 * (skill - 50.0) / 7.0`.
+Ninjitsu provides a passive melee damage bonus identical to Bushido, Tactics, and Necromancy: `GetBonus(Skills.Ninjitsu.Value, 0.625, 100.0, 6.25)` — applied to all melee attacks.
+
+### Mirror Image Diversion
+
+When attacking a target with Mirror Image clones, the chance to be diverted to a clone is `defender.Skills.Ninjitsu.Value / 150.0` (75% at 112.5 Ninjitsu, 100% at 150) — `BaseWeapon.cs:1413`.
 
 ### Regen Rates
 
-- `RegenRates.cs:76` — In Dog or Cat Animal Form, Hits regeneration bonus = `Skills.Ninjitsu.Fixed / 30`.
+In Dog or Cat Animal Form, Hits regeneration bonus = `Skills.Ninjitsu.Fixed / 30` — `RegenRates.cs:76`.
 
 ### Death Strike Trigger
 
-- `WeightOverloading.cs:67,105` — Every movement tick calls `DeathStrike.AddStep()` on both NPCs and players. Death Strike triggers after 3 movement steps or after 5 seconds, whichever comes first.
+Every movement tick calls `DeathStrike.AddStep()` on both NPCs and players. Death Strike triggers after 3 movement steps or after 5 seconds, whichever comes first — `WeightOverloading.cs:67,105`.
 
 ## Ability List
 
@@ -78,7 +74,7 @@ Ninjitsu is the shadow-art skill of the ninja — covering stealth strikes, shap
 ## How to Train
 
 - Activate Ninjitsu abilities from a Book of Ninjitsu; each use rolls a skill gain check via `CheckSkill(MoveSkill, RequiredSkill - 12.5, RequiredSkill + 37.5)`.
-- Gain checks are weighted: Ninjitsu has a `true` (2x) gain rate (`SkillCheck.cs:69`).
+- Gain checks are weighted: Ninjitsu has a `true` (2x) gain rate — `SkillCheck.cs:69`.
 - Animal Form has no mana cost and is an easy low-skill ability to train early.
 - Train alongside [Hiding](hiding.md) and [Stealth](stealth.md) — several abilities (Backstab, Surprise Attack, Shadow Jump) require being hidden.
 - Backstab and Ki Attack provide strong training opportunities at mid-skill levels.
@@ -86,12 +82,20 @@ Ninjitsu is the shadow-art skill of the ninja — covering stealth strikes, shap
 ## How to Obtain the Spellbook
 
 - At character creation, selecting Ninjitsu as a primary skill grants a Book of Ninjitsu.
-- Can be purchased from Monks (see [Talk.cs](file:///home/cthier/projects/ultima-memento/World/Source/Scripts/System/Misc/Talk.cs:71) — the Monk NPC sells exotic items including Ninjitsu tomes).
+- Can be purchased from Monks (`Talk.cs:71` — the Monk NPC sells exotic items including Ninjitsu tomes).
 - Listed in `ItemSales.cs:2075` at price 140 gold, sold by Market.Monk.
 
-## Cross-References
+## What It Affects
 
-### Items
+### Cross-Skill & Ability Mechanics
+
+- `BaseWeapon.cs:2394` — Ninjitsu provides a damage bonus identical to Bushido, Tactics, and Necromancy: `GetBonus(Skills.Ninjitsu.Value, 0.625, 100.0, 6.25)`. This applies to all melee attacks.
+- `BaseWeapon.cs:1413` — When attacking a target with Mirror Image clones, the chance to be diverted to a clone is `defender.Skills.Ninjitsu.Value / 150.0` (75% at 112.5 Ninjitsu, 100% at 150).
+- `Feint.cs:41` — Feint uses `Math.Max(Ninjitsu.Value, Bushido.Value)` to calculate its damage reduction bonus: `20 + 3.0 * (skill - 50.0) / 7.0`.
+- `RegenRates.cs:76` — In Dog or Cat Animal Form, Hits regeneration bonus = `Skills.Ninjitsu.Fixed / 30`.
+- `WeightOverloading.cs:67,105` — Every movement tick calls `DeathStrike.AddStep()` on both NPCs and players. Death Strike triggers after 3 movement steps or after 5 seconds, whichever comes first.
+
+### Items & Spellbook
 
 - `BookOfNinjitsu.cs` — The spellbook for Ninjitsu abilities; equips to the Trinket layer.
 - `ShinobiScroll.cs` — Shinobi scroll that stores learned Shinobi abilities; requires Ninjitsu skill to cast.
@@ -101,7 +105,7 @@ Ninjitsu is the shadow-art skill of the ninja — covering stealth strikes, shap
 - `BaseRunicTool.cs:220,327` — Runic tools can apply Ninjitsu-related enchantments.
 - `Spellbook.cs:102,711,764,1016` — Spellbook system checks for BookOfNinjitsu type; requires 30 Ninjitsu to equip.
 
-### AI & NPCs
+### NPC Behavior
 
 - `OmniAI Ninjitsu.cs:63-65` — NPCs with `Skills.Ninjitsu.Base > 10.0` can use Ninjitsu abilities in combat.
 - `OmniAI Ninjitsu.cs:87-92` — Hidden NPC ninja strikes: Ki Attack (>= 80), Surprise Attack (>= 30), Backstab (>= 20).
@@ -113,10 +117,7 @@ Ninjitsu is the shadow-art skill of the ninja — covering stealth strikes, shap
 - `Titles.cs:250` — Ninjitsu has its own separate fame/karma title table (type 2, same as Bushido).
 - `CharacterCreation.cs:938` — Ninjitsu is available as a starter skill with 30 initial skill points and a Book of Ninjitsu.
 - `ChangeLog.cs:76,196` — Historical: tracking bonus for Ninjitsu builds 2x fast; Ninjitsu is 50% more likely to gain.
-
-### Avatar System
-
-- `SkillArchive.cs:155-156` — Ninjitsu is tracked as `SkillArchive.Ninjitsu` property.
+- `SkillArchive.cs:155-156` — Ninjitsu is tracked as `SkillArchive.Ninjitsu` property in the Avatar system.
 
 ### Other Magic Systems
 
@@ -126,22 +127,26 @@ Ninjitsu is the shadow-art skill of the ninja — covering stealth strikes, shap
 - `Projection.cs:11`, `Mirage.cs:11`, `SpellHelper.cs:13`, `Spell.cs:9`, `SpecialMove.cs:7` — Various other magic systems import `Server.Spells.Ninjitsu` namespace.
 - `DeadRegion.cs:12`, `World.cs:18`, `BargeDeadRegion.cs:12` — Region systems import Ninjitsu namespace.
 
-## Related Skills
+## Related Systems & Skills
 
 ### Synergies
-
-- **[Hiding](hiding.md)** — Required for Backstab, Surprise Attack, and Shadow Jump. Death Strike damage is also boosted by combined Hiding + Stealth value (`scalar = (Hiding + Stealth) / 220`, max 1.0).
-- **[Stealth](stealth.md)** — Required to enter hidden state for several abilities. Combined with Hiding for Death Strike scalar.
-- **[Tracking](tracking.md)** — `Tracking.GetStalkingBonus()` adds to Backstab damage, Surprise Attack malus, and Death Strike damage.
-- **[Bushido](bushido.md)** — Feint weapon ability uses the better of Ninjitsu or Bushido. Damage bonus formulas are identical.
-- **[Shinobi](../magic/shinobi.md)** — All Shinobi spells use Ninjitsu as their `CastSkill` and `DamageSkill`. Deception requires at least 30 Ninjitsu.
-- **[Tactics](tactics.md)** — Works alongside Ninjitsu damage bonus for total melee damage output.
-- **[Anatomy](anatomy.md)** — Adds to total melee damage alongside Ninjitsu.
+- [Hiding](hiding.md): Required for Backstab, Surprise Attack, and Shadow Jump. Death Strike damage is also boosted by combined Hiding + Stealth value (`scalar = (Hiding + Stealth) / 220`, max 1.0).
+- [Stealth](stealth.md): Required to enter hidden state for several abilities. Combined with Hiding for Death Strike scalar.
+- [Tracking](tracking.md): `Tracking.GetStalkingBonus()` adds to Backstab damage, Surprise Attack malus, and Death Strike damage.
+- [Bushido](bushido.md): Feint weapon ability uses the better of Ninjitsu or Bushido. Damage bonus formulas are identical.
+- [Shinobi](../magic/shinobi.md): All Shinobi spells use Ninjitsu as their `CastSkill` and `DamageSkill`. Deception requires at least 30 Ninjitsu.
+- [Tactics](tactics.md): Works alongside Ninjitsu damage bonus for total melee damage output.
+- [Anatomy](anatomy.md): Adds to total melee damage alongside Ninjitsu.
 
 ### Conflicts
-
 - Animal Form conflicts with [Polymorph](../magic/polymorph.md) spells (cannot be polymorphed and use Animal Form simultaneously).
 - Animal Form conflicts with [Deception](../magic/shinobi.md) (cannot disguise while in Animal Form).
 - Mirror Image does not count toward follower cap (checked via `Followers + 1 > FollowersMax`).
 - Ki Attack cannot be used while hidden (explicitly blocked).
 - Ki Attack cannot be used with ranged weapons (ML restriction).
+
+## Notes
+
+- Ninjitsu has a 2x skill gain rate (`SkillCheck.cs:69`), making it faster to train than most skills.
+- Ninjitsu is available as a starter skill with 30 initial skill points at character creation.
+- The skill is listed as expansion-required (Samurai Empire / SE) but functions fully in the current server configuration.

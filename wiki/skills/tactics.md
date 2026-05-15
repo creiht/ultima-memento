@@ -6,9 +6,14 @@ Tactics amplifies the damage of every melee and ranged attack, and is the gating
 
 | Property | Value |
 |---|---|
-| Primary Stat | Strength |
-| Usage | Passive (every swing) |
-| Cooldown | None |
+| **Primary Stat** | Strength |
+| **Usage** | Passive (every swing) |
+| **Skill Type** | Combat |
+| **Skill Check** | None (passive) |
+
+## Description
+
+Tactics adds a flat damage scalar on top of Strength and weapon-skill contributions, capping at 6.25 bonus damage at 100 skill. It is also the gating skill for all weapon special ability tiers — every ability slot requires meeting the Tactics threshold alongside the relevant weapon skill. Tactics scales the effectiveness of several weapon abilities including Nerve Strike, Talon Strike, Block, and Frenzied Whirlwind.
 
 ## How It Works
 
@@ -44,13 +49,11 @@ Tactics gains passively on every swing with `checkSkills = true`. Fight regularl
 ## What It Affects
 
 ### Combat & Damage
-
 - `BaseWeapon.cs:2390` — Tactics adds a flat damage scalar via `GetBonus(Tactics, 0.625, 100.0, 6.25)`, capping at **6.25 bonus damage** at 100 skill.
 - `BaseWeapon.cs:2379` — Every successful weapon swing passively checks Tactics for training gain alongside Anatomy.
 - `BaseWeapon.cs:273` — `AccuracySkill` property defaults to `SkillName.Tactics` for all weapons.
 
 ### Weapon Abilities
-
 - `WeaponAbility.cs:108` — **Tier gating**: Tactics must meet or exceed the same threshold as the weapon skill (default tiers: 70 / 80 / 90 / 100 / 110 per tier via `S_SpecialWeaponAbilSkill = 70.0`). Both must equal or exceed the threshold for that ability slot to unlock.
 - `WeaponAbility.cs:41` — `RequiresTactics()` returns `true` for all abilities — every weapon special has a Tactics requirement.
 - `NerveStrike.cs:56-57` — Damage = `15 * ((Tactics - 50) / 70) + random(10)` (0-25) and paralysis chance = `(150/7 + 4*Tactics/7) / 100` (~71% at 50, ~100% at 100).
@@ -62,7 +65,6 @@ Tactics gains passively on every swing with `checkSkills = true`. Fight regularl
 - `RidingSwipe.cs:49,58` — Damage to mounted target or their mount = `10 + 10 * ((Tactics - 50) / 70 + 5)`, plus paralyze on mounted attacker.
 
 ### Magic Systems
-
 - `JediSpell.cs:137` — Jedi spell casting requires Tactics >= 10 base (alongside Psychology >= 10 and Swords >= 10).
 - `SythSpell.cs:137` — Syth spell casting requires Tactics >= 10 base (alongside Psychology >= 10 and Swords >= 10).
 - `JediSpell.cs:375` / `SythSpell.cs:382` — Jedi/Syth "hate" formula: `karma/120 + Tactics + Swords` (capped at 375). Higher Tactics means more aggression from NPCs.
@@ -71,7 +73,6 @@ Tactics gains passively on every swing with `checkSkills = true`. Fight regularl
 - `AnimateDeadSpell.cs:318,325` — Summoned undead inherit Tactics skill scaled by the summoner's modifier (mages also get Meditation and Psychology).
 
 ### AI & NPCs
-
 - `BaseCreature.cs:6776` — FightMode.Strongest ranking uses `Tactics + Str` to determine which player an NPC targets first.
 - `OmniAI Bushido.cs:88` — AI NPC attempts primary weapon ability when Tactics >= 90 and Bushido >= 25.
 - `OmniAI Bushido.cs:90` — AI NPC attempts secondary weapon ability when Tactics >= 60.
@@ -80,21 +81,18 @@ Tactics gains passively on every swing with `checkSkills = true`. Fight regularl
 - `Druidism.cs:492` — Druidism Animal Form info panel displays Tactics as one of the creature's combat ratings.
 
 ### Items & Mounts
-
 - `HorseArmor.cs:119` — Applying Horse Armor to a mount adds the armor's modification to the horse's Tactics skill.
 - `Ethereals.cs:129` — Warhorse mount requires Tactics >= 100 (alongside grandmaster in any one combat weapon skill).
 - `SilverSteed.cs:20` — Silver Steed mount has Tactics 30.0-45.0.
 - `SeaHorse.cs:20` — Sea Horse mount has Tactics 30.0-45.0.
 
 ### Quest NPCs
-
 - `GolemFighter.cs:107` — Golem Fighter NPC has Tactics set to `50 * scalar`.
 - `FrankenFighter.cs:107` — Frankenstein Fighter NPC has Tactics set to `50 * scalar`.
 - `Robot.cs:57` — Robot NPC has Tactics in range 80.2-98.0.
 - `CodexWisdom.cs:113,433` — Tactics is skill #48 in the Codex skill list.
 
 ### Champion Spawns
-
 - `Silvani.cs:33` — Silvan boss has Tactics 97.6-100.0.
 - `Semidar.cs:42` — Semidar boss has Tactics 90.1-105.0.
 - `Rikktor.cs:51` — Rikktor boss has Tactics 80.0.
@@ -106,13 +104,21 @@ Tactics gains passively on every swing with `checkSkills = true`. Fight regularl
 - `GreaterMongbat.cs:28` — Greater Mongbat champion has Tactics 35.1-50.0.
 
 ### Avatar System
-
 - `SkillArchive.cs:211-212` — Tactics skill tracked in avatar progression system as `Tactics` property.
 
-## Related Skills
+## Related Systems & Skills
 
-- [Anatomy](anatomy.md) — also contributes to damage calculations; competes equally with Tactics for Block, Defense Mastery, and Frenzied Whirlwind bonuses (whichever is higher).
-- [Psychology](psychology.md) — Jedi and Syth spell prerequisites pair Tactics with Psychology and Swords at 10 base each.
-- [Swordsmanship](swordsmanship.md), [Bludgeoning](bludgeoning.md), [Fencing](fencing.md), [Fist Fighting](fist-fighting.md), [Marksmanship](marksmanship.md) — each weapon skill pairs with Tactics; Tactics tier thresholds gate all ability slots.
-- [Bushido](bushido.md) — Omni AI NPCs use Tactics >= 90 as an alternative gating condition for primary weapon abilities.
-- [Weapon Abilities](weapon-abilities.md) — full list of specials gated by Tactics tiers; all abilities have Tactics requirements.
+### Synergies
+- [Anatomy](anatomy.md): Also contributes to damage calculations; competes equally with Tactics for Block, Defense Mastery, and Frenzied Whirlwind bonuses (whichever is higher).
+- [Psychology](psychology.md): Jedi and Syth spell prerequisites pair Tactics with Psychology and Swords at 10 base each.
+- [Bushido](bushido.md): Omni AI NPCs use Tactics >= 90 as an alternative gating condition for primary weapon abilities.
+- [Druidism](../magic/druidism.md): Druidism Animal Form displays Tactics as a combat rating.
+
+### Prerequisites / Co-requisites
+- [Swordsmanship](swordsmanship.md), [Bludgeoning](bludgeoning.md), [Fencing](fencing.md), [Fist Fighting](fist-fighting.md), [Marksmanship](marksmanship.md): Each weapon skill pairs with Tactics; Tactics tier thresholds gate all ability slots.
+- [Weapon Abilities](weapon-abilities.md): Full list of specials gated by Tactics tiers; all abilities have Tactics requirements.
+
+## Notes
+- Tactics gains passively on every weapon swing — no active use required.
+- Tactics and Anatomy compete equally for several weapon ability bonuses (Block, Defense Mastery, Frenzied Whirlwind) — whichever skill is higher determines the value.
+- The damage scalar caps at 6.25 bonus damage at 100 Tactics, but continues to scale past GM (125) at ~7.8 bonus.

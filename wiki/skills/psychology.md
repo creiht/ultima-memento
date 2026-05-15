@@ -6,14 +6,18 @@ Psychology (Evaluate Intelligence) lets you assess a target's mental capabilitie
 
 | Property | Value |
 |---|---|
-| Primary Stat | Intelligence |
-| Usage | Active (targeted) |
-| Range | 8 tiles |
-| Skill Check | 0 - 125 |
-| Guild Affiliation | Mages Guild |
-| Starting Value (Mage) | 30 |
+| **Primary Stat** | Intelligence |
+| **Usage** | Active (targeted) |
+| **Skill Type** | Evaluation / Spell enhancement |
+| **Skill Check** | 0 – 125 |
+
+## Description
+
+Psychology reveals a target's intelligence level and mana percentage on success. Beyond its evaluate function, it serves as the default `DamageSkill` and `CastSkill` for most spell systems, affecting spell duration, damage, and power across nearly all magic types in the game.
 
 ## How It Works
+
+### Basic Use
 
 Use the skill and target a creature or player. On success, you receive a message describing their **intelligence level** (e.g. "That being looks very smart" or "Slightly less intelligent than a rock"). At **76.0+ base skill**, you also see their current **mana percentage**.
 
@@ -146,14 +150,27 @@ Psychology is one of the skills recognized by runic tools for crafting bonuses.
 | `Items/Trades/Magical/Tools/BaseRunicTool.cs` | 297 | Psychology recognized as runic tool skill |
 | `Items/Trades/Magical/Tools/BaseRunicTool.cs` | 361 | Psychology recognized as runic tool skill |
 
-## Related Skills
+## Related Systems & Skills
 
-- [Anatomy](anatomy.md) - Evaluates strength, dexterity, and stamina instead of intelligence.
-- [Meditation](meditation.md) - Mana-focused skill, used alongside Psychology for spellcasting.
-- [Magery](../magic/magery.md) - Primary magic skill; Psychology enhances all Magery spells' duration and damage.
-- [Spiritualism](spiritualism.md) - Necromancy counterpart; used alongside Psychology in research checks.
-- [Magic Resist](magic-resistance.md) - Defensively countered by Psychology-enhanced spell effectiveness.
-- [Jedi](../magic/jedi.md) - Jedi spells require Psychology as cast skill; 25+ needed to begin the path.
-- [Syth](../magic/syth.md) - Syth spells require Psychology as cast skill; 50+ needed for Syth class.
-- [Jester](../magic/jester.md) - Jester class requires 10+ Psychology.
-- [Elementalism](../magic/elementalism.md) - Elementalists are noted as NOT having supplement skills like mages with Psychology.
+### Synergies
+
+- `[Magery](../magic/magery.md)`: Primary magic skill; Psychology enhances all Magery spells' duration and damage. Combined with Magery for Magic Reflect absorption value.
+- `[Jedi](../magic/jedi.md)`: Jedi spells require Psychology as `CastSkill`; 25+ needed to begin the path. Powers Jedi spell calculations.
+- `[Syth](../magic/syth.md)`: Syth spells require Psychology as `CastSkill`; 50+ needed for Syth class. Combined with karma for Syth power value.
+- `[Jester](../magic/jester.md)`: Jester class requires 10+ Psychology. Used by Can of Snakes spell for extra summons.
+
+### Prerequisites / Co-requisites
+
+- `[Jedi Path](../magic/jedi.md)`: Requires Psychology ≥ 25 + positive karma (`Talk.cs:177`).
+- `[Syth Class](../magic/syth.md)`: Requires Psychology ≥ 50 + Swords ≥ 50 + Karma ≤ -5000 + isSyth flag (`Players.cs:571, 608`).
+- `[Anatomy](anatomy.md)`: Evaluates strength, dexterity, and stamina instead of intelligence — complementary evaluate skill.
+- `[Spiritualism](spiritualism.md)`: Used alongside Psychology in Research spell checks.
+- `[Meditation](meditation.md)`: Mana-focused skill, used alongside Psychology for spellcasting.
+- `[Magic Resist](magic-resistance.md)`: Defensively countered by Psychology-enhanced spell effectiveness.
+
+## Notes
+
+- Psychology is the most universally important non-combat skill — it enhances nearly every magic system.
+- At 100+ base Psychology, the evaluate margin of error is 0 (perfect reading).
+- Elementalists are specifically noted as NOT having supplement skills like mages with Psychology (`elementalism.md`).
+- Mages Guild affiliation makes Psychology a natural starting skill (30 base for Mages).

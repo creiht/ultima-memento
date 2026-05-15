@@ -6,10 +6,14 @@ Meditation allows you to enter a trance to regenerate mana at an increased rate.
 
 | Property | Value |
 |---|---|
-| Primary Stat | Intelligence |
-| Usage | Active |
-| Cooldown | 10 seconds |
-| Skill Check | 0 - 100 |
+| **Primary Stat** | Intelligence |
+| **Usage** | Active |
+| **Skill Type** | Secondary (skill check) |
+| **Skill Check** | 0 - 100 |
+
+## Description
+
+Meditation boosts your mana regeneration rate when you enter a meditative trance. It is the primary skill governing mana regeneration for all mobile types, with different formulas applying in AOS and non-AOS eras.
 
 ## How It Works
 
@@ -58,7 +62,7 @@ medPoints = Intelligence + (Meditation × 3)
 medPoints *= (Meditation < 100) ? 0.025 : 0.0275
 ```
 
-- `World/Source/Scripts/System/Misc/RegenRates.cs:125-127`
+- `RegenRates.cs:125-127`
 - At 100+ Meditation, you gain a 10% multiplier bonus (0.0275 vs 0.025).
 - When meditating (buff active), mana points are capped at 13.0: `RegenRates.cs:136`
 
@@ -66,14 +70,14 @@ medPoints *= (Meditation < 100) ? 0.025 : 0.0275
 ```
 medPoints = (Intelligence + Meditation) × 0.5
 ```
-- `World/Source/Scripts/System/Misc/RegenRates.cs:163`
+- `RegenRates.cs:163`
 
 ### Armor Interference
 
 Armor reduces meditation effectiveness. Each armor slot contributes to an armor penalty score:
 
-- `World/Source/Scripts/System/Misc/RegenRates.cs:188-206` — `GetArmorOffset()` sums penalty from all 9 armor slots (neck, hand, head, arms, legs, chest, shoes, cloak, outer torso).
-- `World/Source/Scripts/System/Misc/RegenRates.cs:209-221` — `GetArmorMeditationValue()`:
+- `RegenRates.cs:188-206` — `GetArmorOffset()` sums penalty from all 9 armor slots (neck, hand, head, arms, legs, chest, shoes, cloak, outer torso).
+- `RegenRates.cs:209-221` — `GetArmorMeditationValue()`:
   - `MageArmor != 0` or `SpellChanneling != 0` → no penalty
   - `MeditationAllowance.None` → full base armor rating penalty
   - `MeditationAllowance.Half` → half base armor rating penalty
@@ -146,3 +150,22 @@ Champion spawn NPCs carry very high Meditation values:
 - **Skill listing UI refresh** — gains to Meditation trigger a UI refresh in the skill listing gump (`System/Skills/SkillCheck.cs:429`)
 - **Avatar system** — Meditation is tracked in the avatar SkillArchive (`Engines and Systems/Avatar/SkillArchive.cs:131-132`), and is auto-locked when selecting an avatar template to prevent skill reduction (`Engines and Systems/Avatar/Reward/AvatarShopGumpRewards.cs:306-337`)
 - **Gump categorization** — displayed under the "Magical" tab in SkillsGump (`System/Gumps/SkillsGump.cs:489`)
+
+## Related Systems & Skills
+
+### Synergies
+- [Mystic Spells](../magic/mystic.md): require Meditation ≥ 100 base to cast
+- [Mystic Spellbooks](../magic/magery.md): require Meditation ≥ 100 base to open
+- [Elixir of Meditating](../crafting/alchemy.md): Alchemy recipe that grants Meditation skill bonuses
+- [Runic Tools](../crafting/inscription.md): can enchant items granting Meditation skill bonuses
+- [Focus](focus.md): adds bonus mana regen points on top of Meditation
+- [Druidism](druidism.md): displays Meditation skill level on creature assessment panels
+
+### Prerequisites / Co-requisites
+- [Intelligence](../attributes/intelligence.md): Primary stat for mana regeneration calculations
+
+## Notes
+- Meditation is a secondary skill, meaning it ignores the total skill cap.
+- You cannot meditate while your mana is full.
+- Heavy armor prevents meditation entirely; wear `MeditationAllowance.All` armor to meditate without penalty.
+- In AOS era, any armor with a positive meditation offset completely nullifies the Meditation bonus to mana regen.

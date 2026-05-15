@@ -6,11 +6,14 @@ Tasting (Taste Identification) lets you detect poison in food and beverages, app
 
 | Property | Value |
 |---|---|
-| Primary Stat | Intelligence |
-| Usage | Active (targeted) |
-| Range | 2 tiles |
-| Skill Check | 0 - 125 (poison detection), -5 to 125 (item ID) |
-| Power Scroll | Yes ([PowerScroll.cs](file:///home/cthier/projects/ultima-memento/World/Source/Scripts/Items/Books/PowerScrolls/PowerScroll.cs#L45)) |
+| **Primary Stat** | Intelligence |
+| **Usage** | Active (targeted) |
+| **Skill Type** | Trade / Rogue |
+| **Skill Check** | 0 - 125 (poison detection), −5 to 125 (item ID) |
+
+## Description
+
+Tasting serves multiple roles: detecting poison in food and drinks, identifying Tasting-marked items and relics, and enhancing the potency and duration of consumed foods, elixirs, and mixtures. It is one of three identification skills in the game, alongside Arms Lore and Mercantile.
 
 ## How It Works
 
@@ -29,7 +32,7 @@ Target a piece of food or a drink to check for poison. On success, you learn the
 
 **Warning:** On a **failed** check against poisoned food, you accidentally **eat or drink it**, consuming the poison!
 
-> Source: `Tasting.cs:49` (Food), `Tasting.cs:82` (BaseBeverage)
+Source: `Tasting.cs:49` (Food), `Tasting.cs:82` (BaseBeverage)
 
 ### Item Identification
 
@@ -43,7 +46,11 @@ When targeting any other item, the Tasting skill functions as an item identifica
 
 Targeting a creature or player: "You feel that such an action would be inappropriate."
 
-## What Tasting Affects
+## How to Train
+
+Test poisoned and unpoisoned food/beverages. The skill check is 0-125. You can also identify Tasting-marked items/relics to gain skill. Be careful with very strong poisons at low skill — failure means consuming them.
+
+## What It Affects
 
 ### Food & Consumption
 
@@ -58,33 +65,29 @@ Targeting a creature or player: "You feel that such an action would be inappropr
 
 ### Elixirs & Mixtures
 
-| Effect | File:Line | Formula |
+| Effect | File:Line | Details |
 |---|---|---|
-| Elixir duration | `BaseElixir.cs:45` | `TotalTime = (time + enhancePotions/2 + Cooking/2 + Tasting) / 120` — Tasting contributes up to **+1 minute** at 125 skill |
-| Elixir buff value | `BaseElixir.cs:52` | `TotalBuff = default + enhancePotions/8 + Cooking/5 + Tasting/5` — Tasting contributes up to **+20** buff at 125 skill |
-| Mixture duration | `BaseMixture.cs:165` | `time + enhancePotions/2 + Cooking/2 + Tasting/2` — Tasting contributes up to **+62** seconds at 125 skill |
-| Mixture strength | `BaseMixture.cs:175` | `default + enhancePotions/5 + Cooking/4 + Tasting/3` — Tasting contributes up to **+41** strength at 125 skill |
-| Mixture skill bonus | `BaseMixture.cs:185` | `40 + enhancePotions/2 + Cooking/2 + Tasting/2` — Tasting contributes up to **+62** skill bonus at 125 skill |
-| Mixture damage | `BaseMixture.cs:195` | `1 + enhancePotions/40 + Cooking/25 + Tasting/15` — Tasting contributes up to **+8** damage at 125 skill |
+| Elixir duration | `BaseElixir.cs:45` | `TotalTime = (time + enhancePotions/2 + Cooking/2 + Tasting) / 120` — up to **+1 minute** at 125 skill |
+| Elixir buff value | `BaseElixir.cs:52` | `TotalBuff = default + enhancePotions/8 + Cooking/5 + Tasting/5` — up to **+20** buff at 125 skill |
+| Mixture duration | `BaseMixture.cs:165` | `time + enhancePotions/2 + Cooking/2 + Tasting/2` — up to **+62** seconds at 125 skill |
+| Mixture strength | `BaseMixture.cs:175` | `default + enhancePotions/5 + Cooking/4 + Tasting/3` — up to **+41** strength at 125 skill |
+| Mixture skill bonus | `BaseMixture.cs:185` | `40 + enhancePotions/2 + Cooking/2 + Tasting/2` — up to **+62** skill bonus at 125 skill |
+| Mixture damage | `BaseMixture.cs:195` | `1 + enhancePotions/40 + Cooking/25 + Tasting/15` — up to **+8** damage at 125 skill |
 | Bonus alchemic slime | `BaseMixture.cs:136` | Extra slime summon if `Cooking >= Random(1,200)` **or** `Tasting >= Random(1,200)` — yields 2 slimes instead of 1 |
 | Monster splatter poison potency | `MonsterSplatter.cs:259` | Poison tier bonus includes `Tasting/33` (up to +3) alongside Poisoning/50 and Alchemy/33 |
 
 ### Loot & Drops
 
-| Effect | File:Line | Details |
-|---|---|---|
-| Potion tier upgrade from slimes | `LootPack.cs:796-804` | At 30+ Tasting, chance to upgrade `LesserHealPotion → HealPotion → GreaterHealPotion` based on skill value vs random roll |
-| Guaranteed unidentified item drops | `NotIdentified.cs:297-342` | Auto-delete system uses Tasting skill breakpoints alongside Arms Lore and Mercantile to guarantee items drop unidentified rather than being deleted |
+- `LootPack.cs:796-804` — At 30+ Tasting, chance to upgrade `LesserHealPotion → HealPotion → GreaterHealPotion` based on skill value vs random roll.
+- `NotIdentified.cs:297-342` — Auto-delete system uses Tasting skill breakpoints alongside Arms Lore and Mercantile to guarantee items drop unidentified rather than being deleted.
 
 ### Research System
 
-| Effect | File:Line | Details |
-|---|---|---|
-| Octopus ink bonus | `ResearchFunctions.cs:582` | Chance to gain extra octopus ink: `Tasting >= Random(25,150)` — alongside Alchemy and Cooking checks |
+- `ResearchFunctions.cs:582` — Chance to gain extra octopus ink: `Tasting >= Random(25,150)` — alongside Alchemy and Cooking checks.
 
 ### Guild Benefits
 
-| Guild | Bonus | File:Line |
+| Guild | Bonus | Source |
 |---|---|---|
 | Merchants Guild Ring | +15 Tasting | `GuildRing.cs:63` |
 | Alchemists Guild Ring | +15 Tasting | `GuildRing.cs:82` |
@@ -92,9 +95,7 @@ Targeting a creature or player: "You feel that such an action would be inappropr
 
 ### NPC Merchants
 
-These vendors have Tasting skill set and may offer related services:
-
-| Merchant | Tasting Range | File:Line |
+| Merchant | Tasting Range | Source |
 |---|---|---|
 | Alchemist | 65.0 - 88.0 | `Alchemist.cs:28` |
 | Alchemist Guildmaster | 65.0 - 88.0 | `AlchemistGuildmaster.cs:25` |
@@ -103,8 +104,6 @@ These vendors have Tasting skill set and may offer related services:
 | Culinary Guildmaster | 75.0 - 98.0 | `CulinaryGuildmaster.cs:15` |
 | Farmer | 36.0 - 68.0 | `Farmer.cs:28` |
 | Glassblower | 85.0 - 100.0 | `Glassblower.cs:18` |
-| Hair Stylist | 85.0 - 100.0 | `HairStylist.cs:17` |
-| Custom Hair Stylist | 85.0 - 100.0 | `CustomHairstylist.cs:77` |
 | Herbalist | 80.0 - 100.0 | `Herbalist.cs:29` |
 
 ### Relic System
@@ -145,25 +144,30 @@ Tasting provides discount/identification benefits at:
 
 ### Other Systems
 
-| System | File:Line | Details |
-|---|---|---|
-| Skill fragment | `PlayerMobile.cs:791` | Moving Tasting to skill fragment costs 10 skill points |
-| Behavior skill list | `Behavior.cs:6272` | Tasting is in the global list of skills checked by NPC behavior system |
-| Character creation | `CharacterCreation.cs:370` | Tasting available during character skill allocation |
-| Skill archive (avatar system) | `SkillArchive.cs:224` | Tasting tracked in avatar skill archive |
-| Codex wisdom | `CodexWisdom.cs:435` | Tasting referenced in Codex of Wisdom learnable knowledge |
-| Skill listing/display | `SkillListing.cs:204`, `SkillsGump.cs:538`, `Skills.cs:54` | Displayed in skill gumps and help text |
+- `PlayerMobile.cs:791` — Moving Tasting to skill fragment costs 10 skill points.
+- `Behavior.cs:6272` — Tasting is in the global list of skills checked by NPC behavior system.
+- `CharacterCreation.cs:370` — Tasting available during character skill allocation.
+- `SkillArchive.cs:224` — Tasting tracked in avatar skill archive.
+- `CodexWisdom.cs:435` — Tasting referenced in Codex of Wisdom learnable knowledge.
+- `SkillListing.cs:204`, `SkillsGump.cs:538`, `Skills.cs:54` — Displayed in skill gumps and help text.
 
-## How to Train
+## Related Systems & Skills
 
-Test poisoned and unpoisoned food/beverages. The skill check is 0-125. You can also identify Tasting-marked items/relics to gain skill. Be careful with very strong poisons at low skill — failure means consuming them.
+### Synergies
 
-## Related Skills
+- [Poisoning](poisoning.md): Apply poison to items that Tasting detects.
+- [Cooking](../crafting/cooking.md): Works alongside Tasting for elixir/mixture duration, buff values, and bonus alchemic slime chances.
+- [Healing](healing.md): Higher Tasting means more HP recovered from food consumption.
+- [Seafaring](seafaring.md): Magic fish consumption benefits from Tasting healing.
 
-- [Poisoning](poisoning.md) — Apply poison to items that Tasting detects.
-- [Arms Lore](arms-lore.md) — Another item identification skill (for different item types).
-- [Mercantile](mercantile.md) — Another item identification skill; also appraises item value.
-- [Cooking](cooking.md) — Works alongside Tasting for elixir/mixture duration, buff values, and bonus alchemic slime chances.
-- [Alchemy](alchemy.md) — Works alongside Tasting for monster splatter poison potency and research octopus ink.
-- [Healing](healing.md) — Higher Tasting means more HP recovered from food consumption.
-- [Seafaring](seafaring.md) — Magic fish consumption benefits from Tasting healing.
+### Prerequisites / Co-requisites
+
+- [Arms Lore](arms-lore.md): Another item identification skill (for different item types).
+- [Mercantile](mercantile.md): Another item identification skill; also appraises item value.
+
+## Notes
+
+- **Poison consumption risk**: Failed poison detection checks consume the poisoned food/drink. Be cautious with Deadly and Lethal poisons at low skill.
+- **Three-skill identification system**: Tasting, Arms Lore, and Mercantile form the identification triad, each covering different item categories.
+- **Vendor fallback**: Vendors can always identify items if they are vendible, regardless of skill.
+- **Potion upgrade mechanic**: At 30+ Tasting, loot packs have a chance to upgrade LesserHealPotion → HealPotion → GreaterHealPotion.
